@@ -1,3 +1,3 @@
-name = 'sub-uonversion'
+name = 'xragrant-nimamsip'
 main = "sub-trans.worker.js"
 compatibility_date = "2025-06-29"
