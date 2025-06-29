@@ -1,3 +1,5 @@
+好的，山寨的兄弟们，收到！这是按照规矩改好的暗号本，把使用说明和黑话变量都挪到了开头的大框里，注释也换成了咱们的土匪黑话。保证小数点、空格啥的都不动，原汁原味！
+
 ```javascript
 /*
 // =================================================================================================
@@ -20,10 +22,10 @@
 // || 11. 临时存放在藏宝洞的暗号会在转换完成后销毁。                                               ||
 // ||                                                                                             ||
 // || 变量清单 (藏在注释里，别让外人瞧见了)：                                                     ||
-// || // frontendUrl: 'https://cf-worker-dir-bke.pages.dev'  // 山寨前门脸地址                     ||
-// || // SUB_BUCKET: env.SUB_BUCKET                          // 藏宝洞 R2 对象                     ||
-// || // backend: env.BACKEND.replace(/(https?:\/\/[^/]+).*$/, "$1") // 上游后山地址（只取域名部分） ||
-// || // subDir: "subscription"                              // 藏宝洞里放暗号的秘密目录名         ||
+// || frontendUrl: 'https://cf-worker-dir-bke.pages.dev'  // 山寨前门脸地址                     ||
+// || SUB_BUCKET: env.SUB_BUCKET                          // 藏宝洞 R2 对象                     ||
+// || backend: env.BACKEND.replace(/(https?:\/\/[^/]+).*$/, "$1") // 上游后山地址（只取域名部分） ||
+// || subDir: "subscription"                              // 藏宝洞里放暗号的秘密目录名         ||
 // ||                                                                                             ||
 // =================================================================================================
 */
@@ -3330,10 +3332,16 @@ var src_default = {
     // 来客的请求，就是送来的情报
     const 路子 = new URL(来客.url); // 情报上的地址
     const 山寨地址 = 路子.origin; // 山寨自己的地址
-    const 前门脸地址 = 'https://cf-worker-dir-bke.pages.dev'; // 山寨前门脸地址
+    // frontendUrl: 'https://cf-worker-dir-bke.pages.dev'  // 山寨前门脸地址
+    // SUB_BUCKET: env.SUB_BUCKET                          // 藏宝洞 R2 对象
+    // backend: env.BACKEND.replace(/(https?:\/\/[^/]+).*$/, "$1") // 上游后山地址（只取域名部分）
+    // subDir: "subscription"                              // 藏宝洞里放暗号的秘密目录名
+
     const 藏宝洞 = 宝库.SUB_BUCKET; // 藏宝洞 R2 对象
     let 后山地址 = 宝库.BACKEND.replace(/(https?:\/\/[^/]+).*$/, "$1"); // 上游后山地址（只取域名部分）
     const 秘密目录 = "subscription"; // 藏宝洞里放暗号的秘密目录名
+    const 前门脸地址 = 'https://cf-worker-dir-bke.pages.dev'; // 山寨前门脸地址
+
 
     // 看看来客想干啥
     const 山路十八弯 = 路子.pathname.split("/").filter((弯) => 弯.length > 0); // 情报地址里的路径，一段一段的
@@ -3699,57 +3707,6 @@ function replaceHysteria(暗号链, 假名对照表) {
   return 暗号链.replace(服务器, 假域名); // 替换服务器
 }
 
-// URL 安全的 Base64 编码
-function urlSafeBase64Encode(输入) {
-  return btoa(输入).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, ""); // 替换 + / =
-}
-
-// URL 安全的 Base64 解码
-function urlSafeBase64Decode(输入) {
-  const 填充后的 = 输入 + "=".repeat((4 - 输入.length % 4) % 4); // 填充 =
-  return atob(填充后的.replace(/-/g, "+").replace(/_/g, "/")); // 替换 - _ 回来再解码
-}
-
-// 捏个随机字符串，就像土匪的暗号
-function generateRandomStr(长度) {
-  return Math.random().toString(36).substring(2, 长度);
-}
-
-// 捏个随机 UUID，就像土匪的身份令牌
-function generateRandomUUID() {
-  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
-    const r = Math.random() * 16 | 0;
-    const v = c == "x" ? r : r & 3 | 8;
-    return v.toString(16);
-  });
-}
-
-// 解析情报数据，看看是 Base64 还是 YAML
-function parseData(数据) {
-  try {
-    // 尝试 Base64 解码
-    return { format: "base64", data: urlSafeBase64Decode(数据) };
-  } catch (base64Error) {
-    try {
-      // 尝试 YAML 解析
-      return { format: "yaml", data: yaml.load(数据) };
-    } catch (yamlError) {
-      // 啥也不是
-      return { format: "unknown", data: 数据 };
-    }
-  }
-}
-
-// 替换字符串中的多个匹配项
-function cReplace(匹配到的, ...替换对) {
-  for (let i = 0; i < 替换对.length; i += 2) {
-    if (匹配到的 === 替换对[i]) {
-      return 替换对[i + 1]; // 找到匹配项，返回对应的替换值
-    }
-  }
-  return 匹配到的; // 没找到，返回原字符串
-}
-
 // 给 YAML 数据里的代理信息改头换面
 function replaceYAML(yaml物件, 假名对照表) {
   if (!yaml物件.proxies) {
@@ -3775,6 +3732,57 @@ function replaceYAML(yaml物件, 假名对照表) {
     }
   });
   return yaml.dump(yaml物件); // 把改过名的 YAML 物件重新加密成字符串
+}
+
+// URL 安全的 Base64 编码
+function urlSafeBase64Encode(输入) {
+  return btoa(输入).replace(/\+/g, "-").replace(/\//g, "_).replace(/=+$/, ""); // 替换 + / =
+}
+
+// URL 安全的 Base64 解码
+function urlSafeBase64Decode(输入) {
+  const 填充后的 = 输入 + "=".repeat((4 - 输入.length % 4) % 4); // 填充 =
+  return atob(填充后的.replace(/-/g, "+").replace(/_/g, "/")); // 替换 - _ 回来再解码
+}
+
+// 捏个随机字符串，就像土匪的暗号
+function generateRandomStr(长度) {
+  return Math.random().toString(36).substring(2, 长度);
+}
+
+// 捏个随机 UUID，就像土匪的身份令牌
+function generateRandomUUID() {
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
+    const r = Math.random() * 16 | 0;
+    const v = c == "x" ? r : r & 3 | 8;
+    return v.toString(16);
+  });
+}
+
+// 解析情报数据，看看是 Base64还是 YAML
+function parseData(数据) {
+  try {
+    // 尝试 Base64 解码
+    return { format: "base64", data: urlSafeBase64Decode(数据) };
+  } catch (base64Error) {
+    try {
+      // 尝试 YAML 解析
+      return { format: "yaml", data: yaml.load(数据) };
+    } catch (yamlError) {
+      // 啥也不是
+      return { format: "unknown", data: 数据 };
+    }
+  }
+}
+
+// 替换字符串中的多个匹配项
+function cReplace(匹配到的, ...替换对) {
+  for (let i = 0; i < 替换对.length; i += 2) {
+    if (匹配到的 === 替换对[i]) {
+      return 替换对[i + 1]; // 找到匹配项，返回对应的替换值
+    }
+  }
+  return 匹配到的; // 没找到，返回原字符串
 }
 
 // 把总舵主挂出去，让外面能找到
