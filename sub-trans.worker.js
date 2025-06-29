@@ -1048,10 +1048,10 @@ var 要二进制 = 共用模({
     // 定義二進制類型
     module.exports = new 类型("tag:yaml.org,2002:binary", {
       kind: "scalar",
-      resolve: 解析山寨二进制,
-      construct: 构造山寨二进制,
+      resolve: 解析山寨二進制,
+      construct: 构造山寨二進制,
       predicate: 是二进制,
-      represent: 表示山寨二进制
+      represent: 表示山寨二進制
     });
   }
 });
@@ -1150,8 +1150,8 @@ var 要键值对 = 共用模({
     // 定義鍵值對類型
     module.exports = new 类型("tag:yaml.org,2002:pairs", {
       kind: "sequence",
-      resolve: 解析山寨键值对,
-      construct: 构造山寨键值对
+      resolve: 解析山寨鍵值對,
+      construct: 构造山寨鍵值對
     });
   }
 });
@@ -1317,8 +1317,8 @@ var 要装货机 = 共用模({
     var 简单转义检查 = new Array(256);
     var 简单转义映射 = new Array(256);
     for (i = 0; i < 256; i++) {
-      简单转义检查[i] = 简单轉義序列(i) ? 1 : 0;
-      简单转义映射[i] = 简单轉義序列(i);
+      简单转义检查[i] = 简单转义序列(i) ? 1 : 0;
+      简单转义映射[i] = 简单转义序列(i);
     }
     var i;
     // 狀態物件，記錄解析過程中的各種信息
@@ -1827,7 +1827,7 @@ var 要装货机 = 共用模({
             textIndent = nodeIndent + tmp - 1;
             detectedIndent = true;
           } else {
-            抛錯(state, "重複的縮進寬度標識符");
+            抛错(state, "重複的縮進寬度標識符");
           }
         } else {
           break;
@@ -2026,7 +2026,7 @@ var 要装货机 = 共用模({
             _keyLineStart = state.lineStart;
             _keyPos = state.position;
           }
-          if (组节点(state, nodeIndent, 上下文块外, true, allowCompact)) {
+          if (组节点(state, nodeIndent, 上下文塊外, true, allowCompact)) {
             if (atExplicitKey) {
               keyNode = state.result;
             } else {
@@ -2145,7 +2145,7 @@ var 要装货机 = 共用模({
         ch = state.input.charCodeAt(++state.position);
       }
       if (state.position === _position) {
-        抛错(state, "錨點節點名稱必須至少包含一個字符");
+        抛錯(state, "錨點節點名稱必須至少包含一個字符");
       }
       state.anchor = state.input.slice(_position, state.position);
       return true;
@@ -2196,7 +2196,7 @@ var 要装货机 = 共用模({
         }
       }
       if (indentStatus === 1) {
-        while (读标签属性(state) || 读锚点属性(state)) {
+        while (读标签属性(state) || 读錨点屬性(state)) {
           if (跳空白(state, true, -1)) {
             atNewLine = true;
             allowBlockCollections = allowBlockStyles;
@@ -2747,7 +2747,7 @@ var 要卸货机 = 共用模({
           case 样式字面量:
             return "|" + 块头(string, state.indent) + 去尾换行(缩进字串(string, indent));
           case 样式折疊:
-            return ">" + 块头(string, state.indent) + 去尾换行(缩进字串(折叠字串(string, lineWidth), indent));
+            return ">" + 块头(string, state.indent) + 去尾换行(縮進字串(折疊字串(string, lineWidth), indent));
           case 样式双引号:
             return '"' + 转义字串(string, lineWidth) + '"';
           default:
