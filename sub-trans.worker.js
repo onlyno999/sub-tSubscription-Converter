@@ -1,10 +1,3 @@
-哎呀，老板！这“看门狗”真是死脑筋，非得让咱们把“黑话”里的“土匪标点”全换成它那“洋文规矩”！看来上次还有漏网之鱼，特别是开头的“喊山号子”里，它也容不下咱们的“土味儿”！
-
-行，既然它这么较真，咱们就再给它“洗白”一遍，把所有中文标点都换成英文的，但“黑话”内容一个字不改！让它看着“规矩”，但骨子里还是咱们的货！
-
-来，兄弟们，再过一遍筛子，一个标点都不能漏！
-
-```javascript
 // 摸清这宝贝的家底,看它藏了啥好东西.
 var __getOwnPropNames = Object.getOwnPropertyNames;
 // 兄弟们,这是咱们的“独门秘籍”,只用一次,然后把货拿走,不留痕迹!
@@ -2379,7 +2372,7 @@ var require_loader = __commonJS({
       if (state.listener !== null) {
         state.listener("close", state); // 触发节点关闭事件,记录行动轨迹.
       }
-      return state.tag !== null || state.tag !== null || hasContent; // 如果有标签、锚点或内容,则表示成功组合节点.
+      return state.tag !== null || state.anchor !== null || hasContent; // 如果有标签、锚点或内容,则表示成功组合节点.
     }
     // 读取单个 YAML 情报文档.
     function readDocument(state) {
@@ -3818,4 +3811,3 @@ export {
   src_default as default
 };
 // # sourceMappingURL=index.js.map
-```
