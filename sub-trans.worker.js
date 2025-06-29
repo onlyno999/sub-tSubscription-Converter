@@ -1,5 +1,5 @@
 ```javascript
-// 這是咱們山寨的開山祖師爺，專門管物件的私家財產名兒儿
+// 這是咱們山寨的開山祖師爺，專門管物件的私家財產名兒
 var 取己名 = Object.getOwnPropertyNames;
 // 這是咱們山寨的「模块化」大法，把零散的功夫都給歸攏起來
 var 模块化 = (fn, res) => function __init() {
@@ -1396,18 +1396,18 @@ var 要装货机 = 共用模({
         handle = args[0];
         prefix = args[1];
         if (!标签句柄模式.test(handle)) {
-          抛错(state, "TAG 指令的標籤句柄（第一個參數）格式不正確");
+          抛錯(state, "TAG 指令的標籤句柄（第一個參數）格式不正確");
         }
         if (_hasOwnProperty.call(state.tagMap, handle)) {
-          抛错(state, '標籤句柄 "' + handle + '" 已有前綴聲明');
+          抛錯(state, '標籤句柄 "' + handle + '" 已有前綴聲明');
         }
         if (!标签URI模式.test(prefix)) {
-          抛错(state, "TAG 指令的標籤前綴（第二個參數）格式不正確");
+          抛錯(state, "TAG 指令的標籤前綴（第二個參數）格式不正確");
         }
         try {
           prefix = decodeURIComponent(prefix);
         } catch (err) {
-          抛错(state, "標籤前綴格式錯誤: " + prefix);
+          抛錯(state, "標籤前綴格式錯誤: " + prefix);
         }
         state.tagMap[handle] = prefix;
       }
@@ -1421,11 +1421,11 @@ var 要装货机 = 共用模({
           for (_position = 0, _length = _result.length; _position < _length; _position += 1) {
             _character = _result.charCodeAt(_position);
             if (!(_character === 9 || 32 <= _character && _character <= 1114111)) {
-              抛错(state, "預期有效的 JSON 字符");
+              抛錯(state, "預期有效的 JSON 字符");
             }
           }
         } else if (非打印字符模式.test(_result)) {
-          抛错(state, "流中包含非打印字符");
+          抛錯(state, "流中包含非打印字符");
         }
         state.result += _result;
       }
@@ -1434,7 +1434,7 @@ var 要装货机 = 共用模({
     function 合映射(state, destination, source, overridableKeys) {
       var sourceKeys, key, index, quantity;
       if (!通用.是物件(source)) {
-        抛错(state, "無法合併映射；提供的源物件不可接受");
+        抛錯(state, "無法合併映射；提供的源物件不可接受");
       }
       sourceKeys = Object.keys(source);
       for (index = 0, quantity = sourceKeys.length; index < quantity; index += 1) {
@@ -1452,7 +1452,7 @@ var 要装货机 = 共用模({
         keyNode = Array.prototype.slice.call(keyNode);
         for (index = 0, quantity = keyNode.length; index < quantity; index += 1) {
           if (Array.isArray(keyNode[index])) {
-            抛错(state, "鍵中不支持嵌套數組");
+            抛錯(state, "鍵中不支持嵌套數組");
           }
           if (typeof keyNode === "object" && _class(keyNode[index]) === "[object Object]") {
             keyNode[index] = "[object Object]";
@@ -1479,7 +1479,7 @@ var 要装货机 = 共用模({
           state.line = startLine || state.line;
           state.lineStart = startLineStart || state.lineStart;
           state.position = startPos || state.position;
-          抛错(state, "重複的映射鍵");
+          抛錯(state, "重複的映射鍵");
         }
         if (keyNode === "__proto__") {
           Object.defineProperty(_result, keyNode, {
@@ -1507,7 +1507,7 @@ var 要装货机 = 共用模({
           state.position++;
         }
       } else {
-        抛错(state, "預期換行符");
+        抛錯(state, "預期換行符");
       }
       state.line += 1;
       state.lineStart = state.position;
@@ -1660,13 +1660,13 @@ var 要装货机 = 共用模({
           写折行(state, 跳空白(state, false, nodeIndent));
           captureStart = captureEnd = state.position;
         } else if (state.position === state.lineStart && 测文档分隔(state)) {
-          抛错(state, "單引號標量中意外的文檔結尾");
+          抛錯(state, "單引號標量中意外的文檔結尾");
         } else {
           state.position++;
           captureEnd = state.position;
         }
       }
-      抛错(state, "單引號標量中意外的流結尾");
+      抛錯(state, "單引號標量中意外的流結尾");
     }
     // 讀取雙引號標量
     function 读双引标量(state, nodeIndent) {
@@ -1700,13 +1700,13 @@ var 要装货机 = 共用模({
               if ((tmp = 从十六进制码(ch)) >= 0) {
                 hexResult = (hexResult << 4) + tmp;
               } else {
-                抛错(state, "預期十六進制字符");
+                抛錯(state, "預期十六進制字符");
               }
             }
             state.result += 字符从码点(hexResult);
             state.position++;
           } else {
-            抛错(state, "未知轉義序列");
+            抛錯(state, "未知轉義序列");
           }
           captureStart = captureEnd = state.position;
         } else if (是行尾(ch)) {
@@ -1714,13 +1714,13 @@ var 要装货机 = 共用模({
           写折行(state, 跳空白(state, false, nodeIndent));
           captureStart = captureEnd = state.position;
         } else if (state.position === state.lineStart && 测文档分隔(state)) {
-          抛错(state, "雙引號標量中意外的文檔結尾");
+          抛錯(state, "雙引號標量中意外的文檔結尾");
         } else {
           state.position++;
           captureEnd = state.position;
         }
       }
-      抛错(state, "雙引號標量中意外的流結尾");
+      抛錯(state, "雙引號標量中意外的流結尾");
     }
     // 讀取流集合
     function 读流集合(state, nodeIndent) {
@@ -1752,9 +1752,9 @@ var 要装货机 = 共用模({
           state.result = _result;
           return true;
         } else if (!readNext) {
-          抛错(state, "流集合條目之間缺少逗號");
+          抛錯(state, "流集合條目之間缺少逗號");
         } else if (ch === 44) {
-          抛错(state, "預期節點內容，但找到 ','");
+          抛錯(state, "預期節點內容，但找到 ','");
         }
         keyTag = keyNode = valueNode = null;
         isPair = isExplicitPair = false;
@@ -1797,7 +1797,7 @@ var 要装货机 = 共用模({
           readNext = false;
         }
       }
-      抛错(state, "流集合中意外的流結尾");
+      抛錯(state, "流集合中意外的流結尾");
     }
     // 讀取塊標量
     function 读块标量(state, nodeIndent) {
@@ -1818,16 +1818,16 @@ var 要装货机 = 共用模({
           if (剪切换行 === chomping) {
             chomping = ch === 43 ? 保留换行 : 剥离换行;
           } else {
-            抛错(state, "重複的換行模式標識符");
+            抛錯(state, "重複的換行模式標識符");
           }
         } else if ((tmp = 从十进制码(ch)) >= 0) {
           if (tmp === 0) {
-            抛错(state, "塊標量顯式縮進寬度錯誤；不能小於一");
+            抛錯(state, "塊標量顯式縮進寬度錯誤；不能小於一");
           } else if (!detectedIndent) {
             textIndent = nodeIndent + tmp - 1;
             detectedIndent = true;
           } else {
-            抛错(state, "重複的縮進寬度標識符");
+            抛錯(state, "重複的縮進寬度標識符");
           }
         } else {
           break;
@@ -1908,7 +1908,7 @@ var 要装货机 = 共用模({
       while (ch !== 0) {
         if (state.firstTabInLine !== -1) {
           state.position = state.firstTabInLine;
-          抛错(state, "縮進中不能使用 Tab 字符");
+          抛錯(state, "縮進中不能使用 Tab 字符");
         }
         if (ch !== 45) {
           break;
@@ -1932,7 +1932,7 @@ var 要装货机 = 共用模({
         跳空白(state, true, -1);
         ch = state.input.charCodeAt(state.position);
         if ((state.line === _line || state.lineIndent > nodeIndent) && ch !== 0) {
-          抛错(state, "序列條目縮進錯誤");
+          抛錯(state, "序列條目縮進錯誤");
         } else if (state.lineIndent < nodeIndent) {
           break;
         }
@@ -1958,7 +1958,7 @@ var 要装货机 = 共用模({
       while (ch !== 0) {
         if (!atExplicitKey && state.firstTabInLine !== -1) {
           state.position = state.firstTabInLine;
-          抛错(state, "縮進中不能使用 Tab 字符");
+          抛錯(state, "縮進中不能使用 Tab 字符");
         }
         following = state.input.charCodeAt(state.position + 1);
         _line = state.line;
@@ -1975,7 +1975,7 @@ var 要装货机 = 共用模({
             atExplicitKey = false;
             allowCompact = true;
           } else {
-            抛错(state, "不完整的顯式映射對；缺少鍵節點；或後面跟著非製表符的空行");
+            抛錯(state, "不完整的顯式映射對；缺少鍵節點；或後面跟著非製表符的空行");
           }
           state.position += 1;
           ch = following;
@@ -1994,7 +1994,7 @@ var 要装货机 = 共用模({
             if (ch === 58) {
               ch = state.input.charCodeAt(++state.position);
               if (!是空白或行尾(ch)) {
-                抛错(state, "塊映射中鍵值分隔符後預期空白字符");
+                抛錯(state, "塊映射中鍵值分隔符後預期空白字符");
               }
               if (atExplicitKey) {
                 存映射对(state, _result, overridableKeys, keyTag, keyNode, null, _keyLine, _keyLineStart, _keyPos);
@@ -2006,14 +2006,14 @@ var 要装货机 = 共用模({
               keyTag = state.tag;
               keyNode = state.result;
             } else if (detected) {
-              抛错(state, "無法讀取隱式映射對；缺少冒號");
+              抛錯(state, "無法讀取隱式映射對；缺少冒號");
             } else {
               state.tag = _tag;
               state.anchor = _anchor;
               return true;
             }
           } else if (detected) {
-            抛错(state, "無法讀取塊映射條目；多行鍵不能是隱式鍵");
+            抛錯(state, "無法讀取塊映射條目；多行鍵不能是隱式鍵");
           } else {
             state.tag = _tag;
             state.anchor = _anchor;
@@ -2041,7 +2041,7 @@ var 要装货机 = 共用模({
           ch = state.input.charCodeAt(state.position);
         }
         if ((state.line === _line || state.lineIndent > nodeIndent) && ch !== 0) {
-          抛错(state, "映射條目縮進錯誤");
+          抛錯(state, "映射條目縮進錯誤");
         } else if (state.lineIndent < nodeIndent) {
           break;
         }
@@ -2064,7 +2064,7 @@ var 要装货机 = 共用模({
       if (ch !== 33)
         return false;
       if (state.tag !== null) {
-        抛错(state, "重複的標籤屬性");
+        抛錯(state, "重複的標籤屬性");
       }
       ch = state.input.charCodeAt(++state.position);
       if (ch === 60) {
@@ -2086,7 +2086,7 @@ var 要装货机 = 共用模({
           tagName = state.input.slice(_position, state.position);
           ch = state.input.charCodeAt(++state.position);
         } else {
-          抛错(state, "逐字標籤中意外的流結尾");
+          抛錯(state, "逐字標籤中意外的流結尾");
         }
       } else {
         while (ch !== 0 && !是空白或行尾(ch)) {
@@ -2094,28 +2094,28 @@ var 要装货机 = 共用模({
             if (!isNamed) {
               tagHandle = state.input.slice(_position - 1, state.position + 1);
               if (!标签句柄模式.test(tagHandle)) {
-                抛错(state, "命名標籤句柄不能包含此類字符");
+                抛錯(state, "命名標籤句柄不能包含此類字符");
               }
               isNamed = true;
               _position = state.position + 1;
             } else {
-              抛错(state, "標籤後綴不能包含感嘆號");
+              抛錯(state, "標籤後綴不能包含感嘆號");
             }
           }
           ch = state.input.charCodeAt(++state.position);
         }
         tagName = state.input.slice(_position, state.position);
         if (流指示符模式.test(tagName)) {
-          抛错(state, "標籤後綴不能包含流指示符字符");
+          抛錯(state, "標籤後綴不能包含流指示符字符");
         }
       }
       if (tagName && !标签URI模式.test(tagName)) {
-        抛错(state, "標籤名稱不能包含此類字符: " + tagName);
+        抛錯(state, "標籤名稱不能包含此類字符: " + tagName);
       }
       try {
         tagName = decodeURIComponent(tagName);
       } catch (err) {
-        抛错(state, "標籤名稱格式錯誤: " + tagName);
+        抛錯(state, "標籤名稱格式錯誤: " + tagName);
       }
       if (isVerbatim) {
         state.tag = tagName;
@@ -2126,7 +2126,7 @@ var 要装货机 = 共用模({
       } else if (tagHandle === "!!") {
         state.tag = "tag:yaml.org,2002:" + tagName;
       } else {
-        抛错(state, '未聲明的標籤句柄 "' + tagHandle + '"');
+        抛錯(state, '未聲明的標籤句柄 "' + tagHandle + '"');
       }
       return true;
     }
@@ -2137,7 +2137,7 @@ var 要装货机 = 共用模({
       if (ch !== 38)
         return false;
       if (state.anchor !== null) {
-        抛错(state, "重複的錨點屬性");
+        抛錯(state, "重複的錨點屬性");
       }
       ch = state.input.charCodeAt(++state.position);
       _position = state.position;
@@ -2145,7 +2145,7 @@ var 要装货机 = 共用模({
         ch = state.input.charCodeAt(++state.position);
       }
       if (state.position === _position) {
-        抛错(state, "錨點節點名稱必須至少包含一個字符");
+        抛錯(state, "錨點節點名稱必須至少包含一個字符");
       }
       state.anchor = state.input.slice(_position, state.position);
       return true;
@@ -2162,11 +2162,11 @@ var 要装货机 = 共用模({
         ch = state.input.charCodeAt(++state.position);
       }
       if (state.position === _position) {
-        抛错(state, "別名節點名稱必須至少包含一個字符");
+        抛錯(state, "別名節點名稱必須至少包含一個字符");
       }
       alias = state.input.slice(_position, state.position);
       if (!_hasOwnProperty.call(state.anchorMap, alias)) {
-        抛错(state, '未識別的別名 "' + alias + '"');
+        抛錯(state, '未識別的別名 "' + alias + '"');
       }
       state.result = state.anchorMap[alias];
       跳空白(state, true, -1);
@@ -2231,7 +2231,7 @@ var 要装货机 = 共用模({
             } else if (读别名(state)) {
               hasContent = true;
               if (state.tag !== null || state.anchor !== null) {
-                抛错(state, "別名節點不應有任何屬性");
+                抛錯(state, "別名節點不應有任何屬性");
               }
             } else if (读普通标量(state, flowIndent, 上下文流内 === nodeContext)) {
               hasContent = true;
@@ -2253,7 +2253,7 @@ var 要装货机 = 共用模({
         }
       } else if (state.tag === "?") {
         if (state.result !== null && state.kind !== "scalar") {
-          抛错(state, '標籤 !<?> 的節點種類不可接受；它應該是 "scalar"，而不是 "' + state.kind + '"');
+          抛錯(state, '標籤 !<?> 的節點種類不可接受；它應該是 "scalar"，而不是 "' + state.kind + '"');
         }
         for (typeIndex = 0, typeQuantity = state.implicitTypes.length; typeIndex < typeQuantity; typeIndex += 1) {
           type = state.implicitTypes[typeIndex];
@@ -2280,13 +2280,13 @@ var 要装货机 = 共用模({
           }
         }
         if (!type) {
-          抛错(state, "未知標籤 !<" + state.tag + ">");
+          抛錯(state, "未知標籤 !<" + state.tag + ">");
         }
         if (state.result !== null && type.kind !== state.kind) {
-          抛错(state, "標籤 !<" + state.tag + '> 的節點種類不可接受；它應該是 "' + type.kind + '"，而不是 "' + state.kind + '"');
+          抛錯(state, "標籤 !<" + state.tag + '> 的節點種類不可接受；它應該是 "' + type.kind + '"，而不是 "' + state.kind + '"');
         }
         if (!type.resolve(state.result, state.tag)) {
-          抛错(state, "無法解析帶有 !<" + state.tag + "> 顯式標籤的節點");
+          抛錯(state, "無法解析帶有 !<" + state.tag + "> 顯式標籤的節點");
         } else {
           state.result = type.construct(state.result, state.tag);
           if (state.anchor !== null) {
@@ -2321,7 +2321,7 @@ var 要装货机 = 共用模({
         directiveName = state.input.slice(_position, state.position);
         directiveArgs = [];
         if (directiveName.length < 1) {
-          抛错(state, "指令名稱長度不能小於一個字符");
+          抛錯(state, "指令名稱長度不能小於一個字符");
         }
         while (ch !== 0) {
           while (是空白字符(ch)) {
@@ -2354,7 +2354,7 @@ var 要装货机 = 共用模({
         state.position += 3;
         跳空白(state, true, -1);
       } else if (hasDirectives) {
-        抛错(state, "預期指令結束標記");
+        抛錯(state, "預期指令結束標記");
       }
       组节点(state, state.lineIndent - 1, 上下文块外, false, true);
       跳空白(state, true, -1);
@@ -2370,7 +2370,7 @@ var 要装货机 = 共用模({
         return;
       }
       if (state.position < state.length - 1) {
-        抛错(state, "預期流結尾或文檔分隔符");
+        抛錯(state, "預期流結尾或文檔分隔符");
       } else {
         return;
       }
@@ -2391,7 +2391,7 @@ var 要装货机 = 共用模({
       var nullpos = input.indexOf("\0");
       if (nullpos !== -1) {
         state.position = nullpos;
-        抛错(state, "輸入中不允許空字節");
+        抛錯(state, "輸入中不允許空字節");
       }
       state.input += "\0";
       while (state.input.charCodeAt(state.position) === 32) {
@@ -3024,7 +3024,7 @@ var 要卸货机 = 共用模({
             if (state.noArrayIndent && !isblockseq && level > 0) {
               写块序列(state, level - 1, state.dump, compact);
             } else {
-              写块序列(state, level, state.dump, compact);
+              写塊序列(state, level, state.dump, compact);
             }
             if (duplicate) {
               state.dump = "&ref_" + duplicateIndex + state.dump;
@@ -3425,7 +3425,7 @@ function 替换伪装(link, 替换清单, 是恢复) {
     const [, 身份码, 服务器] = 正则匹配狐狸样式;
     替换清单[随机域名] = 服务器;
     替换清单[随机身份码] = 身份码;
-    const regex = new RegExp(`${身份码}|${服务器}`, "g");
+    const regex = new RegExp(身份码 + "|" + 服务器, "g"); // 修正點
     const 结果 = link.replace(regex, (match) => 条件替换(match, 身份码, 随机身份码, 服务器, 随机域名));
     return 结果;
   }
@@ -3441,14 +3441,14 @@ function 替换伪装(link, 替换清单, 是恢复) {
       const 身份码2 = 配置[4].trim().replace(/^"|"$/g, "");
       替换清单[随机域名] = 服务器2;
       替换清单[随机身份码] = 身份码2;
-      const regex2 = new RegExp(`${身份码2}|${服务器2}`, "g");
+      const regex2 = new RegExp(身份码2 + "|" + 服务器2, "g"); // 修正點
       const 结果2 = 临时链接.replace(regex2, (match) => 条件替换(match, 身份码2, 随机身份码, 服务器2, 随机域名));
       return "伪装://" + btoa(结果2);
     }
     const JSON数据 = JSON.parse(临时链接);
     const 服务器 = JSON数据.add;
     const 身份码 = JSON数据.id;
-    const regex = new RegExp(`${身份码}|${服务器}`, "g");
+    const regex = new RegExp(身份码 + "|" + 服务器, "g"); // 修正點
     let 结果;
     if (是恢复) {
       结果 = 临时链接.replace(regex, (match) => 条件替换(match, 身份码, 替换清单[身份码], 服务器, 替换清单[服务器]));
@@ -3486,7 +3486,7 @@ function 替换影梭(link, 替换清单, 是恢复) {
       替换清单[随机域名] = 服务器;
       替换清单[随机密码] = 密码;
       const 新字串 = 网址安全编码(加密方式 + ":" + 随机密码);
-      替换后字串 = link.replace(编码数据, 新字串).replace(/@.*:/, `@${随机域名}:`);
+      替换后字串 = link.replace(编码数据, 新字串).replace(/@.*:/, "@" + 随机域名 + ":"); // 修正點
     }
   } else {
     try {
@@ -3519,7 +3519,7 @@ function 替换木马(link, 替换清单, 是恢复) {
   const [, , 身份码, 服务器] = 正则匹配;
   替换清单[随机域名] = 服务器;
   替换清单[随机身份码] = 身份码;
-  const regex = new RegExp(`${身份码}|${服务器}`, "g");
+  const regex = new RegExp(身份码 + "|" + 服务器, "g"); // 修正點
   if (是恢复) {
     return link.replace(regex, (match) => 条件替换(match, 身份码, 替换清单[身份码], 服务器, 替换清单[服务器]));
   } else {
