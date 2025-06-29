@@ -2918,7 +2918,7 @@ var src_default = {
   async fetch(request, env) {
     const url = new URL(request.url);
     const host = url.origin;
-    const frontendUrl = 'https://raw.githubusercontent.com/onlyno999/sub-tSubscription-Converter/refs/heads/main/frontend.html';
+    const frontendUrl = 'https://cf-worker-dir-bke.pages.dev';
     const SUB_BUCKET = env.SUB_BUCKET;
     let backend = env.BACKEND.replace(/(https?:\/\/[^/]+).*$/, "$1");
     const subDir = "subscription";
