@@ -2026,7 +2026,7 @@ var 要装货机 = 共用模({
             _keyLineStart = state.lineStart;
             _keyPos = state.position;
           }
-          if (组节点(state, nodeIndent, 上下文塊外, true, allowCompact)) {
+          if (组节点(state, nodeIndent, 上下文块外, true, allowCompact)) {
             if (atExplicitKey) {
               keyNode = state.result;
             } else {
@@ -2145,7 +2145,7 @@ var 要装货机 = 共用模({
         ch = state.input.charCodeAt(++state.position);
       }
       if (state.position === _position) {
-        抛錯(state, "錨點節點名稱必須至少包含一個字符");
+        抛错(state, "錨點節點名稱必須至少包含一個字符");
       }
       state.anchor = state.input.slice(_position, state.position);
       return true;
@@ -2196,7 +2196,7 @@ var 要装货机 = 共用模({
         }
       }
       if (indentStatus === 1) {
-        while (读标签属性(state) || 读錨点屬性(state)) {
+        while (读标签属性(state) || 读锚点属性(state)) {
           if (跳空白(state, true, -1)) {
             atNewLine = true;
             allowBlockCollections = allowBlockStyles;
@@ -2747,7 +2747,7 @@ var 要卸货机 = 共用模({
           case 样式字面量:
             return "|" + 块头(string, state.indent) + 去尾换行(缩进字串(string, indent));
           case 样式折疊:
-            return ">" + 块头(string, state.indent) + 去尾换行(縮進字串(折疊字串(string, lineWidth), indent));
+            return ">" + 块头(string, state.indent) + 去尾换行(缩进字串(折叠字串(string, lineWidth), indent));
           case 样式双引号:
             return '"' + 转义字串(string, lineWidth) + '"';
           default:
@@ -3231,7 +3231,7 @@ var 主程序 = {
         if (已换山寨数据) {
           await 订阅仓库.put(暗号, 已换山寨数据);
           暗号清单.push(暗号);
-          已换网址.push(`${地头蛇}/${黑货目录}/${暗号}`);
+          已换网址.push(地头蛇 + "/" + 黑货目录 + "/" + 暗号); // 替換模板字符串
         }
       }
     } else {
@@ -3282,14 +3282,14 @@ var 主程序 = {
           if (已换编码数据) {
             await 订阅仓库.put(暗号, 已换编码数据);
             暗号清单.push(暗号);
-            已换网址.push(`${地头蛇}/${黑货目录}/${暗号}`);
+            已换网址.push(地头蛇 + "/" + 黑货目录 + "/" + 暗号); // 替換模板字符串
           }
         } else if ("yaml" === 已解物件.格式) {
           const 已换山寨数据 = 替换山寨(已解物件.数据, 替换清单);
           if (已换山寨数据) {
             await 订阅仓库.put(暗号, 已换山寨数据);
             暗号清单.push(暗号);
-            已换网址.push(`${地头蛇}/${黑货目录}/${暗号}`);
+            已换网址.push(地头蛇 + "/" + 黑货目录 + "/" + 暗号); // 替換模板字符串
           }
         }
       }
@@ -3400,7 +3400,7 @@ function 替换伪装(link, 替换清单, 是恢复) {
   }
   let 临时链接 = link.replace(/伪装:\/\/|伪装1:\/\//g, "");
   try {
-    临时链接 = 网址安全解码(临时链接);
+    臨時链接 = 网址安全解码(临时链接);
     const 正则匹配泉样式 = 临时链接.match(/(.*?) = (.*)/);
     if (正则匹配泉样式) {
       const 配置 = 正则匹配泉样式[2].split(",");
