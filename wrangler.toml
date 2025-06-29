@@ -1,0 +1,3 @@
+name = "sub-utomationversion"
+main = "sub-trans.worker.js"
+compatibility_date = "2025-06-29"
