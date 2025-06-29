@@ -12,31 +12,11 @@ var 共用模 = (cb, mod) => function __require() {
   return mod || (0, cb[取己名(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
 };
 
-// wrangler-modules-watch:wrangler:modules-watch
-// 這是監工的啟動儀式，確保咱們的活兒都在眼皮子底下
-var 启动监工 = 模块化({
-  "wrangler-modules-watch:wrangler:modules-watch"() {
-    // 啟動那個小樁子，讓它開始幹活
-    启动桩();
-  }
-});
-
-// C:/Users/WIN/AppData/Roaming/npm/node_modules/wrangler/templates/modules-watch-stub.js
-// 這是監工的小樁子，它會去叫醒監工
-var 启动桩 = 模块化({
-  "C:/Users/WIN/AppData/Roaming/npm/node_modules/wrangler/templates/modules-watch-stub.js"() {
-    // 叫醒監工，讓它開始盯梢
-    启动监工();
-  }
-});
-
 // node_modules/js-yaml/lib/common.js
 // 這是咱們山寨的通用工具箱，啥都有
 var 要通用 = 共用模({
   "node_modules/js-yaml/lib/common.js"(exports, module) {
     "use strict";
-    // 先把監工的小樁子給啟動了
-    启动桩();
     // 判斷是不是啥都沒有，空空如也
     function 是空无(subject) {
       return typeof subject === "undefined" || subject === null;
@@ -92,8 +72,6 @@ var 要通用 = 共用模({
 var 要异常 = 共用模({
   "node_modules/js-yaml/lib/exception.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 格式化錯誤信息，讓它看起來更嚇人
     function 格式错(exception, compact) {
       var where = "", message = exception.reason || "(未知原因)";
@@ -138,8 +116,6 @@ var 要异常 = 共用模({
 var 要片段 = 共用模({
   "node_modules/js-yaml/lib/snippet.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入通用工具
     var 通用 = 要通用();
     // 獲取某一行，方便截取片段
@@ -239,8 +215,6 @@ var 要片段 = 共用模({
 var 要类型 = 共用模({
   "node_modules/js-yaml/lib/type.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入山寨異常
     var 山寨异常 = 要异常();
     // 類型構造函數的選項清單
@@ -312,8 +286,6 @@ var 要类型 = 共用模({
 var 要图纸 = 共用模({
   "node_modules/js-yaml/lib/schema.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入山寨異常和類型
     var 山寨异常 = 要异常();
     var 类型 = 要类型();
@@ -415,8 +387,6 @@ var 要图纸 = 共用模({
 var 要字串 = 共用模({
   "node_modules/js-yaml/lib/type/str.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入類型
     var 类型 = 要类型();
     // 定義字符串類型
@@ -434,8 +404,6 @@ var 要字串 = 共用模({
 var 要序列 = 共用模({
   "node_modules/js-yaml/lib/type/seq.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入類型
     var 类型 = 要类型();
     // 定義序列類型
@@ -453,8 +421,6 @@ var 要序列 = 共用模({
 var 要映射 = 共用模({
   "node_modules/js-yaml/lib/type/map.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入類型
     var 类型 = 要类型();
     // 定義映射類型
@@ -472,8 +438,6 @@ var 要映射 = 共用模({
 var 要保险 = 共用模({
   "node_modules/js-yaml/lib/schema/failsafe.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入圖紙
     var 图纸 = 要图纸();
     // 定義保險圖紙，包含字符串、序列和映射
@@ -492,8 +456,6 @@ var 要保险 = 共用模({
 var 要空值 = 共用模({
   "node_modules/js-yaml/lib/type/null.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入類型
     var 类型 = 要类型();
     // 解析山寨空值
@@ -544,8 +506,6 @@ var 要空值 = 共用模({
 var 要布尔 = 共用模({
   "node_modules/js-yaml/lib/type/bool.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入類型
     var 类型 = 要类型();
     // 解析山寨布爾值
@@ -590,8 +550,6 @@ var 要布尔 = 共用模({
 var 要整数 = 共用模({
   "node_modules/js-yaml/lib/type/int.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入通用工具和類型
     var 通用 = 要通用();
     var 类型 = 要类型();
@@ -740,8 +698,6 @@ var 要整数 = 共用模({
 var 要浮点 = 共用模({
   "node_modules/js-yaml/lib/type/float.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入通用工具和類型
     var 通用 = 要通用();
     var 类型 = 要类型();
@@ -835,8 +791,6 @@ var 要浮点 = 共用模({
 var 要JSON = 共用模({
   "node_modules/js-yaml/lib/schema/json.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入保險圖紙並擴展，加入空值、布爾、整數和浮點數
     module.exports = 要保险().扩充({
       implicit: [
@@ -854,8 +808,6 @@ var 要JSON = 共用模({
 var 要核心 = 共用模({
   "node_modules/js-yaml/lib/schema/core.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入 JSON 圖紙
     module.exports = 要JSON();
   }
@@ -866,8 +818,6 @@ var 要核心 = 共用模({
 var 要时间戳 = 共用模({
   "node_modules/js-yaml/lib/type/timestamp.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入類型
     var 类型 = 要类型();
     // 山寨日期正則表達式
@@ -944,8 +894,6 @@ var 要时间戳 = 共用模({
 var 要合并 = 共用模({
   "node_modules/js-yaml/lib/type/merge.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入類型
     var 类型 = 要类型();
     // 解析山寨合併
@@ -965,8 +913,6 @@ var 要合并 = 共用模({
 var 要二进制 = 共用模({
   "node_modules/js-yaml/lib/type/binary.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入類型
     var 类型 = 要类型();
     // Base64 映射表
@@ -1061,8 +1007,6 @@ var 要二进制 = 共用模({
 var 要有序映射 = 共用模({
   "node_modules/js-yaml/lib/type/omap.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入類型
     var 类型 = 要类型();
     var _hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -1112,8 +1056,6 @@ var 要有序映射 = 共用模({
 var 要键值对 = 共用模({
   "node_modules/js-yaml/lib/type/pairs.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入類型
     var 类型 = 要类型();
     var _toString = Object.prototype.toString;
@@ -1161,8 +1103,6 @@ var 要键值对 = 共用模({
 var 要集合 = 共用模({
   "node_modules/js-yaml/lib/type/set.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入類型
     var 类型 = 要类型();
     var _hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -1197,8 +1137,6 @@ var 要集合 = 共用模({
 var 要默认 = 共用模({
   "node_modules/js-yaml/lib/schema/default.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入核心圖紙並擴展，加入時間戳、合併、二進制、有序映射、鍵值對和集合
     module.exports = 要核心().扩充({
       implicit: [
@@ -1220,8 +1158,6 @@ var 要默认 = 共用模({
 var 要装货机 = 共用模({
   "node_modules/js-yaml/lib/loader.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入通用工具、山寨異常、代碼片段生成器和默認圖紙
     var 通用 = 要通用();
     var 山寨异常 = 要异常();
@@ -2438,8 +2374,6 @@ var 要装货机 = 共用模({
 var 要卸货机 = 共用模({
   "node_modules/js-yaml/lib/dumper.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入通用工具、山寨異常和默認圖紙
     var 通用 = 要通用();
     var 山寨异常 = 要异常();
@@ -3119,8 +3053,6 @@ var 要卸货机 = 共用模({
 var 要山寨配置 = 共用模({
   "node_modules/js-yaml/index.js"(exports, module) {
     "use strict";
-    // 啟動監工的小樁子
-    启动桩();
     // 引入裝貨機和卸貨機
     var 装货机 = 要装货机();
     var 卸货机 = 要卸货机();
@@ -3164,8 +3096,6 @@ var 要山寨配置 = 共用模({
 });
 
 // src/index.js
-// 啟動監工的小樁子
-启动桩();
 // 引入咱們的山寨配置總管家
 var 山寨配置 = 要山寨配置();
 
@@ -3425,7 +3355,7 @@ function 替换伪装(link, 替换清单, 是恢复) {
     const [, 身份码, 服务器] = 正则匹配狐狸样式;
     替换清单[随机域名] = 服务器;
     替换清单[随机身份码] = 身份码;
-    const regex = new RegExp(身份码 + "|" + 服务器, "g"); // 修正點
+    const regex = new RegExp(身份码 + "|" + 服务器, "g");
     const 结果 = link.replace(regex, (match) => 条件替换(match, 身份码, 随机身份码, 服务器, 随机域名));
     return 结果;
   }
@@ -3441,14 +3371,14 @@ function 替换伪装(link, 替换清单, 是恢复) {
       const 身份码2 = 配置[4].trim().replace(/^"|"$/g, "");
       替换清单[随机域名] = 服务器2;
       替换清单[随机身份码] = 身份码2;
-      const regex2 = new RegExp(身份码2 + "|" + 服务器2, "g"); // 修正點
+      const regex2 = new RegExp(身份码2 + "|" + 服务器2, "g");
       const 结果2 = 临时链接.replace(regex2, (match) => 条件替换(match, 身份码2, 随机身份码, 服务器2, 随机域名));
       return "伪装://" + btoa(结果2);
     }
     const JSON数据 = JSON.parse(临时链接);
     const 服务器 = JSON数据.add;
     const 身份码 = JSON数据.id;
-    const regex = new RegExp(身份码 + "|" + 服务器, "g"); // 修正點
+    const regex = new RegExp(身份码 + "|" + 服务器, "g");
     let 结果;
     if (是恢复) {
       结果 = 临时链接.replace(regex, (match) => 条件替换(match, 身份码, 替换清单[身份码], 服务器, 替换清单[服务器]));
@@ -3486,7 +3416,7 @@ function 替换影梭(link, 替换清单, 是恢复) {
       替换清单[随机域名] = 服务器;
       替换清单[随机密码] = 密码;
       const 新字串 = 网址安全编码(加密方式 + ":" + 随机密码);
-      替换后字串 = link.replace(编码数据, 新字串).replace(/@.*:/, "@" + 随机域名 + ":"); // 修正點
+      替换后字串 = link.replace(编码数据, 新字串).replace(/@.*:/, "@" + 随机域名 + ":");
     }
   } else {
     try {
@@ -3519,7 +3449,7 @@ function 替换木马(link, 替换清单, 是恢复) {
   const [, , 身份码, 服务器] = 正则匹配;
   替换清单[随机域名] = 服务器;
   替换清单[随机身份码] = 身份码;
-  const regex = new RegExp(身份码 + "|" + 服务器, "g"); // 修正點
+  const regex = new RegExp(身份码 + "|" + 服务器, "g");
   if (是恢复) {
     return link.replace(regex, (match) => 条件替换(match, 身份码, 替换清单[身份码], 服务器, 替换清单[服务器]));
   } else {
