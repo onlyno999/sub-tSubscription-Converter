@@ -1,3 +1,13 @@
+好的，明白！既然山寨不需要門面了，那咱們就把「前台」那塊兒的活計給撤了。
+
+主要改動：
+1.  移除 `前台网址` 這個常量。
+2.  移除處理根路徑（`路径碎片.length === 0`）的整個 `if` 區塊。
+3.  調整當沒有 `url` 參數時的錯誤提示，讓它更通用，因為現在根路徑也會觸發這個錯誤。
+
+這樣一來，這個 Worker 就只專注於處理訂閱鏈接的轉換和代理功能了。
+
+```javascript
 // 這是咱們山寨的開山祖師爺，專門管物件的私家財產名兒
 var 取己名 = Object.getOwnPropertyNames;
 // 這是咱們山寨的「模块化」大法，把零散的功夫都給歸攏起來
@@ -1316,8 +1326,8 @@ var 要装货机 = 共用模({
     var 简单转义检查 = new Array(256);
     var 简单转义映射 = new Array(256);
     for (i = 0; i < 256; i++) {
-      简单转义检查[i] = 简单转义序列(i) ? 1 : 0;
-      简单转义映射[i] = 简单转义序列(i);
+      简单转义检查[i] = 简单轉義序列(i) ? 1 : 0;
+      简单转义映射[i] = 简单轉義序列(i);
     }
     var i;
     // 狀態物件，記錄解析過程中的各種信息
@@ -1753,7 +1763,7 @@ var 要装货机 = 共用模({
         } else if (!readNext) {
           抛错(state, "流集合條目之間缺少逗號");
         } else if (ch === 44) {
-          抛錯(state, "預期節點內容，但找到 ','");
+          抛错(state, "預期節點內容，但找到 ','");
         }
         keyTag = keyNode = valueNode = null;
         isPair = isExplicitPair = false;
@@ -1826,7 +1836,7 @@ var 要装货机 = 共用模({
             textIndent = nodeIndent + tmp - 1;
             detectedIndent = true;
           } else {
-            抛错(state, "重複的縮進寬度標識符");
+            抛錯(state, "重複的縮進寬度標識符");
           }
         } else {
           break;
@@ -3175,8 +3185,6 @@ var 主程序 = {
     const 网址 = new URL(请求.url);
     // 咱們的地頭蛇是誰
     const 地头蛇 = 网址.origin;
-    // 前台的「江湖秘籍」在哪兒
-    const 前台网址 = 'https://raw.githubusercontent.com/yzcjd/sub-trans/main/frontend.html';
     // 咱們的「黑货仓库」在哪兒
     const 订阅仓库 = 环境.SUB_BUCKET;
     // 後台老大是誰，先給它扒層皮
@@ -3185,27 +3193,9 @@ var 主程序 = {
     const 黑货目录 = "subscription";
     // 把「路径碎片」給拆開，看看是啥路數
     const 路径碎片 = 网址.pathname.split("/").filter((segment) => segment.length > 0);
-    // 如果路徑是空的，那就是來找前台的
-    if (路径碎片.length === 0) {
-      // 去前台那兒「抓取」秘籍
-      const 回应 = await fetch(前台网址);
-      // 如果沒抓到，就報個信
-      if (回应.status !== 200) {
-        return new Response('未能抓取前台', { status: 回应.status });
-      }
-      // 拿到「原版网页」
-      const 原版网页 = await 回应.text();
-      // 把裡面的老地頭蛇換成咱們的地頭蛇
-      const 改版网页 = 原版网页.replace(/https:\/\/bulianglin2023\.dev/, 地头蛇);
-      // 回應給來客
-      return new Response(改版网页, {
-        status: 200,
-        headers: {
-          'Content-Type': 'text/html',
-        },
-      });
-    } else if (路径碎片[0] === 黑货目录) {
-      // 如果是來找黑貨的，就看「暗号」
+
+    // 如果是來找黑貨的，就看「暗号」
+    if (路径碎片[0] === 黑货目录) {
       const 暗号 = 路径碎片[路径碎片.length - 1];
       // 從倉庫裡取「物件」
       const 物件 = await 订阅仓库.get(暗号);
@@ -3228,9 +3218,9 @@ var 主程序 = {
 
     // 拿到「网址参数」
     const 网址参数 = 网址.searchParams.get("url");
-    // 如果沒有网址参数，就說「缺少网址参数」
+    // 如果沒有网址参数，就說「缺少网址参数或无效路径」
     if (!网址参数)
-      return new Response("缺少网址参数", { status: 400 });
+      return new Response("缺少网址参数或无效路径", { status: 400 });
     // 拿到「后台参数」，看看有沒有指定新的后台老大
     const 后台参数 = 网址.searchParams.get("bd");
     if (后台参数 && /^(https?:\/\/[^/]+)[.].+$/g.test(后台参数))
@@ -3598,3 +3588,4 @@ export {
 };
 // 源碼映射，這是給那些想追查咱們秘籍來源的傢伙準備的，讓他們找不著北
 //# sourceMappingURL=index.js.map
+```
