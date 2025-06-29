@@ -1,5 +1,5 @@
 ```javascript
-// 這是咱們山寨的開山祖師爺，專門管物件的私家財產名兒
+// 這是咱們山寨的開山祖師爺，專門管物件的私家財產名兒儿
 var 取己名 = Object.getOwnPropertyNames;
 // 這是咱們山寨的「模块化」大法，把零散的功夫都給歸攏起來
 var 模块化 = (fn, res) => function __init() {
