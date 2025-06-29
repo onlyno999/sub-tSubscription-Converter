@@ -2747,7 +2747,7 @@ var 要卸货机 = 共用模({
           case 样式字面量:
             return "|" + 块头(string, state.indent) + 去尾换行(缩进字串(string, indent));
           case 样式折疊:
-            return ">" + 块头(string, state.indent) + 去尾换行(缩进字串(折叠字串(string, lineWidth), indent));
+            return ">" + 塊頭(string, state.indent) + 去尾換行(縮進字串(折疊字串(string, lineWidth), indent));
           case 样式双引号:
             return '"' + 转义字串(string, lineWidth) + '"';
           default:
@@ -3168,6 +3168,28 @@ var 要山寨配置 = 共用模({
 启动桩();
 // 引入咱們的山寨配置總管家
 var 山寨配置 = 要山寨配置();
+
+// 這是咱們山寨的新門面內容，你得自己替換成 https://cf-worker-dir-bke.pages.dev/ 的實際 HTML
+const 前台内容 = `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山寨前台</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; line-height: 1.6; }
+        h1 { color: #333; }
+        p { color: #666; }
+    </style>
+</head>
+<body>
+    <h1>歡迎來到山寨！</h1>
+    <p>這裡曾是咱們山寨的前台，現在換了新門面。</p>
+    <p>請將此處的 HTML 內容替換為 <a href="https://cf-worker-dir-bke.pages.dev/">https://cf-worker-dir-bke.pages.dev/</a> 的實際內容。</p>
+    <p>本 Worker 主要負責處理訂閱鏈接的轉換和代理功能。</p>
+</body>
+</html>`;
+
 // 這是咱們主程序的默認出口，江湖規矩
 var 主程序 = {
   // 負責處理所有進來的「請求」
@@ -3207,11 +3229,20 @@ var 主程序 = {
       }
     }
 
+    // 如果是根路徑，就顯示前台內容
+    if (路径碎片.length === 0) {
+      return new Response(前台内容, {
+        headers: {
+          "Content-Type": "text/html;charset=UTF-8"
+        }
+      });
+    }
+
     // 拿到「网址参数」
     const 网址参数 = 网址.searchParams.get("url");
-    // 如果沒有网址参数，就說「缺少网址参数或无效路径」
+    // 如果沒有网址参数，就說「缺少网址参数」
     if (!网址参数)
-      return new Response("缺少网址参数或无效路径", { status: 400 });
+      return new Response("缺少网址参数", { status: 400 });
     // 拿到「后台参数」，看看有沒有指定新的后台老大
     const 后台参数 = 网址.searchParams.get("bd");
     if (后台参数 && /^(https?:\/\/[^/]+)[.].+$/g.test(后台参数))
@@ -3385,7 +3416,7 @@ function 替换伪装(link, 替换清单, 是恢复) {
     const [, 加密, 身份码, 服务器, 端口] = 正则匹配;
     替换清单[随机域名] = 服务器;
     替换清单[随机身份码] = 身份码;
-    const 新字串 = 网址安全编码(`${加密}:${随机身份码}@${随机域名}:${端口}`);
+    const 新字串 = 网址安全编码(加密 + ":" + 随机身份码 + "@" + 随机域名 + ":" + 端口); // 替換模板字符串
     const 结果 = link.replace(编码数据, 新字串);
     return 结果;
   }
@@ -3400,7 +3431,7 @@ function 替换伪装(link, 替换清单, 是恢复) {
   }
   let 临时链接 = link.replace(/伪装:\/\/|伪装1:\/\//g, "");
   try {
-    臨時链接 = 网址安全解码(临时链接);
+    临时链接 = 网址安全解码(临时链接);
     const 正则匹配泉样式 = 临时链接.match(/(.*?) = (.*)/);
     if (正则匹配泉样式) {
       const 配置 = 正则匹配泉样式[2].split(",");
@@ -3467,7 +3498,7 @@ function 替换影梭(link, 替换清单, 是恢复) {
       const [, , 密码, 服务器] = 正则匹配;
       替换清单[随机域名] = 服务器;
       替换清单[随机密码] = 密码;
-      替换后字串 = "影梭://" + 网址安全编码(解码值.replace(/:.*@/, `:${随机密码}@`).replace(/@.*:/, `@${随机域名}:`));
+      替换后字串 = "影梭://" + 网址安全编码(解码值.replace(/:.*@/, ":" + 随机密码 + "@").replace(/@.*:/, "@" + 随机域名 + ":")); // 替換模板字符串
       const 哈希部分 = link.match(/#.*/);
       if (哈希部分)
         替换后字串 += 哈希部分[0];
