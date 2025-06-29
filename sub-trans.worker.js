@@ -1,4 +1,3 @@
-```javascript
 // 這是咱們山寨的開山祖師爺，專門管物件的私家財產名兒
 var 取己名 = Object.getOwnPropertyNames;
 // 這是咱們山寨的「模块化」大法，把零散的功夫都給歸攏起來
@@ -1754,7 +1753,7 @@ var 要装货机 = 共用模({
         } else if (!readNext) {
           抛错(state, "流集合條目之間缺少逗號");
         } else if (ch === 44) {
-          抛错(state, "預期節點內容，但找到 ','");
+          抛錯(state, "預期節點內容，但找到 ','");
         }
         keyTag = keyNode = valueNode = null;
         isPair = isExplicitPair = false;
@@ -3249,7 +3248,6 @@ var 主程序 = {
         // 替換山寨數據
         const 已换山寨数据 = 替换山寨(数据, 替换清单);
         if (已换山寨数据) {
-          // 把替換後的數據存到倉庫
           await 订阅仓库.put(暗号, 已换山寨数据);
           暗号清单.push(暗号);
           已换网址.push(`${地头蛇}/${黑货目录}/${暗号}`);
@@ -3600,4 +3598,3 @@ export {
 };
 // 源碼映射，這是給那些想追查咱們秘籍來源的傢伙準備的，讓他們找不著北
 //# sourceMappingURL=index.js.map
-```
