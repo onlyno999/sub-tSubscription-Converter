@@ -1,4 +1,4 @@
-name: Daily Sync _worker.js from cmliu/epeius
+name: Daily Sync sub-trans.worker.js from yzcjd/sub-trans
 
 on:
   schedule:
@@ -16,7 +16,7 @@ jobs:
       - name: 获取上游最新 commit SHA
         id: get_sha
         run: |
-          git ls-remote https://github.com/cmliu/epeius.git HEAD | cut -f1 > upstream_sha.txt
+          git ls-remote https://github.com/yzcjd/sub-trans.git HEAD | cut -f1 > upstream_sha.txt
           echo "sha=$(cat upstream_sha.txt)" >> $GITHUB_OUTPUT
 
       - name: 检查是否需要更新
@@ -33,7 +33,7 @@ jobs:
             echo "need_update=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: 同步 _worker.js 并更新 version.txt
+      - name: 同步 sub-trans.worker.js 并更新 version.txt
         if: steps.check_update.outputs.need_update == 'true'
         run: |
           git clone --depth=1 https://github.com/yzcjd/sub-trans.git upstream_repo
@@ -46,6 +46,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add _worker.js version.txt
+          git add sub-trans.worker.js version.txt
           git commit -m "自动同步 sub-trans.worker.js，上游版本 $(cat version.txt)"
           git push
