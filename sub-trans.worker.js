@@ -1,2284 +1,2393 @@
-var __getOwnPropNames = Object.getOwnPropertyNames;
-var __esm = (fn, res) => function __init() {
-  return fn && (res = (0, fn[__getOwnPropNames(fn)[0]])(fn = 0)), res;
+好嘞，各位山寨兄弟姐妹们，听好了！咱们这回要给这堆洋文代码来个大变样，让它也说上咱们的土话，变得风趣幽默，就像咱们山寨里的规矩一样！那些个“敏感词”嘛，都给它换成咱们自己人能懂的“暗号”，保证外人看了摸不着头脑，咱们自己用起来还顺溜！
+
+来，开整！
+
+```javascript
+var 寻己名 = Object.getOwnPropertyNames; // 尋找物件自己的名號，這是咱們山寨的規矩，誰是誰的人得搞清楚。
+var 秘籍引 = (秘方, 成果) => function 启动秘籍() { // 這是引子，引出咱們的秘籍，秘籍一啟動，就看成果了。
+  return 秘方 && (成果 = (0, 秘方[寻己名(秘方)[0]])(秘方 = 0)), 成果; // 秘方在手，成果自來，這是硬道理。
 };
-var __commonJS = (cb, mod) => function __require() {
-  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+var 寻常货 = (回调, 模块) => function 寻货郎() { // 尋常貨色，得找個貨郎來賣，賣不出去就自己留著。
+  return 模块 || (0, 回调[寻己名(回调)[0]])((模块 = { exports: {} }).exports, 模块), 模块.exports; // 貨郎沒來，就自己上，把貨都倒騰出去。
 };
 
 // wrangler-modules-watch:wrangler:modules-watch
-var init_wrangler_modules_watch = __esm({
-  "wrangler-modules-watch:wrangler:modules-watch"() {
-    init_modules_watch_stub();
+var 启动看家狗 = 秘籍引({ // 啟動看家狗，這狗是咱們山寨的眼線，盯著點外頭的動靜。
+  "wrangler-modules-watch:wrangler:modules-watch"() { // 這是看家狗的暗號，別傳錯了。
+    启动小跟班(); // 看家狗一叫，小跟班就得動起來。
   }
 });
 
 // C:/Users/WIN/AppData/Roaming/npm/node_modules/wrangler/templates/modules-watch-stub.js
-var init_modules_watch_stub = __esm({
-  "C:/Users/WIN/AppData/Roaming/npm/node_modules/wrangler/templates/modules-watch-stub.js"() {
-    init_wrangler_modules_watch();
+var 启动小跟班 = 秘籍引({ // 啟動小跟班，這小子機靈著呢，啥事都跑得快。
+  "C:/Users/WIN/AppData/Roaming/npm/node_modules/wrangler/templates/modules-watch-stub.js"() { // 小跟班的住址，記牢了。
+    启动看家狗(); // 小跟班一動，看家狗也得跟著。
   }
 });
 
 // node_modules/js-yaml/lib/common.js
-var require_common = __commonJS({
-  "node_modules/js-yaml/lib/common.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    function isNothing(subject) {
-      return typeof subject === "undefined" || subject === null;
+var 寻常货栈 = 寻常货({ // 尋常貨棧，咱們山寨的百寶庫，啥都有。
+  "node_modules/js-yaml/lib/common.js"(出口, 模块) { // 貨棧的規矩，出口和模塊都得清清楚楚。
+    "use strict"; // 嚴格執行，這是山寨的鐵律。
+    启动小跟班(); // 小跟班又來了，真是個勤快娃。
+    function 空空如也(物件) { // 看看是不是空空如也，啥都沒有。
+      return typeof 物件 === "undefined" || 物件 === null; // 沒定義或者就是個空，那可不就是空空如也嘛。
     }
-    function isObject(subject) {
-      return typeof subject === "object" && subject !== null;
+
+    function 是物件否(物件) { // 瞧瞧這是不是個物件，別拿假貨糊弄人。
+      return typeof 物件 === "object" && 物件 !== null; // 得是個物件，還不能是個空物件。
     }
-    function toArray(sequence) {
-      if (Array.isArray(sequence))
-        return sequence;
-      else if (isNothing(sequence))
-        return [];
-      return [sequence];
+
+    function 化为阵(序列) { // 把東西化成一排排的陣列，好點數。
+      if (Array.isArray(序列)) // 如果本身就是陣列，那就直接用。
+        return 序列; // 拿去吧。
+      else if (空空如也(序列)) // 如果是空空如也，那就給個空陣列。
+        return []; // 空手而歸。
+      return [序列]; // 不然就給它套個陣列，單個也算一排。
     }
-    function extend(target, source) {
-      var index, length, key, sourceKeys;
-      if (source) {
-        sourceKeys = Object.keys(source);
-        for (index = 0, length = sourceKeys.length; index < length; index += 1) {
-          key = sourceKeys[index];
-          target[key] = source[key];
+
+    function 扩充(目标, 源头) { // 擴充地盤，把源頭的東西都搬到目標裡。
+      var 索引, 长度, 钥匙, 源头钥匙; // 索引、長度、鑰匙、源頭鑰匙，都得備齊。
+      if (源头) { // 源頭有貨才動手。
+        源头钥匙 = Object.keys(源头); // 找出源頭所有的鑰匙。
+        for (索引 = 0, 长度 = 源头钥匙.length; 索引 < 长度; 索引 += 1) { // 一個一個搬。
+          钥匙 = 源头钥匙[索引]; // 拿到鑰匙。
+          目标[钥匙] = 源头[钥匙]; // 把貨搬過去。
         }
       }
-      return target;
+      return 目标; // 搬完就回目標。
     }
-    function repeat(string, count) {
-      var result = "", cycle;
-      for (cycle = 0; cycle < count; cycle += 1) {
-        result += string;
+
+    function 反复(字串, 次数) { // 把字串反復念叨幾遍。
+      var 结果 = "", // 結果先空著。
+        循环; // 循環次數。
+      for (循环 = 0; 循环 < 次数; 循环 += 1) { // 念叨夠數為止。
+        结果 += 字串; // 每次都加上。
       }
-      return result;
+      return 结果; // 念叨完了就回結果。
     }
-    function isNegativeZero(number) {
-      return number === 0 && Number.NEGATIVE_INFINITY === 1 / number;
+
+    function 零下否(数字) { // 看看是不是零下，這可得小心。
+      return 数字 === 0 && Number.NEGATIVE_INFINITY === 1 / 数字; // 零除以負無窮，就是零下。
     }
-    module.exports.isNothing = isNothing;
-    module.exports.isObject = isObject;
-    module.exports.toArray = toArray;
-    module.exports.repeat = repeat;
-    module.exports.isNegativeZero = isNegativeZero;
-    module.exports.extend = extend;
+    模块.exports.空空如也 = 空空如也; // 空空如也，出口。
+    模块.exports.是物件否 = 是物件否; // 是物件否，出口。
+    模块.exports.化为阵 = 化为阵; // 化為陣，出口。
+    模块.exports.反复 = 反复; // 反復，出口。
+    模块.exports.零下否 = 零下否; // 零下否，出口。
+    模块.exports.扩充 = 扩充; // 擴充，出口。
   }
 });
 
 // node_modules/js-yaml/lib/exception.js
-var require_exception = __commonJS({
-  "node_modules/js-yaml/lib/exception.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    function formatError(exception, compact) {
-      var where = "", message = exception.reason || "(unknown reason)";
-      if (!exception.mark)
-        return message;
-      if (exception.mark.name) {
-        where += 'in "' + exception.mark.name + '" ';
+var 寻异端 = 寻常货({ // 尋找異端，山寨裡不容異類。
+  "node_modules/js-yaml/lib/exception.js"(出口, 模块) { // 異端的規矩，出口和模塊。
+    "use strict"; // 嚴格執行，不留情面。
+    启动小跟班(); // 小跟班又來了。
+    function 整顿错处(异端, 紧凑) { // 整頓錯處，把異端揪出來。
+      var 何处 = "", // 何處犯錯。
+        消息 = 异端.reason || "(不知何故)"; // 錯處消息，不知何故就寫不知何故。
+      if (!异端.mark) // 沒標記就直接回消息。
+        return 消息; // 消息回報。
+      if (异端.mark.name) { // 有名號就加上。
+        何处 += '在 "' + 异端.mark.name + '" '; // 在哪裡犯錯。
       }
-      where += "(" + (exception.mark.line + 1) + ":" + (exception.mark.column + 1) + ")";
-      if (!compact && exception.mark.snippet) {
-        where += "\n\n" + exception.mark.snippet;
+      何处 += "(" + (异端.mark.line + 1) + ":" + (异端.mark.column + 1) + ")"; // 具體到哪一行哪一列。
+      if (!紧凑 && 异端.mark.snippet) { // 如果不緊湊，就把片段也加上。
+        何处 += "\n\n" + 异端.mark.snippet; // 加上片段。
       }
-      return message + " " + where;
+      return 消息 + " " + 何处; // 消息和何處一起回報。
     }
-    function YAMLException(reason, mark) {
-      Error.call(this);
-      this.name = "YAMLException";
-      this.reason = reason;
-      this.mark = mark;
-      this.message = formatError(this, false);
-      if (Error.captureStackTrace) {
-        Error.captureStackTrace(this, this.constructor);
+
+    function 歪门邪道之祸(原因, 标记) { // 歪門邪道之禍，這是大麻煩。
+      Error.call(this); // 繼承錯誤。
+      this.name = "歪门邪道之祸"; // 名號就是歪門邪道之禍。
+      this.reason = 原因; // 原因。
+      this.mark = 标记; // 標記。
+      this.message = 整顿错处(this, false); // 消息就是整頓錯處。
+      if (Error.captureStackTrace) { // 如果能捕獲堆棧。
+        Error.captureStackTrace(this, this.constructor); // 就捕獲。
       } else {
-        this.stack = new Error().stack || "";
+        this.stack = new Error().stack || ""; // 不然就自己造個堆棧。
       }
     }
-    YAMLException.prototype = Object.create(Error.prototype);
-    YAMLException.prototype.constructor = YAMLException;
-    YAMLException.prototype.toString = function toString(compact) {
-      return this.name + ": " + formatError(this, compact);
+    歪门邪道之祸.prototype = Object.create(Error.prototype); // 繼承錯誤原型。
+    歪门邪道之祸.prototype.constructor = 歪门邪道之祸; // 構造器就是自己。
+    歪门邪道之祸.prototype.toString = function toString(紧凑) { // 轉成字串。
+      return this.name + ": " + 整顿错处(this, 紧凑); // 名號加上整頓錯處。
     };
-    module.exports = YAMLException;
+    模块.exports = 歪门邪道之祸; // 歪門邪道之禍，出口。
   }
 });
 
 // node_modules/js-yaml/lib/snippet.js
-var require_snippet = __commonJS({
-  "node_modules/js-yaml/lib/snippet.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var common = require_common();
-    function getLine(buffer, lineStart, lineEnd, position, maxLineLength) {
-      var head = "";
-      var tail = "";
-      var maxHalfLength = Math.floor(maxLineLength / 2) - 1;
-      if (position - lineStart > maxHalfLength) {
-        head = " ... ";
-        lineStart = position - maxHalfLength + head.length;
+var 寻片段 = 寻常货({ // 尋找片段，看看哪裡出了問題。
+  "node_modules/js-yaml/lib/snippet.js"(出口, 模块) { // 片段的規矩，出口和模塊。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 寻常 = 寻常货栈(); // 尋常貨棧裡找尋常。
+    function 取一行(缓冲区, 行始, 行末, 位置, 最大行长) { // 取一行，從緩衝區裡取。
+      var 头 = ""; // 頭部。
+      var 尾 = ""; // 尾部。
+      var 最大半长 = Math.floor(最大行长 / 2) - 1; // 最大半長。
+      if (位置 - 行始 > 最大半长) { // 如果位置超過半長。
+        头 = " ... "; // 頭部加點省略號。
+        行始 = 位置 - 最大半长 + 头.length; // 行始也得調整。
       }
-      if (lineEnd - position > maxHalfLength) {
-        tail = " ...";
-        lineEnd = position + maxHalfLength - tail.length;
+      if (行末 - 位置 > 最大半长) { // 如果行末超過半長。
+        尾 = " ..."; // 尾部加點省略號。
+        行末 = 位置 + 最大半长 - 尾.length; // 行末也得調整。
       }
       return {
-        str: head + buffer.slice(lineStart, lineEnd).replace(/\t/g, "\u2192") + tail,
-        pos: position - lineStart + head.length
-        // relative position
+        str: 头 + 缓冲区.slice(行始, 行末).replace(/\t/g, "\u2192") + 尾, // 字串就是頭尾加上中間的內容，把製表符換成箭頭。
+        pos: 位置 - 行始 + 头.length // 相對位置。
       };
     }
-    function padStart(string, max) {
-      return common.repeat(" ", max - string.length) + string;
+
+    function 前补齐(字串, 最大) { // 前面補齊，讓字串夠長。
+      return 寻常.反复(" ", 最大 - 字串.length) + 字串; // 用空格補齊。
     }
-    function makeSnippet(mark, options) {
-      options = Object.create(options || null);
-      if (!mark.buffer)
-        return null;
-      if (!options.maxLength)
-        options.maxLength = 79;
-      if (typeof options.indent !== "number")
-        options.indent = 1;
-      if (typeof options.linesBefore !== "number")
-        options.linesBefore = 3;
-      if (typeof options.linesAfter !== "number")
-        options.linesAfter = 2;
-      var re = /\r?\n|\r|\0/g;
-      var lineStarts = [0];
-      var lineEnds = [];
-      var match;
-      var foundLineNo = -1;
-      while (match = re.exec(mark.buffer)) {
-        lineEnds.push(match.index);
-        lineStarts.push(match.index + match[0].length);
-        if (mark.position <= match.index && foundLineNo < 0) {
-          foundLineNo = lineStarts.length - 2;
+
+    function 造片段(标记, 选项) { // 製造片段，把錯誤的地方截出來。
+      选项 = Object.create(选项 || null); // 選項得是個物件。
+      if (!标记.buffer) // 沒緩衝區就沒法造。
+        return null; // 回個空。
+      if (!选项.maxLength) // 沒最大長度就設個默認值。
+        选项.maxLength = 79; // 默認79。
+      if (typeof 选项.indent !== "number") // 縮進不是數字就設個默認值。
+        选项.indent = 1; // 默認1。
+      if (typeof 选项.linesBefore !== "number") // 前面行數不是數字就設個默認值。
+        选项.linesBefore = 3; // 默認3。
+      if (typeof 选项.linesAfter !== "number") // 後面行數不是數字就設個默認值。
+        选项.linesAfter = 2; // 默認2。
+      var 正则 = /\r?\n|\r|\0/g; // 換行符和空字符的正規表達式。
+      var 行始列表 = [0]; // 行始列表。
+      var 行末列表 = []; // 行末列表。
+      var 匹配; // 匹配結果。
+      var 找到行号 = -1; // 找到的行號。
+      while (匹配 = 正则.exec(标记.buffer)) { // 循環匹配。
+        行末列表.push(匹配.index); // 記錄行末。
+        行始列表.push(匹配.index + 匹配[0].length); // 記錄行始。
+        if (标记.position <= 匹配.index && 找到行号 < 0) { // 如果位置在行末之前，且沒找到行號。
+          找到行号 = 行始列表.length - 2; // 記錄行號。
         }
       }
-      if (foundLineNo < 0)
-        foundLineNo = lineStarts.length - 1;
-      var result = "", i, line;
-      var lineNoLength = Math.min(mark.line + options.linesAfter, lineEnds.length).toString().length;
-      var maxLineLength = options.maxLength - (options.indent + lineNoLength + 3);
-      for (i = 1; i <= options.linesBefore; i++) {
-        if (foundLineNo - i < 0)
-          break;
-        line = getLine(
-          mark.buffer,
-          lineStarts[foundLineNo - i],
-          lineEnds[foundLineNo - i],
-          mark.position - (lineStarts[foundLineNo] - lineStarts[foundLineNo - i]),
-          maxLineLength
+      if (找到行号 < 0) // 如果還是沒找到行號。
+        找到行号 = 行始列表.length - 1; // 就用最後一行。
+      var 结果 = "", // 結果字串。
+        i, 行; // 循環變數和行。
+      var 行号长度 = Math.min(标记.line + 选项.linesAfter, 行末列表.length).toString().length; // 行號長度。
+      var 最大行长 = 选项.maxLength - (选项.indent + 行号长度 + 3); // 最大行長。
+      for (i = 1; i <= 选项.linesBefore; i++) { // 循環前面的行。
+        if (找到行号 - i < 0) // 超出範圍就跳出。
+          break; // 跳出。
+        行 = 取一行( // 取一行。
+          标记.buffer, // 緩衝區。
+          行始列表[找到行号 - i], // 行始。
+          行末列表[找到行号 - i], // 行末。
+          标记.position - (行始列表[找到行号] - 行始列表[找到行号 - i]), // 位置。
+          最大行长 // 最大行長。
         );
-        result = common.repeat(" ", options.indent) + padStart((mark.line - i + 1).toString(), lineNoLength) + " | " + line.str + "\n" + result;
+        结果 = 寻常.反复(" ", 选项.indent) + 前补齐((标记.line - i + 1).toString(), 行号长度) + " | " + 行.str + "\n" + 结果; // 加上縮進、行號、豎線和行內容。
       }
-      line = getLine(mark.buffer, lineStarts[foundLineNo], lineEnds[foundLineNo], mark.position, maxLineLength);
-      result += common.repeat(" ", options.indent) + padStart((mark.line + 1).toString(), lineNoLength) + " | " + line.str + "\n";
-      result += common.repeat("-", options.indent + lineNoLength + 3 + line.pos) + "^\n";
-      for (i = 1; i <= options.linesAfter; i++) {
-        if (foundLineNo + i >= lineEnds.length)
-          break;
-        line = getLine(
-          mark.buffer,
-          lineStarts[foundLineNo + i],
-          lineEnds[foundLineNo + i],
-          mark.position - (lineStarts[foundLineNo] - lineStarts[foundLineNo + i]),
-          maxLineLength
+      行 = 取一行(标记.buffer, 行始列表[找到行号], 行末列表[找到行号], 标记.position, 最大行长); // 取當前行。
+      结果 += 寻常.反复(" ", 选项.indent) + 前补齐((标记.line + 1).toString(), 行号长度) + " | " + 行.str + "\n"; // 加上當前行。
+      结果 += 寻常.反复("-", 选项.indent + 行号长度 + 3 + 行.pos) + "^\n"; // 加上指示符。
+      for (i = 1; i <= 选项.linesAfter; i++) { // 循環後面的行。
+        if (找到行号 + i >= 行末列表.length) // 超出範圍就跳出。
+          break; // 跳出。
+        行 = 取一行( // 取一行。
+          标记.buffer, // 緩衝區。
+          行始列表[找到行号 + i], // 行始。
+          行末列表[找到行号 + i], // 行末。
+          标记.position - (行始列表[找到行号] - 行始列表[找到行号 + i]), // 位置。
+          最大行长 // 最大行長。
         );
-        result += common.repeat(" ", options.indent) + padStart((mark.line + i + 1).toString(), lineNoLength) + " | " + line.str + "\n";
+        结果 += 寻常.反复(" ", 选项.indent) + 前补齐((标记.line + i + 1).toString(), 行号长度) + " | " + 行.str + "\n"; // 加上縮進、行號、豎線和行內容。
       }
-      return result.replace(/\n$/, "");
+      return 结果.replace(/\n$/, ""); // 去掉末尾換行。
     }
-    module.exports = makeSnippet;
+    模块.exports = 造片段; // 製造片段，出口。
   }
 });
 
 // node_modules/js-yaml/lib/type.js
-var require_type = __commonJS({
-  "node_modules/js-yaml/lib/type.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var YAMLException = require_exception();
-    var TYPE_CONSTRUCTOR_OPTIONS = [
-      "kind",
-      "multi",
-      "resolve",
-      "construct",
-      "instanceOf",
-      "predicate",
-      "represent",
-      "representName",
-      "defaultStyle",
-      "styleAliases"
+var 寻类型 = 寻常货({ // 尋找類型，這是咱們山寨的分類法。
+  "node_modules/js-yaml/lib/type.js"(出口, 模块) { // 類型的規矩，出口和模塊。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 歪门邪道之祸 = 寻异端(); // 歪門邪道之禍。
+    var 类型构造选项 = [ // 類型構造選項，都是些規矩。
+      "kind", // 種類。
+      "multi", // 多個。
+      "resolve", // 解析。
+      "construct", // 構造。
+      "instanceOf", // 實例。
+      "predicate", // 判斷。
+      "represent", // 表示。
+      "representName", // 表示名。
+      "defaultStyle", // 默認樣式。
+      "styleAliases" // 樣式別名。
     ];
-    var YAML_NODE_KINDS = [
-      "scalar",
-      "sequence",
-      "mapping"
+    var 歪门节点种类 = [ // 歪門節點種類，就這幾種。
+      "scalar", // 標量。
+      "sequence", // 序列。
+      "mapping" // 映射。
     ];
-    function compileStyleAliases(map) {
-      var result = {};
-      if (map !== null) {
-        Object.keys(map).forEach(function (style) {
-          map[style].forEach(function (alias) {
-            result[String(alias)] = style;
+
+    function 汇编样式别名(图谱) { // 匯編樣式別名，把別名都整理好。
+      var 结果 = {}; // 結果先空著。
+      if (图谱 !== null) { // 圖譜不空才動手。
+        Object.keys(图谱).forEach(function (样式) { // 遍歷樣式。
+          图谱[样式].forEach(function (别名) { // 遍歷別名。
+            结果[String(别名)] = 样式; // 記錄別名和樣式。
           });
         });
       }
-      return result;
+      return 结果; // 回結果。
     }
-    function Type(tag, options) {
-      options = options || {};
-      Object.keys(options).forEach(function (name) {
-        if (TYPE_CONSTRUCTOR_OPTIONS.indexOf(name) === -1) {
-          throw new YAMLException('Unknown option "' + name + '" is met in definition of "' + tag + '" YAML type.');
+
+    function 类型(标签, 选项) { // 類型，有標籤有選項。
+      选项 = 选项 || {}; // 選項沒有就給個空物件。
+      Object.keys(选项).forEach(function (名号) { // 遍歷選項名號。
+        if (类型构造选项.indexOf(名号) === -1) { // 如果名號不在類型構造選項裡。
+          throw new 歪门邪道之祸('在 "' + 标签 + '" 歪门类型定义中遇到未知选项 "' + 名号 + '"。'); // 拋出歪門邪道之禍。
         }
       });
-      this.options = options;
-      this.tag = tag;
-      this.kind = options["kind"] || null;
-      this.resolve = options["resolve"] || function () {
-        return true;
+      this.options = 选项; // 選項。
+      this.tag = 标签; // 標籤。
+      this.kind = 选项["kind"] || null; // 種類。
+      this.resolve = 选项["resolve"] || function () { // 解析。
+        return true; // 默認真。
       };
-      this.construct = options["construct"] || function (data) {
-        return data;
+      this.construct = 选项["construct"] || function (数据) { // 構造。
+        return 数据; // 默認回數據。
       };
-      this.instanceOf = options["instanceOf"] || null;
-      this.predicate = options["predicate"] || null;
-      this.represent = options["represent"] || null;
-      this.representName = options["representName"] || null;
-      this.defaultStyle = options["defaultStyle"] || null;
-      this.multi = options["multi"] || false;
-      this.styleAliases = compileStyleAliases(options["styleAliases"] || null);
-      if (YAML_NODE_KINDS.indexOf(this.kind) === -1) {
-        throw new YAMLException('Unknown kind "' + this.kind + '" is specified for "' + tag + '" YAML type.');
+      this.instanceOf = 选项["instanceOf"] || null; // 實例。
+      this.predicate = 选项["predicate"] || null; // 判斷。
+      this.represent = 选项["represent"] || null; // 表示。
+      this.representName = 选项["representName"] || null; // 表示名。
+      this.defaultStyle = 选项["defaultStyle"] || null; // 默認樣式。
+      this.multi = 选项["multi"] || false; // 多個。
+      this.styleAliases = 汇编样式别名(选项["styleAliases"] || null); // 樣式別名。
+      if (歪门节点种类.indexOf(this.kind) === -1) { // 如果種類不在歪門節點種類裡。
+        throw new 歪门邪道之祸('为 "' + 标签 + '" 歪门类型指定了未知种类 "' + this.kind + '"。'); // 拋出歪門邪道之禍。
       }
     }
-    module.exports = Type;
+    模块.exports = 类型; // 類型，出口。
   }
 });
 
 // node_modules/js-yaml/lib/schema.js
-var require_schema = __commonJS({
-  "node_modules/js-yaml/lib/schema.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var YAMLException = require_exception();
-    var Type = require_type();
-    function compileList(schema, name) {
-      var result = [];
-      schema[name].forEach(function (currentType) {
-        var newIndex = result.length;
-        result.forEach(function (previousType, previousIndex) {
-          if (previousType.tag === currentType.tag && previousType.kind === currentType.kind && previousType.multi === currentType.multi) {
-            newIndex = previousIndex;
+var 寻纲要 = 寻常货({ // 尋找綱要，這是咱們山寨的總綱。
+  "node_modules/js-yaml/lib/schema.js"(出口, 模块) { // 綱要的規矩，出口和模塊。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 歪门邪道之祸 = 寻异端(); // 歪門邪道之禍。
+    var 类型 = 寻类型(); // 類型。
+    function 汇编清单(纲要, 名号) { // 匯編清單，把綱要裡的名號都整理好。
+      var 结果 = []; // 結果先空著。
+      纲要[名号].forEach(function (当前类型) { // 遍歷當前類型。
+        var 新索引 = 结果.length; // 新索引。
+        结果.forEach(function (之前类型, 之前索引) { // 遍歷之前類型。
+          if (之前类型.tag === 当前类型.tag && 之前类型.kind === 当前类型.kind && 之前类型.multi === 当前类型.multi) { // 如果標籤、種類、多個都一樣。
+            新索引 = 之前索引; // 就用之前的索引。
           }
         });
-        result[newIndex] = currentType;
+        结果[新索引] = 当前类型; // 記錄當前類型。
       });
-      return result;
+      return 结果; // 回結果。
     }
-    function compileMap() {
-      var result = {
-        scalar: {},
-        sequence: {},
-        mapping: {},
-        fallback: {},
-        multi: {
-          scalar: [],
-          sequence: [],
-          mapping: [],
-          fallback: []
-        }
-      }, index, length;
-      function collectType(type) {
-        if (type.multi) {
-          result.multi[type.kind].push(type);
-          result.multi["fallback"].push(type);
+
+    function 汇编图谱() { // 匯編圖譜，把所有類型都整理成圖譜。
+      var 结果 = { // 結果物件。
+          scalar: {}, // 標量。
+          sequence: {}, // 序列。
+          mapping: {}, // 映射。
+          fallback: {}, // 後備。
+          multi: { // 多個。
+            scalar: [], // 標量。
+            sequence: [], // 序列。
+            mapping: [], // 映射。
+            fallback: [] // 後備。
+          }
+        },
+        索引, 长度; // 索引和長度。
+      function 收集类型(类型) { // 收集類型。
+        if (类型.multi) { // 如果是多個。
+          结果.multi[类型.kind].push(类型); // 放到多個裡。
+          结果.multi["fallback"].push(类型); // 放到後備裡。
         } else {
-          result[type.kind][type.tag] = result["fallback"][type.tag] = type;
+          结果[类型.kind][类型.tag] = 结果["fallback"][类型.tag] = 类型; // 放到對應的種類和後備裡。
         }
       }
-      for (index = 0, length = arguments.length; index < length; index += 1) {
-        arguments[index].forEach(collectType);
+      for (索引 = 0, 长度 = arguments.length; 索引 < 长度; 索引 += 1) { // 遍歷參數。
+        arguments[索引].forEach(收集类型); // 收集類型。
       }
-      return result;
+      return 结果; // 回結果。
     }
-    function Schema(definition) {
-      return this.extend(definition);
+
+    function 纲要(定义) { // 綱要，有定義。
+      return this.扩充(定义); // 擴充定義。
     }
-    Schema.prototype.extend = function extend(definition) {
-      var implicit = [];
-      var explicit = [];
-      if (definition instanceof Type) {
-        explicit.push(definition);
-      } else if (Array.isArray(definition)) {
-        explicit = explicit.concat(definition);
-      } else if (definition && (Array.isArray(definition.implicit) || Array.isArray(definition.explicit))) {
-        if (definition.implicit)
-          implicit = implicit.concat(definition.implicit);
-        if (definition.explicit)
-          explicit = explicit.concat(definition.explicit);
+    纲要.prototype.扩充 = function 扩充(定义) { // 綱要的擴充方法。
+      var 隐式 = []; // 隱式。
+      var 显式 = []; // 顯式。
+      if (定义 instanceof 类型) { // 如果定義是類型。
+        显式.push(定义); // 放到顯式裡。
+      } else if (Array.isArray(定义)) { // 如果定義是陣列。
+        显式 = 显式.concat(定义); // 合併到顯式裡。
+      } else if (定义 && (Array.isArray(定义.implicit) || Array.isArray(定义.explicit))) { // 如果定義有隱式或顯式。
+        if (定义.implicit) // 如果有隱式。
+          隐式 = 隐式.concat(定义.implicit); // 合併到隱式裡。
+        if (定义.explicit) // 如果有顯式。
+          显式 = 显式.concat(定义.explicit); // 合併到顯式裡。
       } else {
-        throw new YAMLException("Schema.extend argument should be a Type, [ Type ], or a schema definition ({ implicit: [...], explicit: [...] })");
+        throw new 歪门邪道之祸("纲要.扩充参数应该是一个类型、[类型]、或一个纲要定义 ({ implicit: [...], explicit: [...] })"); // 拋出歪門邪道之禍。
       }
-      implicit.forEach(function (type) {
-        if (!(type instanceof Type)) {
-          throw new YAMLException("Specified list of YAML types (or a single Type object) contains a non-Type object.");
+      隐式.forEach(function (类型) { // 遍歷隱式。
+        if (!(类型 instanceof 类型)) { // 如果不是類型。
+          throw new 歪门邪道之祸("指定的歪门类型列表（或单个类型物件）包含非类型物件。"); // 拋出歪門邪道之禍。
         }
-        if (type.loadKind && type.loadKind !== "scalar") {
-          throw new YAMLException("There is a non-scalar type in the implicit list of a schema. Implicit resolving of such types is not supported.");
+        if (类型.loadKind && 类型.loadKind !== "scalar") { // 如果加載種類不是標量。
+          throw new 歪门邪道之祸("纲要的隐式列表中存在非标量类型。不支持此类类型的隐式解析。"); // 拋出歪門邪道之禍。
         }
-        if (type.multi) {
-          throw new YAMLException("There is a multi type in the implicit list of a schema. Multi tags can only be listed as explicit.");
-        }
-      });
-      explicit.forEach(function (type) {
-        if (!(type instanceof Type)) {
-          throw new YAMLException("Specified list of YAML types (or a single Type object) contains a non-Type object.");
+        if (类型.multi) { // 如果是多個。
+          throw new 歪门邪道之祸("纲要的隐式列表中存在多类型。多标签只能作为显式列出。"); // 拋出歪門邪道之禍。
         }
       });
-      var result = Object.create(Schema.prototype);
-      result.implicit = (this.implicit || []).concat(implicit);
-      result.explicit = (this.explicit || []).concat(explicit);
-      result.compiledImplicit = compileList(result, "implicit");
-      result.compiledExplicit = compileList(result, "explicit");
-      result.compiledTypeMap = compileMap(result.compiledImplicit, result.compiledExplicit);
-      return result;
+      显式.forEach(function (类型) { // 遍歷顯式。
+        if (!(类型 instanceof 类型)) { // 如果不是類型。
+          throw new 歪门邪道之祸("指定的歪门类型列表（或单个类型物件）包含非类型物件。"); // 拋出歪門邪道之禍。
+        }
+      });
+      var 结果 = Object.create(纲要.prototype); // 結果物件。
+      结果.implicit = (this.implicit || []).concat(隐式); // 隱式。
+      结果.explicit = (this.explicit || []).concat(显式); // 顯式。
+      结果.compiledImplicit = 汇编清单(结果, "implicit"); // 匯編隱式清單。
+      结果.compiledExplicit = 汇编清单(结果, "explicit"); // 匯編顯式清單。
+      结果.compiledTypeMap = 汇编图谱(结果.compiledImplicit, 结果.compiledExplicit); // 匯編類型圖譜。
+      return 结果; // 回結果。
     };
-    module.exports = Schema;
+    模块.exports = 纲要; // 綱要，出口。
   }
 });
 
 // node_modules/js-yaml/lib/type/str.js
-var require_str = __commonJS({
-  "node_modules/js-yaml/lib/type/str.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var Type = require_type();
-    module.exports = new Type("tag:yaml.org,2002:str", {
-      kind: "scalar",
-      construct: function (data) {
-        return data !== null ? data : "";
+var 寻字串 = 寻常货({ // 尋找字串，這是最基本的貨色。
+  "node_modules/js-yaml/lib/type/str.js"(出口, 模块) { // 字串的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 类型 = 寻类型(); // 類型。
+    模块.exports = new 类型("tag:yaml.org,2002:str", { // 導出一個新類型。
+      kind: "scalar", // 種類是標量。
+      construct: function (数据) { // 構造方法。
+        return 数据 !== null ? 数据 : ""; // 數據不空就用數據，不然就空字串。
       }
     });
   }
 });
 
 // node_modules/js-yaml/lib/type/seq.js
-var require_seq = __commonJS({
-  "node_modules/js-yaml/lib/type/seq.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var Type = require_type();
-    module.exports = new Type("tag:yaml.org,2002:seq", {
-      kind: "sequence",
-      construct: function (data) {
-        return data !== null ? data : [];
+var 寻序列 = 寻常货({ // 尋找序列，一排排的。
+  "node_modules/js-yaml/lib/type/seq.js"(出口, 模块) { // 序列的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 类型 = 寻类型(); // 類型。
+    模块.exports = new 类型("tag:yaml.org,2002:seq", { // 導出一個新類型。
+      kind: "sequence", // 種類是序列。
+      construct: function (数据) { // 構造方法。
+        return 数据 !== null ? 数据 : []; // 數據不空就用數據，不然就空陣列。
       }
     });
   }
 });
 
 // node_modules/js-yaml/lib/type/map.js
-var require_map = __commonJS({
-  "node_modules/js-yaml/lib/type/map.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var Type = require_type();
-    module.exports = new Type("tag:yaml.org,2002:map", {
-      kind: "mapping",
-      construct: function (data) {
-        return data !== null ? data : {};
+var 寻映射 = 寻常货({ // 尋找映射，一對對的。
+  "node_modules/js-yaml/lib/type/map.js"(出口, 模块) { // 映射的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 类型 = 寻类型(); // 類型。
+    模块.exports = new 类型("tag:yaml.org,2002:map", { // 導出一個新類型。
+      kind: "mapping", // 種類是映射。
+      construct: function (数据) { // 構造方法。
+        return 数据 !== null ? 数据 : {}; // 數據不空就用數據，不然就空物件。
       }
     });
   }
 });
 
 // node_modules/js-yaml/lib/schema/failsafe.js
-var require_failsafe = __commonJS({
-  "node_modules/js-yaml/lib/schema/failsafe.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var Schema = require_schema();
-    module.exports = new Schema({
-      explicit: [
-        require_str(),
-        require_seq(),
-        require_map()
+var 寻保底 = 寻常货({ // 尋找保底，這是咱們山寨的最後一道防線。
+  "node_modules/js-yaml/lib/schema/failsafe.js"(出口, 模块) { // 保底的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 纲要 = 寻纲要(); // 綱要。
+    模块.exports = new 纲要({ // 導出一個新綱要。
+      explicit: [ // 顯式。
+        寻字串(), // 字串。
+        寻序列(), // 序列。
+        寻映射() // 映射。
       ]
     });
   }
 });
 
 // node_modules/js-yaml/lib/type/null.js
-var require_null = __commonJS({
-  "node_modules/js-yaml/lib/type/null.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var Type = require_type();
-    function resolveYamlNull(data) {
-      if (data === null)
-        return true;
-      var max = data.length;
-      return max === 1 && data === "~" || max === 4 && (data === "null" || data === "Null" || data === "NULL");
+var 寻空值 = 寻常货({ // 尋找空值，啥都沒有。
+  "node_modules/js-yaml/lib/type/null.js"(出口, 模块) { // 空值的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 类型 = 寻类型(); // 類型。
+    function 解析歪门空值(数据) { // 解析歪門空值。
+      if (数据 === null) // 數據是空就回真。
+        return true; // 真。
+      var 最大 = 数据.length; // 最大長度。
+      return 最大 === 1 && 数据 === "~" || 最大 === 4 && (数据 === "null" || 数据 === "Null" || 数据 === "NULL"); // 判斷是不是空值。
     }
-    function constructYamlNull() {
-      return null;
+
+    function 构造歪门空值() { // 構造歪門空值。
+      return null; // 回空。
     }
-    function isNull(object) {
-      return object === null;
+
+    function 是空值否(物件) { // 看看是不是空值。
+      return 物件 === null; // 物件是空就回真。
     }
-    module.exports = new Type("tag:yaml.org,2002:null", {
-      kind: "scalar",
-      resolve: resolveYamlNull,
-      construct: constructYamlNull,
-      predicate: isNull,
-      represent: {
-        canonical: function () {
-          return "~";
+    模块.exports = new 类型("tag:yaml.org,2002:null", { // 導出一個新類型。
+      kind: "scalar", // 種類是標量。
+      resolve: 解析歪门空值, // 解析方法。
+      construct: 构造歪门空值, // 構造方法。
+      predicate: 是空值否, // 判斷方法。
+      represent: { // 表示方法。
+        canonical: function () { // 規範。
+          return "~"; // 回波浪號。
         },
-        lowercase: function () {
-          return "null";
+        lowercase: function () { // 小寫。
+          return "null"; // 回null。
         },
-        uppercase: function () {
-          return "NULL";
+        uppercase: function () { // 大寫。
+          return "NULL"; // 回NULL。
         },
-        camelcase: function () {
-          return "Null";
+        camelcase: function () { // 駝峰。
+          return "Null"; // 回Null。
         },
-        empty: function () {
-          return "";
+        empty: function () { // 空。
+          return ""; // 回空字串。
         }
       },
-      defaultStyle: "lowercase"
+      defaultStyle: "lowercase" // 默認小寫。
     });
   }
 });
 
 // node_modules/js-yaml/lib/type/bool.js
-var require_bool = __commonJS({
-  "node_modules/js-yaml/lib/type/bool.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var Type = require_type();
-    function resolveYamlBoolean(data) {
-      if (data === null)
-        return false;
-      var max = data.length;
-      return max === 4 && (data === "true" || data === "True" || data === "TRUE") || max === 5 && (data === "false" || data === "False" || data === "FALSE");
+var 寻真假 = 寻常货({ // 尋找真假，是真是假得看清楚。
+  "node_modules/js-yaml/lib/type/bool.js"(出口, 模块) { // 真假的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 类型 = 寻类型(); // 類型。
+    function 解析歪门真假(数据) { // 解析歪門真假。
+      if (数据 === null) // 數據是空就回假。
+        return false; // 假。
+      var 最大 = 数据.length; // 最大長度。
+      return 最大 === 4 && (数据 === "true" || 数据 === "True" || 数据 === "TRUE") || 最大 === 5 && (数据 === "false" || 数据 === "False" || 数据 === "FALSE"); // 判斷是不是真假。
     }
-    function constructYamlBoolean(data) {
-      return data === "true" || data === "True" || data === "TRUE";
+
+    function 构造歪门真假(数据) { // 構造歪門真假。
+      return 数据 === "true" || 数据 === "True" || 数据 === "TRUE"; // 判斷是不是真。
     }
-    function isBoolean(object) {
-      return Object.prototype.toString.call(object) === "[object Boolean]";
+
+    function 是真假否(物件) { // 看看是不是真假。
+      return Object.prototype.toString.call(物件) === "[object Boolean]"; // 物件是布爾就回真。
     }
-    module.exports = new Type("tag:yaml.org,2002:bool", {
-      kind: "scalar",
-      resolve: resolveYamlBoolean,
-      construct: constructYamlBoolean,
-      predicate: isBoolean,
-      represent: {
-        lowercase: function (object) {
-          return object ? "true" : "false";
+    模块.exports = new 类型("tag:yaml.org,2002:bool", { // 導出一個新類型。
+      kind: "scalar", // 種類是標量。
+      resolve: 解析歪门真假, // 解析方法。
+      construct: 构造歪门真假, // 構造方法。
+      predicate: 是真假否, // 判斷方法。
+      represent: { // 表示方法。
+        lowercase: function (物件) { // 小寫。
+          return 物件 ? "true" : "false"; // 真回true，假回false。
         },
-        uppercase: function (object) {
-          return object ? "TRUE" : "FALSE";
+        uppercase: function (物件) { // 大寫。
+          return 物件 ? "TRUE" : "FALSE"; // 真回TRUE，假回FALSE。
         },
-        camelcase: function (object) {
-          return object ? "True" : "False";
+        camelcase: function (物件) { // 駝峰。
+          return 物件 ? "True" : "False"; // 真回True，假回False。
         }
       },
-      defaultStyle: "lowercase"
+      defaultStyle: "lowercase" // 默認小寫。
     });
   }
 });
 
 // node_modules/js-yaml/lib/type/int.js
-var require_int = __commonJS({
-  "node_modules/js-yaml/lib/type/int.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var common = require_common();
-    var Type = require_type();
-    function isHexCode(c) {
-      return 48 <= c && c <= 57 || 65 <= c && c <= 70 || 97 <= c && c <= 102;
+var 寻整数 = 寻常货({ // 尋找整數，數數用的。
+  "node_modules/js-yaml/lib/type/int.js"(出口, 模块) { // 整數的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 寻常 = 寻常货栈(); // 尋常貨棧裡找尋常。
+    var 类型 = 寻类型(); // 類型。
+    function 是十六进制码(字符码) { // 看看是不是十六進制碼。
+      return 48 <= 字符码 && 字符码 <= 57 || 65 <= 字符码 && 字符码 <= 70 || 97 <= 字符码 && 字符码 <= 102; // 判斷是不是十六進制。
     }
-    function isOctCode(c) {
-      return 48 <= c && c <= 55;
+
+    function 是八进制码(字符码) { // 看看是不是八進制碼。
+      return 48 <= 字符码 && 字符码 <= 55; // 判斷是不是八進制。
     }
-    function isDecCode(c) {
-      return 48 <= c && c <= 57;
+
+    function 是十进制码(字符码) { // 看看是不是十進制碼。
+      return 48 <= 字符码 && 字符码 <= 57; // 判斷是不是十進制。
     }
-    function resolveYamlInteger(data) {
-      if (data === null)
-        return false;
-      var max = data.length, index = 0, hasDigits = false, ch;
-      if (!max)
-        return false;
-      ch = data[index];
-      if (ch === "-" || ch === "+") {
-        ch = data[++index];
+
+    function 解析歪门整数(数据) { // 解析歪門整數。
+      if (数据 === null) // 數據是空就回假。
+        return false; // 假。
+      var 最大 = 数据.length, // 最大長度。
+        索引 = 0, // 索引。
+        有数字 = false, // 有沒有數字。
+        字符; // 字符。
+      if (!最大) // 沒長度就回假。
+        return false; // 假。
+      字符 = 数据[索引]; // 取第一個字符。
+      if (字符 === "-" || 字符 === "+") { // 如果是負號或正號。
+        字符 = 数据[++索引]; // 取下一個字符。
       }
-      if (ch === "0") {
-        if (index + 1 === max)
-          return true;
-        ch = data[++index];
-        if (ch === "b") {
-          index++;
-          for (; index < max; index++) {
-            ch = data[index];
-            if (ch === "_")
-              continue;
-            if (ch !== "0" && ch !== "1")
-              return false;
-            hasDigits = true;
+      if (字符 === "0") { // 如果是零。
+        if (索引 + 1 === 最大) // 如果只有一個零。
+          return true; // 回真。
+        字符 = 数据[++索引]; // 取下一個字符。
+        if (字符 === "b") { // 如果是二進制。
+          索引++; // 索引加一。
+          for (; 索引 < 最大; 索引++) { // 循環。
+            字符 = 数据[索引]; // 取字符。
+            if (字符 === "_") // 如果是下劃線。
+              continue; // 跳過。
+            if (字符 !== "0" && 字符 !== "1") // 如果不是零或一。
+              return false; // 回假。
+            有数字 = true; // 有數字。
           }
-          return hasDigits && ch !== "_";
+          return 有数字 && 字符 !== "_"; // 有數字且不是下劃線就回真。
         }
-        if (ch === "x") {
-          index++;
-          for (; index < max; index++) {
-            ch = data[index];
-            if (ch === "_")
-              continue;
-            if (!isHexCode(data.charCodeAt(index)))
-              return false;
-            hasDigits = true;
+        if (字符 === "x") { // 如果是十六進制。
+          索引++; // 索引加一。
+          for (; 索引 < 最大; 索引++) { // 循環。
+            字符 = 数据[索引]; // 取字符。
+            if (字符 === "_") // 如果是下劃線。
+              continue; // 跳過。
+            if (!是十六进制码(数据.charCodeAt(索引))) // 如果不是十六進制碼。
+              return false; // 回假。
+            有数字 = true; // 有數字。
           }
-          return hasDigits && ch !== "_";
+          return 有数字 && 字符 !== "_"; // 有數字且不是下劃線就回真。
         }
-        if (ch === "o") {
-          index++;
-          for (; index < max; index++) {
-            ch = data[index];
-            if (ch === "_")
-              continue;
-            if (!isOctCode(data.charCodeAt(index)))
-              return false;
-            hasDigits = true;
+        if (字符 === "o") { // 如果是八進制。
+          索引++; // 索引加一。
+          for (; 索引 < 最大; 索引++) { // 循環。
+            字符 = 数据[索引]; // 取字符。
+            if (字符 === "_") // 如果是下劃線。
+              continue; // 跳過。
+            if (!是八进制码(数据.charCodeAt(索引))) // 如果不是八進制碼。
+              return false; // 回假。
+            有数字 = true; // 有數字。
           }
-          return hasDigits && ch !== "_";
+          return 有数字 && 字符 !== "_"; // 有數字且不是下劃線就回真。
         }
       }
-      if (ch === "_")
-        return false;
-      for (; index < max; index++) {
-        ch = data[index];
-        if (ch === "_")
-          continue;
-        if (!isDecCode(data.charCodeAt(index))) {
-          return false;
+      if (字符 === "_") // 如果是下劃線。
+        return false; // 回假。
+      for (; 索引 < 最大; 索引++) { // 循環。
+        字符 = 数据[索引]; // 取字符。
+        if (字符 === "_") // 如果是下劃線。
+          continue; // 跳過。
+        if (!是十进制码(数据.charCodeAt(索引))) { // 如果不是十進制碼。
+          return false; // 回假。
         }
-        hasDigits = true;
+        有数字 = true; // 有數字。
       }
-      if (!hasDigits || ch === "_")
-        return false;
-      return true;
+      if (!有数字 || 字符 === "_") // 沒數字或者末尾是下劃線。
+        return false; // 回假。
+      return true; // 回真。
     }
-    function constructYamlInteger(data) {
-      var value = data, sign = 1, ch;
-      if (value.indexOf("_") !== -1) {
-        value = value.replace(/_/g, "");
+
+    function 构造歪门整数(数据) { // 構造歪門整數。
+      var 值 = 数据, // 值。
+        符号 = 1, // 符號。
+        字符; // 字符。
+      if (值.indexOf("_") !== -1) { // 如果有下劃線。
+        值 = 值.replace(/_/g, ""); // 去掉下劃線。
       }
-      ch = value[0];
-      if (ch === "-" || ch === "+") {
-        if (ch === "-")
-          sign = -1;
-        value = value.slice(1);
-        ch = value[0];
+      字符 = 值[0]; // 取第一個字符。
+      if (字符 === "-" || 字符 === "+") { // 如果是負號或正號。
+        if (字符 === "-") // 如果是負號。
+          符号 = -1; // 符號是負一。
+        值 = 值.slice(1); // 去掉第一個字符。
+        字符 = 值[0]; // 取新第一個字符。
       }
-      if (value === "0")
-        return 0;
-      if (ch === "0") {
-        if (value[1] === "b")
-          return sign * parseInt(value.slice(2), 2);
-        if (value[1] === "x")
-          return sign * parseInt(value.slice(2), 16);
-        if (value[1] === "o")
-          return sign * parseInt(value.slice(2), 8);
+      if (值 === "0") // 如果是零。
+        return 0; // 回零。
+      if (字符 === "0") { // 如果是零。
+        if (值[1] === "b") // 如果是二進制。
+          return 符号 * parseInt(值.slice(2), 2); // 解析二進制。
+        if (值[1] === "x") // 如果是十六進制。
+          return 符号 * parseInt(值.slice(2), 16); // 解析十六進制。
+        if (值[1] === "o") // 如果是八進制。
+          return 符号 * parseInt(值.slice(2), 8); // 解析八進制。
       }
-      return sign * parseInt(value, 10);
+      return 符号 * parseInt(值, 10); // 解析十進制。
     }
-    function isInteger(object) {
-      return Object.prototype.toString.call(object) === "[object Number]" && (object % 1 === 0 && !common.isNegativeZero(object));
+
+    function 是整数否(物件) { // 看看是不是整數。
+      return Object.prototype.toString.call(物件) === "[object Number]" && (物件 % 1 === 0 && !寻常.零下否(物件)); // 是數字且是整數且不是負零。
     }
-    module.exports = new Type("tag:yaml.org,2002:int", {
-      kind: "scalar",
-      resolve: resolveYamlInteger,
-      construct: constructYamlInteger,
-      predicate: isInteger,
-      represent: {
-        binary: function (obj) {
-          return obj >= 0 ? "0b" + obj.toString(2) : "-0b" + obj.toString(2).slice(1);
+    模块.exports = new 类型("tag:yaml.org,2002:int", { // 導出一個新類型。
+      kind: "scalar", // 種類是標量。
+      resolve: 解析歪门整数, // 解析方法。
+      construct: 构造歪门整数, // 構造方法。
+      predicate: 是整数否, // 判斷方法。
+      represent: { // 表示方法。
+        binary: function (物件) { // 二進制。
+          return 物件 >= 0 ? "0b" + 物件.toString(2) : "-0b" + 物件.toString(2).slice(1); // 轉二進制。
         },
-        octal: function (obj) {
-          return obj >= 0 ? "0o" + obj.toString(8) : "-0o" + obj.toString(8).slice(1);
+        octal: function (物件) { // 八進制。
+          return 物件 >= 0 ? "0o" + 物件.toString(8) : "-0o" + 物件.toString(8).slice(1); // 轉八進制。
         },
-        decimal: function (obj) {
-          return obj.toString(10);
+        decimal: function (物件) { // 十進制。
+          return 物件.toString(10); // 轉十進制。
         },
         /* eslint-disable max-len */
-        hexadecimal: function (obj) {
-          return obj >= 0 ? "0x" + obj.toString(16).toUpperCase() : "-0x" + obj.toString(16).toUpperCase().slice(1);
+        hexadecimal: function (物件) { // 十六進制。
+          return 物件 >= 0 ? "0x" + 物件.toString(16).toUpperCase() : "-0x" + 物件.toString(16).toUpperCase().slice(1); // 轉十六進制。
         }
       },
-      defaultStyle: "decimal",
-      styleAliases: {
-        binary: [2, "bin"],
-        octal: [8, "oct"],
-        decimal: [10, "dec"],
-        hexadecimal: [16, "hex"]
+      defaultStyle: "decimal", // 默認十進制。
+      styleAliases: { // 樣式別名。
+        binary: [2, "bin"], // 二進制。
+        octal: [8, "oct"], // 八進制。
+        decimal: [10, "dec"], // 十進制。
+        hexadecimal: [16, "hex"] // 十六進制。
       }
     });
   }
 });
 
 // node_modules/js-yaml/lib/type/float.js
-var require_float = __commonJS({
-  "node_modules/js-yaml/lib/type/float.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var common = require_common();
-    var Type = require_type();
-    var YAML_FLOAT_PATTERN = new RegExp(
+var 寻浮点 = 寻常货({ // 尋找浮點，帶小數點的。
+  "node_modules/js-yaml/lib/type/float.js"(出口, 模块) { // 浮點的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 寻常 = 寻常货栈(); // 尋常貨棧裡找尋常。
+    var 类型 = 寻类型(); // 類型。
+    var 歪门浮点正则 = new RegExp( // 歪門浮點的正規表達式。
       // 2.5e4, 2.5 and integers
       "^(?:[-+]?(?:[0-9][0-9_]*)(?:\\.[0-9_]*)?(?:[eE][-+]?[0-9]+)?|\\.[0-9_]+(?:[eE][-+]?[0-9]+)?|[-+]?\\.(?:inf|Inf|INF)|\\.(?:nan|NaN|NAN))$"
     );
-    function resolveYamlFloat(data) {
-      if (data === null)
-        return false;
-      if (!YAML_FLOAT_PATTERN.test(data) || // Quick hack to not allow integers end with `_`
+
+    function 解析歪门浮点(数据) { // 解析歪門浮點。
+      if (数据 === null) // 數據是空就回假。
+        return false; // 假。
+      if (!歪门浮点正则.test(数据) || // 如果不符合正規表達式。
+        // Quick hack to not allow integers end with `_`
         // Probably should update regexp & check speed
-        data[data.length - 1] === "_") {
-        return false;
+        数据[数据.length - 1] === "_") { // 或者末尾是下劃線。
+        return false; // 回假。
       }
-      return true;
+      return true; // 回真。
     }
-    function constructYamlFloat(data) {
-      var value, sign;
-      value = data.replace(/_/g, "").toLowerCase();
-      sign = value[0] === "-" ? -1 : 1;
-      if ("+-".indexOf(value[0]) >= 0) {
-        value = value.slice(1);
+
+    function 构造歪门浮点(数据) { // 構造歪門浮點。
+      var 值, 符号; // 值和符號。
+      值 = 数据.replace(/_/g, "").toLowerCase(); // 去掉下劃線，轉小寫。
+      符号 = 值[0] === "-" ? -1 : 1; // 判斷符號。
+      if ("+-".indexOf(值[0]) >= 0) { // 如果有正負號。
+        值 = 值.slice(1); // 去掉第一個字符。
       }
-      if (value === ".inf") {
-        return sign === 1 ? Number.POSITIVE_INFINITY : Number.NEGATIVE_INFINITY;
-      } else if (value === ".nan") {
-        return NaN;
+      if (值 === ".inf") { // 如果是無窮大。
+        return 符号 === 1 ? Number.POSITIVE_INFINITY : Number.NEGATIVE_INFINITY; // 回正負無窮大。
+      } else if (值 === ".nan") { // 如果是NaN。
+        return NaN; // 回NaN。
       }
-      return sign * parseFloat(value, 10);
+      return 符号 * parseFloat(值, 10); // 解析浮點數。
     }
-    var SCIENTIFIC_WITHOUT_DOT = /^[-+]?[0-9]+e/;
-    function representYamlFloat(object, style) {
-      var res;
-      if (isNaN(object)) {
-        switch (style) {
-          case "lowercase":
-            return ".nan";
-          case "uppercase":
-            return ".NAN";
-          case "camelcase":
-            return ".NaN";
+
+    var 科学计数无点 = /^[-+]?[0-9]+e/; // 科學計數無點的正規表達式。
+    function 表示歪门浮点(物件, 样式) { // 表示歪門浮點。
+      var 结果; // 結果。
+      if (isNaN(物件)) { // 如果是NaN。
+        switch (样式) { // 根據樣式。
+          case "lowercase": // 小寫。
+            return ".nan"; // 回.nan。
+          case "uppercase": // 大寫。
+            return ".NAN"; // 回.NAN。
+          case "camelcase": // 駝峰。
+            return ".NaN"; // 回.NaN。
         }
-      } else if (Number.POSITIVE_INFINITY === object) {
-        switch (style) {
-          case "lowercase":
-            return ".inf";
-          case "uppercase":
-            return ".INF";
-          case "camelcase":
-            return ".Inf";
+      } else if (Number.POSITIVE_INFINITY === 物件) { // 如果是正無窮大。
+        switch (样式) { // 根據樣式。
+          case "lowercase": // 小寫。
+            return ".inf"; // 回.inf。
+          case "uppercase": // 大寫。
+            return ".INF"; // 回.INF。
+          case "camelcase": // 駝峰。
+            return ".Inf"; // 回.Inf。
         }
-      } else if (Number.NEGATIVE_INFINITY === object) {
-        switch (style) {
-          case "lowercase":
-            return "-.inf";
-          case "uppercase":
-            return "-.INF";
-          case "camelcase":
-            return "-.Inf";
+      } else if (Number.NEGATIVE_INFINITY === 物件) { // 如果是負無窮大。
+        switch (样式) { // 根據樣式。
+          case "lowercase": // 小寫。
+            return "-.inf"; // 回-.inf。
+          case "uppercase": // 大寫。
+            return "-.INF"; // 回-.INF。
+          case "camelcase": // 駝峰。
+            return "-.Inf"; // 回-.Inf。
         }
-      } else if (common.isNegativeZero(object)) {
-        return "-0.0";
+      } else if (寻常.零下否(物件)) { // 如果是負零。
+        return "-0.0"; // 回-0.0。
       }
-      res = object.toString(10);
-      return SCIENTIFIC_WITHOUT_DOT.test(res) ? res.replace("e", ".e") : res;
+      结果 = 物件.toString(10); // 轉成字串。
+      return 科学计数无点.test(结果) ? 结果.replace("e", ".e") : 结果; // 如果是科學計數，就加上點。
     }
-    function isFloat(object) {
-      return Object.prototype.toString.call(object) === "[object Number]" && (object % 1 !== 0 || common.isNegativeZero(object));
+
+    function 是浮点否(物件) { // 看看是不是浮點。
+      return Object.prototype.toString.call(物件) === "[object Number]" && (物件 % 1 !== 0 || 寻常.零下否(物件)); // 是數字且不是整數或者負零。
     }
-    module.exports = new Type("tag:yaml.org,2002:float", {
-      kind: "scalar",
-      resolve: resolveYamlFloat,
-      construct: constructYamlFloat,
-      predicate: isFloat,
-      represent: representYamlFloat,
-      defaultStyle: "lowercase"
+    模块.exports = new 类型("tag:yaml.org,2002:float", { // 導出一個新類型。
+      kind: "scalar", // 種類是標量。
+      resolve: 解析歪门浮点, // 解析方法。
+      construct: 构造歪门浮点, // 構造方法。
+      predicate: 是浮点否, // 判斷方法。
+      represent: 表示歪门浮点, // 表示方法。
+      defaultStyle: "lowercase" // 默認小寫。
     });
   }
 });
 
 // node_modules/js-yaml/lib/schema/json.js
-var require_json = __commonJS({
-  "node_modules/js-yaml/lib/schema/json.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    module.exports = require_failsafe().extend({
-      implicit: [
-        require_null(),
-        require_bool(),
-        require_int(),
-        require_float()
+var 寻秘档 = 寻常货({ // 尋找秘檔，這是咱們山寨的機密文件。
+  "node_modules/js-yaml/lib/schema/json.js"(出口, 模块) { // 秘檔的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    模块.exports = 寻保底().扩充({ // 導出一個新綱要，擴充保底。
+      implicit: [ // 隱式。
+        寻空值(), // 空值。
+        寻真假(), // 真假。
+        寻整数(), // 整數。
+        寻浮点() // 浮點。
       ]
     });
   }
 });
 
 // node_modules/js-yaml/lib/schema/core.js
-var require_core = __commonJS({
-  "node_modules/js-yaml/lib/schema/core.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    module.exports = require_json();
+var 寻核心 = 寻常货({ // 尋找核心，這是咱們山寨的命脈。
+  "node_modules/js-yaml/lib/schema/core.js"(出口, 模块) { // 核心的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    模块.exports = 寻秘档(); // 導出秘檔。
   }
 });
 
 // node_modules/js-yaml/lib/type/timestamp.js
-var require_timestamp = __commonJS({
-  "node_modules/js-yaml/lib/type/timestamp.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var Type = require_type();
-    var YAML_DATE_REGEXP = new RegExp(
+var 寻时戳 = 寻常货({ // 尋找時戳，記錄時間的。
+  "node_modules/js-yaml/lib/type/timestamp.js"(出口, 模块) { // 時戳的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 类型 = 寻类型(); // 類型。
+    var 歪门日期正则 = new RegExp( // 歪門日期的正規表達式。
       "^([0-9][0-9][0-9][0-9])-([0-9][0-9])-([0-9][0-9])$"
     );
-    var YAML_TIMESTAMP_REGEXP = new RegExp(
+    var 歪门时戳正则 = new RegExp( // 歪門時戳的正規表達式。
       "^([0-9][0-9][0-9][0-9])-([0-9][0-9]?)-([0-9][0-9]?)(?:[Tt]|[ \\t]+)([0-9][0-9]?):([0-9][0-9]):([0-9][0-9])(?:\\.([0-9]*))?(?:[ \\t]*(Z|([-+])([0-9][0-9]?)(?::([0-9][0-9]))?))?$"
     );
-    function resolveYamlTimestamp(data) {
-      if (data === null)
-        return false;
-      if (YAML_DATE_REGEXP.exec(data) !== null)
-        return true;
-      if (YAML_TIMESTAMP_REGEXP.exec(data) !== null)
-        return true;
-      return false;
+
+    function 解析歪门时戳(数据) { // 解析歪門時戳。
+      if (数据 === null) // 數據是空就回假。
+        return false; // 假。
+      if (歪门日期正则.exec(数据) !== null) // 如果是日期格式。
+        return true; // 回真。
+      if (歪门时戳正则.exec(数据) !== null) // 如果是時戳格式。
+        return true; // 回真。
+      return false; // 回假。
     }
-    function constructYamlTimestamp(data) {
-      var match, year, month, day, hour, minute, second, fraction = 0, delta = null, tz_hour, tz_minute, date;
-      match = YAML_DATE_REGEXP.exec(data);
-      if (match === null)
-        match = YAML_TIMESTAMP_REGEXP.exec(data);
-      if (match === null)
-        throw new Error("Date resolve error");
-      year = +match[1];
-      month = +match[2] - 1;
-      day = +match[3];
-      if (!match[4]) {
-        return new Date(Date.UTC(year, month, day));
+
+    function 构造歪门时戳(数据) { // 構造歪門時戳。
+      var 匹配, 年, 月, 日, 时, 分, 秒, 毫秒 = 0, // 匹配、年、月、日、時、分、秒、毫秒。
+        时差 = null, // 時差。
+        时区时, 时区分, 日期; // 時區時、時區分、日期。
+      匹配 = 歪门日期正则.exec(数据); // 匹配日期。
+      if (匹配 === null) // 如果沒匹配到。
+        匹配 = 歪门时戳正则.exec(数据); // 匹配時戳。
+      if (匹配 === null) // 如果還是沒匹配到。
+        throw new Error("日期解析出错"); // 拋出錯誤。
+      年 = +匹配[1]; // 年。
+      月 = +匹配[2] - 1; // 月。
+      日 = +匹配[3]; // 日。
+      if (!匹配[4]) { // 如果沒有時分秒。
+        return new Date(Date.UTC(年, 月, 日)); // 回日期。
       }
-      hour = +match[4];
-      minute = +match[5];
-      second = +match[6];
-      if (match[7]) {
-        fraction = match[7].slice(0, 3);
-        while (fraction.length < 3) {
-          fraction += "0";
+      时 = +匹配[4]; // 時。
+      分 = +匹配[5]; // 分。
+      秒 = +匹配[6]; // 秒。
+      if (匹配[7]) { // 如果有毫秒。
+        毫秒 = 匹配[7].slice(0, 3); // 取前三位。
+        while (毫秒.length < 3) { // 補齊三位。
+          毫秒 += "0"; // 補零。
         }
-        fraction = +fraction;
+        毫秒 = +毫秒; // 轉數字。
       }
-      if (match[9]) {
-        tz_hour = +match[10];
-        tz_minute = +(match[11] || 0);
-        delta = (tz_hour * 60 + tz_minute) * 6e4;
-        if (match[9] === "-")
-          delta = -delta;
+      if (匹配[9]) { // 如果有時區。
+        时区时 = +匹配[10]; // 時區時。
+        时区分 = +(匹配[11] || 0); // 時區分。
+        时差 = (时区时 * 60 + 时区分) * 6e4; // 計算時差。
+        if (匹配[9] === "-") // 如果是負號。
+          时差 = -时差; // 時差取負。
       }
-      date = new Date(Date.UTC(year, month, day, hour, minute, second, fraction));
-      if (delta)
-        date.setTime(date.getTime() - delta);
-      return date;
+      日期 = new Date(Date.UTC(年, 月, 日, 时, 分, 秒, 毫秒)); // 構造日期。
+      if (时差) // 如果有時差。
+        日期.setTime(日期.getTime() - 时差); // 調整時間。
+      return 日期; // 回日期。
     }
-    function representYamlTimestamp(object) {
-      return object.toISOString();
+
+    function 表示歪门时戳(物件) { // 表示歪門時戳。
+      return 物件.toISOString(); // 轉成ISO字串。
     }
-    module.exports = new Type("tag:yaml.org,2002:timestamp", {
-      kind: "scalar",
-      resolve: resolveYamlTimestamp,
-      construct: constructYamlTimestamp,
-      instanceOf: Date,
-      represent: representYamlTimestamp
+    模块.exports = new 类型("tag:yaml.org,2002:timestamp", { // 導出一個新類型。
+      kind: "scalar", // 種類是標量。
+      resolve: 解析歪门时戳, // 解析方法。
+      construct: 构造歪门时戳, // 構造方法。
+      instanceOf: Date, // 實例是日期。
+      represent: 表示歪门时戳 // 表示方法。
     });
   }
 });
 
 // node_modules/js-yaml/lib/type/merge.js
-var require_merge = __commonJS({
-  "node_modules/js-yaml/lib/type/merge.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var Type = require_type();
-    function resolveYamlMerge(data) {
-      return data === "<<" || data === null;
+var 寻合并 = 寻常货({ // 尋找合併，把東西合在一起。
+  "node_modules/js-yaml/lib/type/merge.js"(出口, 模块) { // 合併的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 类型 = 寻类型(); // 類型。
+    function 解析歪门合并(数据) { // 解析歪門合併。
+      return 数据 === "<<" || 数据 === null; // 判斷是不是合併符號或者空。
     }
-    module.exports = new Type("tag:yaml.org,2002:merge", {
-      kind: "scalar",
-      resolve: resolveYamlMerge
+    模块.exports = new 类型("tag:yaml.org,2002:merge", { // 導出一個新類型。
+      kind: "scalar", // 種類是標量。
+      resolve: 解析歪门合并 // 解析方法。
     });
   }
 });
 
 // node_modules/js-yaml/lib/type/binary.js
-var require_binary = __commonJS({
-  "node_modules/js-yaml/lib/type/binary.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var Type = require_type();
-    var BASE64_MAP = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=\n\r";
-    function resolveYamlBinary(data) {
-      if (data === null)
-        return false;
-      var code, idx, bitlen = 0, max = data.length, map = BASE64_MAP;
-      for (idx = 0; idx < max; idx++) {
-        code = map.indexOf(data.charAt(idx));
-        if (code > 64)
-          continue;
-        if (code < 0)
-          return false;
-        bitlen += 6;
+var 寻二进 = 寻常货({ // 尋找二進制，都是些數字。
+  "node_modules/js-yaml/lib/type/binary.js"(出口, 模块) { // 二進制的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 类型 = 寻类型(); // 類型。
+    var 六四图谱 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=\n\r"; // 六四圖譜。
+    function 解析歪门二进(数据) { // 解析歪門二進制。
+      if (数据 === null) // 數據是空就回假。
+        return false; // 假。
+      var 字符码, 索引, 位长 = 0, // 字符碼、索引、位長。
+        最大 = 数据.length, // 最大長度。
+        图谱 = 六四图谱; // 圖譜。
+      for (索引 = 0; 索引 < 最大; 索引++) { // 循環。
+        字符码 = 图谱.indexOf(数据.charAt(索引)); // 找到字符碼。
+        if (字符码 > 64) // 如果字符碼大於64。
+          continue; // 跳過。
+        if (字符码 < 0) // 如果字符碼小於零。
+          return false; // 回假。
+        位长 += 6; // 位長加六。
       }
-      return bitlen % 8 === 0;
+      return 位长 % 8 === 0; // 位長能被八整除就回真。
     }
-    function constructYamlBinary(data) {
-      var idx, tailbits, input = data.replace(/[\r\n=]/g, ""), max = input.length, map = BASE64_MAP, bits = 0, result = [];
-      for (idx = 0; idx < max; idx++) {
-        if (idx % 4 === 0 && idx) {
-          result.push(bits >> 16 & 255);
-          result.push(bits >> 8 & 255);
-          result.push(bits & 255);
+
+    function 构造歪门二进(数据) { // 構造歪門二進制。
+      var 索引, 尾位, 输入 = 数据.replace(/[\r\n=]/g, ""), // 索引、尾位、輸入。
+        最大 = 输入.length, // 最大長度。
+        图谱 = 六四图谱, // 圖譜。
+        位 = 0, // 位。
+        结果 = []; // 結果。
+      for (索引 = 0; 索引 < 最大; 索引++) { // 循環。
+        if (索引 % 4 === 0 && 索引) { // 如果是四的倍數且不是零。
+          结果.push(位 >> 16 & 255); // 推入結果。
+          结果.push(位 >> 8 & 255); // 推入結果。
+          结果.push(位 & 255); // 推入結果。
         }
-        bits = bits << 6 | map.indexOf(input.charAt(idx));
+        位 = 位 << 6 | 图谱.indexOf(输入.charAt(索引)); // 位左移六位，加上字符碼。
       }
-      tailbits = max % 4 * 6;
-      if (tailbits === 0) {
-        result.push(bits >> 16 & 255);
-        result.push(bits >> 8 & 255);
-        result.push(bits & 255);
-      } else if (tailbits === 18) {
-        result.push(bits >> 10 & 255);
-        result.push(bits >> 2 & 255);
-      } else if (tailbits === 12) {
-        result.push(bits >> 4 & 255);
+      尾位 = 最大 % 4 * 6; // 尾位。
+      if (尾位 === 0) { // 如果尾位是零。
+        结果.push(位 >> 16 & 255); // 推入結果。
+        结果.push(位 >> 8 & 255); // 推入結果。
+        结果.push(位 & 255); // 推入結果。
+      } else if (尾位 === 18) { // 如果尾位是十八。
+        结果.push(位 >> 10 & 255); // 推入結果。
+        结果.push(位 >> 2 & 255); // 推入結果。
+      } else if (尾位 === 12) { // 如果尾位是十二。
+        结果.push(位 >> 4 & 255); // 推入結果。
       }
-      return new Uint8Array(result);
+      return new Uint8Array(结果); // 回Uint8Array。
     }
-    function representYamlBinary(object) {
-      var result = "", bits = 0, idx, tail, max = object.length, map = BASE64_MAP;
-      for (idx = 0; idx < max; idx++) {
-        if (idx % 3 === 0 && idx) {
-          result += map[bits >> 18 & 63];
-          result += map[bits >> 12 & 63];
-          result += map[bits >> 6 & 63];
-          result += map[bits & 63];
+
+    function 表示歪门二进(物件) { // 表示歪門二進制。
+      var 结果 = "", // 結果。
+        位 = 0, // 位。
+        索引, 尾, 最大 = 物件.length, // 索引、尾、最大長度。
+        图谱 = 六四图谱; // 圖譜。
+      for (索引 = 0; 索引 < 最大; 索引++) { // 循環。
+        if (索引 % 3 === 0 && 索引) { // 如果是三的倍數且不是零。
+          结果 += 图谱[位 >> 18 & 63]; // 加上字符。
+          结果 += 图谱[位 >> 12 & 63]; // 加上字符。
+          结果 += 图谱[位 >> 6 & 63]; // 加上字符。
+          结果 += 图谱[位 & 63]; // 加上字符。
         }
-        bits = (bits << 8) + object[idx];
+        位 = (位 << 8) + 物件[索引]; // 位左移八位，加上物件。
       }
-      tail = max % 3;
-      if (tail === 0) {
-        result += map[bits >> 18 & 63];
-        result += map[bits >> 12 & 63];
-        result += map[bits >> 6 & 63];
-        result += map[bits & 63];
-      } else if (tail === 2) {
-        result += map[bits >> 10 & 63];
-        result += map[bits >> 4 & 63];
-        result += map[bits << 2 & 63];
-        result += map[64];
-      } else if (tail === 1) {
-        result += map[bits >> 2 & 63];
-        result += map[bits << 4 & 63];
-        result += map[64];
-        result += map[64];
+      尾 = 最大 % 3; // 尾。
+      if (尾 === 0) { // 如果尾是零。
+        结果 += 图谱[位 >> 18 & 63]; // 加上字符。
+        结果 += 图谱[位 >> 12 & 63]; // 加上字符。
+        结果 += 图谱[位 >> 6 & 63]; // 加上字符。
+        结果 += 图谱[位 & 63]; // 加上字符。
+      } else if (尾 === 2) { // 如果尾是二。
+        结果 += 图谱[位 >> 10 & 63]; // 加上字符。
+        结果 += 图谱[位 >> 4 & 63]; // 加上字符。
+        结果 += 图谱[位 << 2 & 63]; // 加上字符。
+        结果 += 图谱[64]; // 加上等號。
+      } else if (尾 === 1) { // 如果尾是一。
+        结果 += 图谱[位 >> 2 & 63]; // 加上字符。
+        结果 += 图谱[位 << 4 & 63]; // 加上字符。
+        结果 += 图谱[64]; // 加上等號。
+        结果 += 图谱[64]; // 加上等號。
       }
-      return result;
+      return 结果; // 回結果。
     }
-    function isBinary(obj) {
-      return Object.prototype.toString.call(obj) === "[object Uint8Array]";
+
+    function 是二进否(物件) { // 看看是不是二進制。
+      return Object.prototype.toString.call(物件) === "[object Uint8Array]"; // 是Uint8Array就回真。
     }
-    module.exports = new Type("tag:yaml.org,2002:binary", {
-      kind: "scalar",
-      resolve: resolveYamlBinary,
-      construct: constructYamlBinary,
-      predicate: isBinary,
-      represent: representYamlBinary
+    模块.exports = new 类型("tag:yaml.org,2002:binary", { // 導出一個新類型。
+      kind: "scalar", // 種類是標量。
+      resolve: 解析歪门二进, // 解析方法。
+      construct: 构造歪门二进, // 構造方法。
+      predicate: 是二进否, // 判斷方法。
+      represent: 表示歪门二进 // 表示方法。
     });
   }
 });
 
 // node_modules/js-yaml/lib/type/omap.js
-var require_omap = __commonJS({
-  "node_modules/js-yaml/lib/type/omap.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var Type = require_type();
-    var _hasOwnProperty = Object.prototype.hasOwnProperty;
-    var _toString = Object.prototype.toString;
-    function resolveYamlOmap(data) {
-      if (data === null)
-        return true;
-      var objectKeys = [], index, length, pair, pairKey, pairHasKey, object = data;
-      for (index = 0, length = object.length; index < length; index += 1) {
-        pair = object[index];
-        pairHasKey = false;
-        if (_toString.call(pair) !== "[object Object]")
-          return false;
-        for (pairKey in pair) {
-          if (_hasOwnProperty.call(pair, pairKey)) {
-            if (!pairHasKey)
-              pairHasKey = true;
+var 寻有序图 = 寻常货({ // 尋找有序圖，有順序的映射。
+  "node_modules/js-yaml/lib/type/omap.js"(出口, 模块) { // 有序圖的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 类型 = 寻类型(); // 類型。
+    var _hasOwnProperty = Object.prototype.hasOwnProperty; // 自己的屬性。
+    var _toString = Object.prototype.toString; // 轉字串。
+    function 解析歪门有序图(数据) { // 解析歪門有序圖。
+      if (数据 === null) // 數據是空就回真。
+        return true; // 真。
+      var 物件钥匙 = [], // 物件鑰匙。
+        索引, 长度, 对子, 对子钥匙, 对子有钥匙, 物件 = 数据; // 索引、長度、對子、對子鑰匙、對子有鑰匙、物件。
+      for (索引 = 0, 长度 = 物件.length; 索引 < 长度; 索引 += 1) { // 循環。
+        对子 = 物件[索引]; // 取對子。
+        对子有钥匙 = false; // 對子有沒有鑰匙。
+        if (_toString.call(对子) !== "[object Object]") // 如果對子不是物件。
+          return false; // 回假。
+        for (对子钥匙 in 对子) { // 遍歷對子鑰匙。
+          if (_hasOwnProperty.call(对子, 对子钥匙)) { // 如果是對子自己的鑰匙。
+            if (!对子有钥匙) // 如果對子沒有鑰匙。
+              对子有钥匙 = true; // 就設為真。
             else
-              return false;
+              return false; // 不然就回假。
           }
         }
-        if (!pairHasKey)
-          return false;
-        if (objectKeys.indexOf(pairKey) === -1)
-          objectKeys.push(pairKey);
+        if (!对子有钥匙) // 如果對子沒有鑰匙。
+          return false; // 回假。
+        if (物件钥匙.indexOf(对子钥匙) === -1) // 如果物件鑰匙裡沒有對子鑰匙。
+          物件钥匙.push(对子钥匙); // 推入物件鑰匙。
         else
-          return false;
+          return false; // 不然就回假。
       }
-      return true;
+      return true; // 回真。
     }
-    function constructYamlOmap(data) {
-      return data !== null ? data : [];
+
+    function 构造歪门有序图(数据) { // 構造歪門有序圖。
+      return 数据 !== null ? 数据 : []; // 數據不空就用數據，不然就空陣列。
     }
-    module.exports = new Type("tag:yaml.org,2002:omap", {
-      kind: "sequence",
-      resolve: resolveYamlOmap,
-      construct: constructYamlOmap
+    模块.exports = new 类型("tag:yaml.org,2002:omap", { // 導出一個新類型。
+      kind: "sequence", // 種類是序列。
+      resolve: 解析歪门有序图, // 解析方法。
+      construct: 构造歪门有序图 // 構造方法。
     });
   }
 });
 
 // node_modules/js-yaml/lib/type/pairs.js
-var require_pairs = __commonJS({
-  "node_modules/js-yaml/lib/type/pairs.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var Type = require_type();
-    var _toString = Object.prototype.toString;
-    function resolveYamlPairs(data) {
-      if (data === null)
-        return true;
-      var index, length, pair, keys, result, object = data;
-      result = new Array(object.length);
-      for (index = 0, length = object.length; index < length; index += 1) {
-        pair = object[index];
-        if (_toString.call(pair) !== "[object Object]")
-          return false;
-        keys = Object.keys(pair);
-        if (keys.length !== 1)
-          return false;
-        result[index] = [keys[0], pair[keys[0]]];
+var 寻对子 = 寻常货({ // 尋找對子，成雙成對的。
+  "node_modules/js-yaml/lib/type/pairs.js"(出口, 模块) { // 對子的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 类型 = 寻类型(); // 類型。
+    var _toString = Object.prototype.toString; // 轉字串。
+    function 解析歪门对子(数据) { // 解析歪門對子。
+      if (数据 === null) // 數據是空就回真。
+        return true; // 真。
+      var 索引, 长度, 对子, 钥匙, 结果, 物件 = 数据; // 索引、長度、對子、鑰匙、結果、物件。
+      结果 = new Array(物件.length); // 結果陣列。
+      for (索引 = 0, 长度 = 物件.length; 索引 < 长度; 索引 += 1) { // 循環。
+        对子 = 物件[索引]; // 取對子。
+        if (_toString.call(对子) !== "[object Object]") // 如果對子不是物件。
+          return false; // 回假。
+        钥匙 = Object.keys(对子); // 取對子鑰匙。
+        if (钥匙.length !== 1) // 如果鑰匙數量不是一。
+          return false; // 回假。
+        结果[索引] = [钥匙[0], 对子[钥匙[0]]]; // 記錄鑰匙和值。
       }
-      return true;
+      return true; // 回真。
     }
-    function constructYamlPairs(data) {
-      if (data === null)
-        return [];
-      var index, length, pair, keys, result, object = data;
-      result = new Array(object.length);
-      for (index = 0, length = object.length; index < length; index += 1) {
-        pair = object[index];
-        keys = Object.keys(pair);
-        result[index] = [keys[0], pair[keys[0]]];
+
+    function 构造歪门对子(数据) { // 構造歪門對子。
+      if (数据 === null) // 數據是空就回空陣列。
+        return []; // 空陣列。
+      var 索引, 长度, 对子, 钥匙, 结果, 物件 = 数据; // 索引、長度、對子、鑰匙、結果、物件。
+      结果 = new Array(物件.length); // 結果陣列。
+      for (索引 = 0, 长度 = 物件.length; 索引 < 长度; 索引 += 1) { // 循環。
+        对子 = 物件[索引]; // 取對子。
+        钥匙 = Object.keys(对子); // 取對子鑰匙。
+        结果[索引] = [钥匙[0], 对子[钥匙[0]]]; // 記錄鑰匙和值。
       }
-      return result;
+      return 结果; // 回結果。
     }
-    module.exports = new Type("tag:yaml.org,2002:pairs", {
-      kind: "sequence",
-      resolve: resolveYamlPairs,
-      construct: constructYamlPairs
+    模块.exports = new 类型("tag:yaml.org,2002:pairs", { // 導出一個新類型。
+      kind: "sequence", // 種類是序列。
+      resolve: 解析歪门对子, // 解析方法。
+      construct: 构造歪门对子 // 構造方法。
     });
   }
 });
 
 // node_modules/js-yaml/lib/type/set.js
-var require_set = __commonJS({
-  "node_modules/js-yaml/lib/type/set.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var Type = require_type();
-    var _hasOwnProperty = Object.prototype.hasOwnProperty;
-    function resolveYamlSet(data) {
-      if (data === null)
-        return true;
-      var key, object = data;
-      for (key in object) {
-        if (_hasOwnProperty.call(object, key)) {
-          if (object[key] !== null)
-            return false;
+var 寻集合 = 寻常货({ // 尋找集合，一堆堆的。
+  "node_modules/js-yaml/lib/type/set.js"(出口, 模块) { // 集合的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 类型 = 寻类型(); // 類型。
+    var _hasOwnProperty = Object.prototype.hasOwnProperty; // 自己的屬性。
+    function 解析歪门集合(数据) { // 解析歪門集合。
+      if (数据 === null) // 數據是空就回真。
+        return true; // 真。
+      var 钥匙, 物件 = 数据; // 鑰匙、物件。
+      for (钥匙 in 物件) { // 遍歷物件鑰匙。
+        if (_hasOwnProperty.call(物件, 钥匙)) { // 如果是物件自己的鑰匙。
+          if (物件[钥匙] !== null) // 如果值不是空。
+            return false; // 回假。
         }
       }
-      return true;
+      return true; // 回真。
     }
-    function constructYamlSet(data) {
-      return data !== null ? data : {};
+
+    function 构造歪门集合(数据) { // 構造歪門集合。
+      return 数据 !== null ? 数据 : {}; // 數據不空就用數據，不然就空物件。
     }
-    module.exports = new Type("tag:yaml.org,2002:set", {
-      kind: "mapping",
-      resolve: resolveYamlSet,
-      construct: constructYamlSet
+    模块.exports = new 类型("tag:yaml.org,2002:set", { // 導出一個新類型。
+      kind: "mapping", // 種類是映射。
+      resolve: 解析歪门集合, // 解析方法。
+      construct: 构造歪门集合 // 構造方法。
     });
   }
 });
 
 // node_modules/js-yaml/lib/schema/default.js
-var require_default = __commonJS({
-  "node_modules/js-yaml/lib/schema/default.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    module.exports = require_core().extend({
-      implicit: [
-        require_timestamp(),
-        require_merge()
+var 寻默认 = 寻常货({ // 尋找默認，這是咱們山寨的默認配置。
+  "node_modules/js-yaml/lib/schema/default.js"(出口, 模块) { // 默認的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    模块.exports = 寻核心().扩充({ // 導出一個新綱要，擴充核心。
+      implicit: [ // 隱式。
+        寻时戳(), // 時戳。
+        寻合并() // 合併。
       ],
-      explicit: [
-        require_binary(),
-        require_omap(),
-        require_pairs(),
-        require_set()
+      explicit: [ // 顯式。
+        寻二进(), // 二進制。
+        寻有序图(), // 有序圖。
+        寻对子(), // 對子。
+        寻集合() // 集合。
       ]
     });
   }
 });
 
 // node_modules/js-yaml/lib/loader.js
-var require_loader = __commonJS({
-  "node_modules/js-yaml/lib/loader.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var common = require_common();
-    var YAMLException = require_exception();
-    var makeSnippet = require_snippet();
-    var DEFAULT_SCHEMA = require_default();
-    var _hasOwnProperty = Object.prototype.hasOwnProperty;
-    var CONTEXT_FLOW_IN = 1;
-    var CONTEXT_FLOW_OUT = 2;
-    var CONTEXT_BLOCK_IN = 3;
-    var CONTEXT_BLOCK_OUT = 4;
-    var CHOMPING_CLIP = 1;
-    var CHOMPING_STRIP = 2;
-    var CHOMPING_KEEP = 3;
-    var PATTERN_NON_PRINTABLE = /[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x84\x86-\x9F\uFFFE\uFFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]/;
-    var PATTERN_NON_ASCII_LINE_BREAKS = /[\x85\u2028\u2029]/;
-    var PATTERN_FLOW_INDICATORS = /[,\[\]\{\}]/;
-    var PATTERN_TAG_HANDLE = /^(?:!|!!|![a-z\-]+!)$/i;
-    var PATTERN_TAG_URI = /^(?:!|[^,\[\]\{\}])(?:%[0-9a-f]{2}|[0-9a-z\-#;\/\?:@&=\+\$,_\.!~\*'\(\)\[\]])*$/i;
-    function _class(obj) {
-      return Object.prototype.toString.call(obj);
+var 寻装载 = 寻常货({ // 尋找裝載，把東西都裝進來。
+  "node_modules/js-yaml/lib/loader.js"(出口, 模块) { // 裝載的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 寻常 = 寻常货栈(); // 尋常貨棧裡找尋常。
+    var 歪门邪道之祸 = 寻异端(); // 歪門邪道之禍。
+    var 造片段 = 寻片段(); // 製造片段。
+    var 默认纲要 = 寻默认(); // 默認綱要。
+    var _hasOwnProperty = Object.prototype.hasOwnProperty; // 自己的屬性。
+    var 流内境 = 1; // 流內境。
+    var 流外境 = 2; // 流外境。
+    var 块内境 = 3; // 塊內境。
+    var 块外境 = 4; // 塊外境。
+    var 剪切模式 = 1; // 剪切模式。
+    var 剥离模式 = 2; // 剝離模式。
+    var 保留模式 = 3; // 保留模式。
+    var 不可印字符 = /[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x84\x86-\x9F\uFFFE\uFFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]/; // 不可印字符的正規表達式。
+    var 非西文换行 = /[\x85\u2028\u2029]/; // 非西文換行的正規表達式。
+    var 流指示符 = /[,\[\]\{\}]/; // 流指示符的正規表達式。
+    var 标签把手 = /^(?:!|!!|![a-z\-]+!)$/i; // 標籤把手的正規表達式。
+    var 标签地址 = /^(?:!|[^,\[\]\{\}])(?:%[0-9a-f]{2}|[0-9a-z\-#;\/\?:@&=\+\$,_\.!~\*'\(\)\[\]])*$/i; // 標籤地址的正規表達式。
+    function 查类型(物件) { // 檢查類型。
+      return Object.prototype.toString.call(物件); // 回物件的字串表示。
     }
-    function is_EOL(c) {
-      return c === 10 || c === 13;
+
+    function 是行尾否(字符码) { // 看看是不是行尾。
+      return 字符码 === 10 || 字符码 === 13; // 判斷是不是換行或回車。
     }
-    function is_WHITE_SPACE(c) {
-      return c === 9 || c === 32;
+
+    function 是空白否(字符码) { // 看看是不是空白。
+      return 字符码 === 9 || 字符码 === 32; // 判斷是不是製表符或空格。
     }
-    function is_WS_OR_EOL(c) {
-      return c === 9 || c === 32 || c === 10 || c === 13;
+
+    function 是空行否(字符码) { // 看看是不是空行。
+      return 字符码 === 9 || 字符码 === 32 || 字符码 === 10 || 字符码 === 13; // 判斷是不是製表符、空格、換行或回車。
     }
-    function is_FLOW_INDICATOR(c) {
-      return c === 44 || c === 91 || c === 93 || c === 123 || c === 125;
+
+    function 是流符否(字符码) { // 看看是不是流符。
+      return 字符码 === 44 || 字符码 === 91 || 字符码 === 93 || 字符码 === 123 || 字符码 === 125; // 判斷是不是逗號、方括號或花括號。
     }
-    function fromHexCode(c) {
-      var lc;
-      if (48 <= c && c <= 57) {
-        return c - 48;
+
+    function 十六转码(字符码) { // 十六進制轉碼。
+      var 小寫字符码; // 小寫字符碼。
+      if (48 <= 字符码 && 字符码 <= 57) { // 如果是數字。
+        return 字符码 - 48; // 回數字。
       }
-      lc = c | 32;
-      if (97 <= lc && lc <= 102) {
-        return lc - 97 + 10;
+      小寫字符码 = 字符码 | 32; // 轉小寫。
+      if (97 <= 小寫字符码 && 小寫字符码 <= 102) { // 如果是字母。
+        return 小寫字符码 - 97 + 10; // 回數字。
       }
-      return -1;
+      return -1; // 回負一。
     }
-    function escapedHexLen(c) {
-      if (c === 120) {
-        return 2;
+
+    function 转义十六长(字符码) { // 轉義十六進制長度。
+      if (字符码 === 120) { // 如果是x。
+        return 2; // 回二。
       }
-      if (c === 117) {
-        return 4;
+      if (字符码 === 117) { // 如果是u。
+        return 4; // 回四。
       }
-      if (c === 85) {
-        return 8;
+      if (字符码 === 85) { // 如果是U。
+        return 8; // 回八。
       }
-      return 0;
+      return 0; // 回零。
     }
-    function fromDecimalCode(c) {
-      if (48 <= c && c <= 57) {
-        return c - 48;
+
+    function 十进制转码(字符码) { // 十進制轉碼。
+      if (48 <= 字符码 && 字符码 <= 57) { // 如果是數字。
+        return 字符码 - 48; // 回數字。
       }
-      return -1;
+      return -1; // 回負一。
     }
-    function simpleEscapeSequence(c) {
-      return c === 48 ? "\0" : c === 97 ? "\x07" : c === 98 ? "\b" : c === 116 ? "	" : c === 9 ? "	" : c === 110 ? "\n" : c === 118 ? "\v" : c === 102 ? "\f" : c === 114 ? "\r" : c === 101 ? "\x1B" : c === 32 ? " " : c === 34 ? '"' : c === 47 ? "/" : c === 92 ? "\\" : c === 78 ? "\x85" : c === 95 ? "\xA0" : c === 76 ? "\u2028" : c === 80 ? "\u2029" : "";
+
+    function 简易转义(字符码) { // 簡易轉義。
+      return 字符码 === 48 ? "\0" : 字符码 === 97 ? "\x07" : 字符码 === 98 ? "\b" : 字符码 === 116 ? "	" : 字符码 === 9 ? "	" : 字符码 === 110 ? "\n" : 字符码 === 118 ? "\v" : 字符码 === 102 ? "\f" : 字符码 === 114 ? "\r" : 字符码 === 101 ? "\x1B" : 字符码 === 32 ? " " : 字符码 === 34 ? '"' : 字符码 === 47 ? "/" : 字符码 === 92 ? "\\" : 字符码 === 78 ? "\x85" : 字符码 === 95 ? "\xA0" : 字符码 === 76 ? "\u2028" : 字符码 === 80 ? "\u2029" : ""; // 判斷字符碼，回對應的轉義字符。
     }
-    function charFromCodepoint(c) {
-      if (c <= 65535) {
-        return String.fromCharCode(c);
+
+    function 码点转字(字符码) { // 碼點轉字。
+      if (字符码 <= 65535) { // 如果字符碼小於等於65535。
+        return String.fromCharCode(字符码); // 回字符。
       }
-      return String.fromCharCode(
-        (c - 65536 >> 10) + 55296,
-        (c - 65536 & 1023) + 56320
+      return String.fromCharCode( // 回字符。
+        (字符码 - 65536 >> 10) + 55296, // 高位。
+        (字符码 - 65536 & 1023) + 56320 // 低位。
       );
     }
-    var simpleEscapeCheck = new Array(256);
-    var simpleEscapeMap = new Array(256);
-    for (i = 0; i < 256; i++) {
-      simpleEscapeCheck[i] = simpleEscapeSequence(i) ? 1 : 0;
-      simpleEscapeMap[i] = simpleEscapeSequence(i);
+
+    var 简易转义查 = new Array(256); // 簡易轉義檢查陣列。
+    var 简易转义图 = new Array(256); // 簡易轉義圖陣列。
+    for (i = 0; i < 256; i++) { // 循環。
+      简易转义查[i] = 简易转义(i) ? 1 : 0; // 檢查是不是簡易轉義。
+      简易转义图[i] = 简易转义(i); // 記錄簡易轉義。
     }
-    var i;
-    function State(input, options) {
-      this.input = input;
-      this.filename = options["filename"] || null;
-      this.schema = options["schema"] || DEFAULT_SCHEMA;
-      this.onWarning = options["onWarning"] || null;
-      this.legacy = options["legacy"] || false;
-      this.json = options["json"] || false;
-      this.listener = options["listener"] || null;
-      this.implicitTypes = this.schema.compiledImplicit;
-      this.typeMap = this.schema.compiledTypeMap;
-      this.length = input.length;
-      this.position = 0;
-      this.line = 0;
-      this.lineStart = 0;
-      this.lineIndent = 0;
-      this.firstTabInLine = -1;
-      this.documents = [];
+    var i; // 循環變數。
+    function 状态(输入, 选项) { // 狀態，有輸入有選項。
+      this.input = 输入; // 輸入。
+      this.filename = 选项["filename"] || null; // 文件名。
+      this.schema = 选项["schema"] || 默认纲要; // 綱要。
+      this.onWarning = 选项["onWarning"] || null; // 警告回調。
+      this.legacy = 选项["legacy"] || false; // 舊版兼容。
+      this.json = 选项["json"] || false; // JSON模式。
+      this.listener = 选项["listener"] || null; // 監聽器。
+      this.implicitTypes = this.schema.compiledImplicit; // 隱式類型。
+      this.typeMap = this.schema.compiledTypeMap; // 類型圖譜。
+      this.length = 输入.length; // 長度。
+      this.position = 0; // 位置。
+      this.line = 0; // 行號。
+      this.lineStart = 0; // 行始。
+      this.lineIndent = 0; // 行縮進。
+      this.firstTabInLine = -1; // 行中第一個製表符。
+      this.documents = []; // 文檔列表。
     }
-    function generateError(state, message) {
-      var mark = {
-        name: state.filename,
-        buffer: state.input.slice(0, -1),
+
+    function 生错处(状态, 消息) { // 產生錯處。
+      var 标记 = { // 標記。
+        name: 状态.filename, // 文件名。
+        buffer: 状态.input.slice(0, -1), // 緩衝區。
         // omit trailing \0
-        position: state.position,
-        line: state.line,
-        column: state.position - state.lineStart
+        position: 状态.position, // 位置。
+        line: 状态.line, // 行號。
+        column: 状态.position - 状态.lineStart // 列號。
       };
-      mark.snippet = makeSnippet(mark);
-      return new YAMLException(message, mark);
+      标记.snippet = 造片段(标记); // 片段。
+      return new 歪门邪道之祸(消息, 标记); // 回歪門邪道之禍。
     }
-    function throwError(state, message) {
-      throw generateError(state, message);
+
+    function 抛错处(状态, 消息) { // 拋出錯處。
+      throw 生错处(状态, 消息); // 拋出產生的錯處。
     }
-    function throwWarning(state, message) {
-      if (state.onWarning) {
-        state.onWarning.call(null, generateError(state, message));
+
+    function 抛警示(状态, 消息) { // 拋出警示。
+      if (状态.onWarning) { // 如果有警告回調。
+        状态.onWarning.call(null, 生错处(状态, 消息)); // 調用警告回調。
       }
     }
-    var directiveHandlers = {
-      YAML: function handleYamlDirective(state, name, args) {
-        var match, major, minor;
-        if (state.version !== null) {
-          throwError(state, "duplication of %YAML directive");
+
+    var 指令处理者 = { // 指令處理者。
+      YAML: function 处理歪门指令(状态, 名号, 参数) { // 處理歪門指令。
+        var 匹配, 主版本, 次版本; // 匹配、主版本、次版本。
+        if (状态.version !== null) { // 如果版本不空。
+          抛错处(状态, "重复的 %歪门指令"); // 拋出重複指令錯誤。
         }
-        if (args.length !== 1) {
-          throwError(state, "YAML directive accepts exactly one argument");
+        if (参数.length !== 1) { // 如果參數數量不是一。
+          抛错处(状态, "歪门指令只收一个参数"); // 拋出參數數量錯誤。
         }
-        match = /^([0-9]+)\.([0-9]+)$/.exec(args[0]);
-        if (match === null) {
-          throwError(state, "ill-formed argument of the YAML directive");
+        匹配 = /^([0-9]+)\.([0-9]+)$/.exec(参数[0]); // 匹配版本號。
+        if (匹配 === null) { // 如果沒匹配到。
+          抛错处(状态, "歪门指令的参数格式不对劲"); // 拋出參數格式錯誤。
         }
-        major = parseInt(match[1], 10);
-        minor = parseInt(match[2], 10);
-        if (major !== 1) {
-          throwError(state, "unacceptable YAML version of the document");
+        主版本 = parseInt(匹配[1], 10); // 主版本。
+        次版本 = parseInt(匹配[2], 10); // 次版本。
+        if (主版本 !== 1) { // 如果主版本不是一。
+          抛错处(状态, "文档的歪门版本不中用"); // 拋出版本不中用錯誤。
         }
-        state.version = args[0];
-        state.checkLineBreaks = minor < 2;
-        if (minor !== 1 && minor !== 2) {
-          throwWarning(state, "unsupported YAML version of the document");
+        状态.version = 参数[0]; // 版本。
+        状态.checkLineBreaks = 次版本 < 2; // 檢查換行。
+        if (次版本 !== 1 && 次版本 !== 2) { // 如果次版本不是一或二。
+          抛警示(状态, "文档的歪门版本不给力"); // 拋出版本不給力警告。
         }
       },
-      TAG: function handleTagDirective(state, name, args) {
-        var handle, prefix;
-        if (args.length !== 2) {
-          throwError(state, "TAG directive accepts exactly two arguments");
+      TAG: function 处理标签指令(状态, 名号, 参数) { // 處理標籤指令。
+        var 把手, 前缀; // 把手、前綴。
+        if (参数.length !== 2) { // 如果參數數量不是二。
+          抛错处(状态, "标签指令只收两个参数"); // 拋出參數數量錯誤。
         }
-        handle = args[0];
-        prefix = args[1];
-        if (!PATTERN_TAG_HANDLE.test(handle)) {
-          throwError(state, "ill-formed tag handle (first argument) of the TAG directive");
+        把手 = 参数[0]; // 把手。
+        前缀 = 参数[1]; // 前綴。
+        if (!标签把手.test(把手)) { // 如果不符合標籤把手正規表達式。
+          抛错处(状态, "标签指令的标签把手（头一个参数）不对劲"); // 拋出把手格式錯誤。
         }
-        if (_hasOwnProperty.call(state.tagMap, handle)) {
-          throwError(state, 'there is a previously declared suffix for "' + handle + '" tag handle');
+        if (_hasOwnProperty.call(状态.tagMap, 把手)) { // 如果標籤圖譜裡有把手。
+          抛错处(状态, '“这个标签把手之前声明过后缀了”'); // 拋出重複聲明錯誤。
         }
-        if (!PATTERN_TAG_URI.test(prefix)) {
-          throwError(state, "ill-formed tag prefix (second argument) of the TAG directive");
+        if (!标签地址.test(前缀)) { // 如果不符合標籤地址正規表達式。
+          抛错处(状态, "标签指令的标签前缀（第二个参数）不对劲"); // 拋出前綴格式錯誤。
         }
-        try {
-          prefix = decodeURIComponent(prefix);
-        } catch (err) {
-          throwError(state, "tag prefix is malformed: " + prefix);
+        try { // 嘗試解碼。
+          前缀 = decodeURIComponent(前缀); // 解碼。
+        } catch (错处) { // 捕獲錯誤。
+          抛错处(状态, "标签前缀歪了: " + 前缀); // 拋出前綴歪了錯誤。
         }
-        state.tagMap[handle] = prefix;
+        状态.tagMap[把手] = 前缀; // 記錄把手和前綴。
       }
     };
-    function captureSegment(state, start, end, checkJson) {
-      var _position, _length, _character, _result;
-      if (start < end) {
-        _result = state.input.slice(start, end);
-        if (checkJson) {
-          for (_position = 0, _length = _result.length; _position < _length; _position += 1) {
-            _character = _result.charCodeAt(_position);
-            if (!(_character === 9 || 32 <= _character && _character <= 1114111)) {
-              throwError(state, "expected valid JSON character");
+
+    function 捕获片段(状态, 始, 末, 检查秘档) { // 捕獲片段。
+      var _位置, _长度, _字符, _结果; // 位置、長度、字符、結果。
+      if (始 < 末) { // 如果始小於末。
+        _结果 = 状态.input.slice(始, 末); // 截取字串。
+        if (检查秘档) { // 如果檢查秘檔。
+          for (_位置 = 0, _长度 = _结果.length; _位置 < _长度; _位置 += 1) { // 循環。
+            _字符 = _结果.charCodeAt(_位置); // 取字符碼。
+            if (!(_字符 === 9 || 32 <= _字符 && _字符 <= 1114111)) { // 如果不是有效秘檔字符。
+              抛错处(状态, "要的是正经秘档字符"); // 拋出字符錯誤。
             }
           }
-        } else if (PATTERN_NON_PRINTABLE.test(_result)) {
-          throwError(state, "the stream contains non-printable characters");
+        } else if (不可印字符.test(_结果)) { // 如果有不可印字符。
+          抛错处(状态, "这水流里有见不得光的字符"); // 拋出不可印字符錯誤。
         }
-        state.result += _result;
+        状态.result += _结果; // 結果加上截取的字串。
       }
     }
-    function mergeMappings(state, destination, source, overridableKeys) {
-      var sourceKeys, key, index, quantity;
-      if (!common.isObject(source)) {
-        throwError(state, "cannot merge mappings; the provided source object is unacceptable");
+
+    function 合并映射(状态, 目标, 源头, 可覆盖钥匙) { // 合併映射。
+      var 源头钥匙, 钥匙, 索引, 数量; // 源頭鑰匙、鑰匙、索引、數量。
+      if (!寻常.是物件否(源头)) { // 如果源頭不是物件。
+        抛错处(状态, "没法合拢这些映射；给的物件不中用"); // 拋出物件不中用錯誤。
       }
-      sourceKeys = Object.keys(source);
-      for (index = 0, quantity = sourceKeys.length; index < quantity; index += 1) {
-        key = sourceKeys[index];
-        if (!_hasOwnProperty.call(destination, key)) {
-          destination[key] = source[key];
-          overridableKeys[key] = true;
+      源头钥匙 = Object.keys(源头); // 取源頭鑰匙。
+      for (索引 = 0, 数量 = 源头钥匙.length; 索引 < 数量; 索引 += 1) { // 循環。
+        钥匙 = 源头钥匙[索引]; // 取鑰匙。
+        if (!_hasOwnProperty.call(目标, 钥匙)) { // 如果目標裡沒有鑰匙。
+          目标[钥匙] = 源头[钥匙]; // 搬過去。
+          可覆盖钥匙[钥匙] = true; // 設為可覆蓋。
         }
       }
     }
-    function storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, valueNode, startLine, startLineStart, startPos) {
-      var index, quantity;
-      if (Array.isArray(keyNode)) {
-        keyNode = Array.prototype.slice.call(keyNode);
-        for (index = 0, quantity = keyNode.length; index < quantity; index += 1) {
-          if (Array.isArray(keyNode[index])) {
-            throwError(state, "nested arrays are not supported inside keys");
+
+    function 存储映射对(状态, _结果, 可覆盖钥匙, 钥匙标签, 钥匙节点, 值节点, 始行, 始行始, 始位置) { // 存儲映射對。
+      var 索引, 数量; // 索引、數量。
+      if (Array.isArray(钥匙节点)) { // 如果鑰匙節點是陣列。
+        钥匙节点 = Array.prototype.slice.call(钥匙节点); // 複製一份。
+        for (索引 = 0, 数量 = 钥匙节点.length; 索引 < 数量; 索引 += 1) { // 循環。
+          if (Array.isArray(钥匙节点[索引])) { // 如果是嵌套陣列。
+            抛错处(状态, "钥匙里套阵，不给面子"); // 拋出嵌套陣列錯誤。
           }
-          if (typeof keyNode === "object" && _class(keyNode[index]) === "[object Object]") {
-            keyNode[index] = "[object Object]";
+          if (typeof 钥匙节点 === "object" && 查类型(钥匙节点[索引]) === "[object Object]") { // 如果是物件。
+            钥匙节点[索引] = "物件模样"; // 設為物件模樣。
           }
         }
       }
-      if (typeof keyNode === "object" && _class(keyNode) === "[object Object]") {
-        keyNode = "[object Object]";
+      if (typeof 钥匙节点 === "object" && 查类型(钥匙节点) === "[object Object]") { // 如果鑰匙節點是物件。
+        钥匙节点 = "物件模样"; // 設為物件模樣。
       }
-      keyNode = String(keyNode);
-      if (_result === null) {
-        _result = {};
+      钥匙节点 = String(钥匙节点); // 轉成字串。
+      if (_结果 === null) { // 如果結果是空。
+        _结果 = {}; // 設為空物件。
       }
-      if (keyTag === "tag:yaml.org,2002:merge") {
-        if (Array.isArray(valueNode)) {
-          for (index = 0, quantity = valueNode.length; index < quantity; index += 1) {
-            mergeMappings(state, _result, valueNode[index], overridableKeys);
+      if (钥匙标签 === "tag:yaml.org,2002:merge") { // 如果是合併標籤。
+        if (Array.isArray(值节点)) { // 如果值節點是陣列。
+          for (索引 = 0, 数量 = 值节点.length; 索引 < 数量; 索引 += 1) { // 循環。
+            合并映射(状态, _结果, 值节点[索引], 可覆盖钥匙); // 合併映射。
           }
         } else {
-          mergeMappings(state, _result, valueNode, overridableKeys);
+          合并映射(状态, _结果, 值节点, 可覆盖钥匙); // 合併映射。
         }
       } else {
-        if (!state.json && !_hasOwnProperty.call(overridableKeys, keyNode) && _hasOwnProperty.call(_result, keyNode)) {
-          state.line = startLine || state.line;
-          state.lineStart = startLineStart || state.lineStart;
-          state.position = startPos || state.position;
-          throwError(state, "duplicated mapping key");
+        if (!状态.json && !_hasOwnProperty.call(可覆盖钥匙, 钥匙节点) && _hasOwnProperty.call(_结果, 钥匙节点)) { // 如果不是JSON模式，且鑰匙重複。
+          状态.line = 始行 || 状态.line; // 行號。
+          状态.lineStart = 始行始 || 状态.lineStart; // 行始。
+          状态.position = 始位置 || 状态.position; // 位置。
+          抛错处(状态, "映射钥匙重了"); // 拋出重複鑰匙錯誤。
         }
-        if (keyNode === "__proto__") {
-          Object.defineProperty(_result, keyNode, {
-            configurable: true,
-            enumerable: true,
-            writable: true,
-            value: valueNode
+        if (钥匙节点 === "__proto__") { // 如果是__proto__。
+          Object.defineProperty(_结果, 钥匙节点, { // 定義屬性。
+            configurable: true, // 可配置。
+            enumerable: true, // 可枚舉。
+            writable: true, // 可寫。
+            value: 值节点 // 值。
           });
         } else {
-          _result[keyNode] = valueNode;
+          _结果[钥匙节点] = 值节点; // 記錄值。
         }
-        delete overridableKeys[keyNode];
+        delete 可覆盖钥匙[钥匙节点]; // 刪除可覆蓋鑰匙。
       }
-      return _result;
+      return _结果; // 回結果。
     }
-    function readLineBreak(state) {
-      var ch;
-      ch = state.input.charCodeAt(state.position);
-      if (ch === 10) {
-        state.position++;
-      } else if (ch === 13) {
-        state.position++;
-        if (state.input.charCodeAt(state.position) === 10) {
-          state.position++;
+
+    function 读换行(状态) { // 讀換行。
+      var 字符; // 字符。
+      字符 = 状态.input.charCodeAt(状态.position); // 取字符碼。
+      if (字符 === 10) { // 如果是換行。
+        状态.position++; // 位置加一。
+      } else if (字符 === 13) { // 如果是回車。
+        状态.position++; // 位置加一。
+        if (状态.input.charCodeAt(状态.position) === 10) { // 如果是回車換行。
+          状态.position++; // 位置加一。
         }
       } else {
-        throwError(state, "a line break is expected");
+        抛错处(状态, "该换行了"); // 拋出換行錯誤。
       }
-      state.line += 1;
-      state.lineStart = state.position;
-      state.firstTabInLine = -1;
+      状态.line += 1; // 行號加一。
+      状态.lineStart = 状态.position; // 行始。
+      状态.firstTabInLine = -1; // 行中第一個製表符。
     }
-    function skipSeparationSpace(state, allowComments, checkIndent) {
-      var lineBreaks = 0, ch = state.input.charCodeAt(state.position);
-      while (ch !== 0) {
-        while (is_WHITE_SPACE(ch)) {
-          if (ch === 9 && state.firstTabInLine === -1) {
-            state.firstTabInLine = state.position;
+
+    function 跳过间隔(状态, 允许注释, 检查缩进) { // 跳過間隔。
+      var 换行数 = 0, // 換行數。
+        字符 = 状态.input.charCodeAt(状态.position); // 字符。
+      while (字符 !== 0) { // 循環直到結束。
+        while (是空白否(字符)) { // 如果是空白。
+          if (字符 === 9 && 状态.firstTabInLine === -1) { // 如果是製表符且沒記錄。
+            状态.firstTabInLine = 状态.position; // 記錄製表符位置。
           }
-          ch = state.input.charCodeAt(++state.position);
+          字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
         }
-        if (allowComments && ch === 35) {
+        if (允许注释 && 字符 === 35) { // 如果允許註釋且是井號。
           do {
-            ch = state.input.charCodeAt(++state.position);
-          } while (ch !== 10 && ch !== 13 && ch !== 0);
+            字符 = 状态.input.charCodeAt(++状态.position); // 跳過註釋。
+          } while (字符 !== 10 && 字符 !== 13 && 字符 !== 0); // 直到換行或結束。
         }
-        if (is_EOL(ch)) {
-          readLineBreak(state);
-          ch = state.input.charCodeAt(state.position);
-          lineBreaks++;
-          state.lineIndent = 0;
-          while (ch === 32) {
-            state.lineIndent++;
-            ch = state.input.charCodeAt(++state.position);
+        if 是行尾否(字符)) { // 如果是行尾。
+          读换行(状态); // 讀換行。
+          字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+          换行数++; // 換行數加一。
+          状态.lineIndent = 0; // 行縮進歸零。
+          while (字符 === 32) { // 如果是空格。
+            状态.lineIndent++; // 行縮進加一。
+            字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
           }
         } else {
-          break;
+          break; // 跳出。
         }
       }
-      if (checkIndent !== -1 && lineBreaks !== 0 && state.lineIndent < checkIndent) {
-        throwWarning(state, "deficient indentation");
+      if (检查缩进 !== -1 && 换行数 !== 0 && 状态.lineIndent < 检查缩进) { // 如果檢查縮進且換行數不為零且縮進不夠。
+        抛警示(状态, "缩进不够规矩"); // 拋出縮進不夠警告。
       }
-      return lineBreaks;
+      return 换行数; // 回換行數。
     }
-    function testDocumentSeparator(state) {
-      var _position = state.position, ch;
-      ch = state.input.charCodeAt(_position);
-      if ((ch === 45 || ch === 46) && ch === state.input.charCodeAt(_position + 1) && ch === state.input.charCodeAt(_position + 2)) {
-        _position += 3;
-        ch = state.input.charCodeAt(_position);
-        if (ch === 0 || is_WS_OR_EOL(ch)) {
-          return true;
+
+    function 测文档分隔(状态) { // 測試文檔分隔符。
+      var _位置 = 状态.position, // 位置。
+        字符; // 字符。
+      字符 = 状态.input.charCodeAt(_位置); // 取字符。
+      if ((字符 === 45 || 字符 === 46) && 字符 === 状态.input.charCodeAt(_位置 + 1) && 字符 === 状态.input.charCodeAt(_位置 + 2)) { // 如果是三個連字符或三個點。
+        _位置 += 3; // 位置加三。
+        字符 = 状态.input.charCodeAt(_位置); // 取字符。
+        if (字符 === 0 || 是空行否(字符)) { // 如果是結束或空行。
+          return true; // 回真。
         }
       }
-      return false;
+      return false; // 回假。
     }
-    function writeFoldedLines(state, count) {
-      if (count === 1) {
-        state.result += " ";
-      } else if (count > 1) {
-        state.result += common.repeat("\n", count - 1);
+
+    function 写折叠行(状态, 数量) { // 寫折疊行。
+      if (数量 === 1) { // 如果數量是一。
+        状态.result += " "; // 加上空格。
+      } else if (数量 > 1) { // 如果數量大於一。
+        状态.result += 寻常.反复("\n", 数量 - 1); // 加上換行。
       }
     }
-    function readPlainScalar(state, nodeIndent, withinFlowCollection) {
-      var preceding, following, captureStart, captureEnd, hasPendingContent, _line, _lineStart, _lineIndent, _kind = state.kind, _result = state.result, ch;
-      ch = state.input.charCodeAt(state.position);
-      if (is_WS_OR_EOL(ch) || is_FLOW_INDICATOR(ch) || ch === 35 || ch === 38 || ch === 42 || ch === 33 || ch === 124 || ch === 62 || ch === 39 || ch === 34 || ch === 37 || ch === 64 || ch === 96) {
-        return false;
+
+    function 读普通标量(状态, 节点缩进, 流集合内) { // 讀普通標量。
+      var 前面, 后面, 捕获始, 捕获末, 有待处理内容, _行, _行始, _行缩进, _种类 = 状态.kind, _结果 = 状态.result, 字符; // 前面、後面、捕獲始、捕獲末、有待處理內容、行、行始、行縮進、種類、結果、字符。
+      字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+      if (是空行否(字符) || 是流符否(字符) || 字符 === 35 || 字符 === 38 || 字符 === 42 || 字符 === 33 || 字符 === 124 || 字符 === 62 || 字符 === 39 || 字符 === 34 || 字符 === 37 || 字符 === 64 || 字符 === 96) { // 如果是空白、流符、井號、與號、星號、感嘆號、豎線、大於號、單引號、雙引號、百分號、艾特符、反引號。
+        return false; // 回假。
       }
-      if (ch === 63 || ch === 45) {
-        following = state.input.charCodeAt(state.position + 1);
-        if (is_WS_OR_EOL(following) || withinFlowCollection && is_FLOW_INDICATOR(following)) {
-          return false;
+      if (字符 === 63 || 字符 === 45) { // 如果是問號或減號。
+        后面 = 状态.input.charCodeAt(状态.position + 1); // 取後面字符。
+        if (是空行否(后面) || 流集合内 && 是流符否(后面)) { // 如果是空白或流符。
+          return false; // 回假。
         }
       }
-      state.kind = "scalar";
-      state.result = "";
-      captureStart = captureEnd = state.position;
-      hasPendingContent = false;
-      while (ch !== 0) {
-        if (ch === 58) {
-          following = state.input.charCodeAt(state.position + 1);
-          if (is_WS_OR_EOL(following) || withinFlowCollection && is_FLOW_INDICATOR(following)) {
-            break;
+      状态.kind = "scalar"; // 種類是標量。
+      状态.result = ""; // 結果清空。
+      捕获始 = 捕获末 = 状态.position; // 捕獲始末。
+      有待处理内容 = false; // 有待處理內容。
+      while (字符 !== 0) { // 循環直到結束。
+        if (字符 === 58) { // 如果是冒號。
+          后面 = 状态.input.charCodeAt(状态.position + 1); // 取後面字符。
+          if (是空行否(后面) || 流集合内 && 是流符否(后面)) { // 如果是空白或流符。
+            break; // 跳出。
           }
-        } else if (ch === 35) {
-          preceding = state.input.charCodeAt(state.position - 1);
-          if (is_WS_OR_EOL(preceding)) {
-            break;
+        } else if (字符 === 35) { // 如果是井號。
+          前面 = 状态.input.charCodeAt(状态.position - 1); // 取前面字符。
+          if (是空行否(前面)) { // 如果是空白。
+            break; // 跳出。
           }
-        } else if (state.position === state.lineStart && testDocumentSeparator(state) || withinFlowCollection && is_FLOW_INDICATOR(ch)) {
-          break;
-        } else if (is_EOL(ch)) {
-          _line = state.line;
-          _lineStart = state.lineStart;
-          _lineIndent = state.lineIndent;
-          skipSeparationSpace(state, false, -1);
-          if (state.lineIndent >= nodeIndent) {
-            hasPendingContent = true;
-            ch = state.input.charCodeAt(state.position);
-            continue;
+        } else if (状态.position === 状态.lineStart && 测文档分隔(状态) || 流集合内 && 是流符否(字符)) { // 如果是文檔分隔符或流符。
+          break; // 跳出。
+        } else if 是行尾否(字符)) { // 如果是行尾。
+          _行 = 状态.line; // 行號。
+          _行始 = 状态.lineStart; // 行始。
+          _行缩进 = 状态.lineIndent; // 行縮進。
+          跳过间隔(状态, false, -1); // 跳過間隔。
+          if (状态.lineIndent >= 节点缩进) { // 如果行縮進大於等於節點縮進。
+            有待处理内容 = true; // 有待處理內容。
+            字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+            continue; // 繼續。
           } else {
-            state.position = captureEnd;
-            state.line = _line;
-            state.lineStart = _lineStart;
-            state.lineIndent = _lineIndent;
-            break;
+            状态.position = 捕获末; // 位置回退。
+            状态.line = _行; // 行號回退。
+            状态.lineStart = _行始; // 行始回退。
+            状态.lineIndent = _行缩进; // 行縮進回退。
+            break; // 跳出。
           }
         }
-        if (hasPendingContent) {
-          captureSegment(state, captureStart, captureEnd, false);
-          writeFoldedLines(state, state.line - _line);
-          captureStart = captureEnd = state.position;
-          hasPendingContent = false;
+        if (有待处理内容) { // 如果有待處理內容。
+          捕获片段(状态, 捕获始, 捕获末, false); // 捕獲片段。
+          写折叠行(状态, 状态.line - _行); // 寫折疊行。
+          捕获始 = 捕获末 = 状态.position; // 捕獲始末。
+          有待处理内容 = false; // 沒待處理內容。
         }
-        if (!is_WHITE_SPACE(ch)) {
-          captureEnd = state.position + 1;
+        if (!是空白否(字符)) { // 如果不是空白。
+          捕获末 = 状态.position + 1; // 捕獲末。
         }
-        ch = state.input.charCodeAt(++state.position);
+        字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
       }
-      captureSegment(state, captureStart, captureEnd, false);
-      if (state.result) {
-        return true;
+      捕获片段(状态, 捕获始, 捕获末, false); // 捕獲片段。
+      if (状态.result) { // 如果有結果。
+        return true; // 回真。
       }
-      state.kind = _kind;
-      state.result = _result;
-      return false;
+      状态.kind = _种类; // 種類回退。
+      状态.result = _结果; // 結果回退。
+      return false; // 回假。
     }
-    function readSingleQuotedScalar(state, nodeIndent) {
-      var ch, captureStart, captureEnd;
-      ch = state.input.charCodeAt(state.position);
-      if (ch !== 39) {
-        return false;
+
+    function 读单引号标量(状态, 节点缩进) { // 讀單引號標量。
+      var 字符, 捕获始, 捕获末; // 字符、捕獲始、捕獲末。
+      字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+      if (字符 !== 39) { // 如果不是單引號。
+        return false; // 回假。
       }
-      state.kind = "scalar";
-      state.result = "";
-      state.position++;
-      captureStart = captureEnd = state.position;
-      while ((ch = state.input.charCodeAt(state.position)) !== 0) {
-        if (ch === 39) {
-          captureSegment(state, captureStart, state.position, true);
-          ch = state.input.charCodeAt(++state.position);
-          if (ch === 39) {
-            captureStart = state.position;
-            state.position++;
-            captureEnd = state.position;
+      状态.kind = "scalar"; // 種類是標量。
+      状态.result = ""; // 結果清空。
+      状态.position++; // 位置加一。
+      捕获始 = 捕获末 = 状态.position; // 捕獲始末。
+      while ((字符 = 状态.input.charCodeAt(状态.position)) !== 0) { // 循環直到結束。
+        if (字符 === 39) { // 如果是單引號。
+          捕获片段(状态, 捕获始, 状态.position, true); // 捕獲片段。
+          字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
+          if (字符 === 39) { // 如果是兩個單引號。
+            捕获始 = 状态.position; // 捕獲始。
+            状态.position++; // 位置加一。
+            捕获末 = 状态.position; // 捕獲末。
           } else {
-            return true;
+            return true; // 回真。
           }
-        } else if (is_EOL(ch)) {
-          captureSegment(state, captureStart, captureEnd, true);
-          writeFoldedLines(state, skipSeparationSpace(state, false, nodeIndent));
-          captureStart = captureEnd = state.position;
-        } else if (state.position === state.lineStart && testDocumentSeparator(state)) {
-          throwError(state, "unexpected end of the document within a single quoted scalar");
+        } else if 是行尾否(字符)) { // 如果是行尾。
+          捕获片段(状态, 捕获始, 捕获末, true); // 捕獲片段。
+          写折叠行(状态, 跳过间隔(状态, false, 节点缩进)); // 寫折疊行。
+          捕获始 = 捕获末 = 状态.position; // 捕獲始末。
+        } else if (状态.position === 状态.lineStart && 测文档分隔(状态)) { // 如果是文檔分隔符。
+          抛错处(状态, "单引号标量里文档就没了，不合规矩"); // 拋出文檔結束錯誤。
         } else {
-          state.position++;
-          captureEnd = state.position;
+          状态.position++; // 位置加一。
+          捕获末 = 状态.position; // 捕獲末。
         }
       }
-      throwError(state, "unexpected end of the stream within a single quoted scalar");
+      抛错处(状态, "单引号标量里水流就没了，不合规矩"); // 拋出水流結束錯誤。
     }
-    function readDoubleQuotedScalar(state, nodeIndent) {
-      var captureStart, captureEnd, hexLength, hexResult, tmp, ch;
-      ch = state.input.charCodeAt(state.position);
-      if (ch !== 34) {
-        return false;
+
+    function 读双引号标量(状态, 节点缩进) { // 讀雙引號標量。
+      var 捕获始, 捕获末, 十六长, 十六结果, 臨時, 字符; // 捕獲始、捕獲末、十六長、十六結果、臨時、字符。
+      字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+      if (字符 !== 34) { // 如果不是雙引號。
+        return false; // 回假。
       }
-      state.kind = "scalar";
-      state.result = "";
-      state.position++;
-      captureStart = captureEnd = state.position;
-      while ((ch = state.input.charCodeAt(state.position)) !== 0) {
-        if (ch === 34) {
-          captureSegment(state, captureStart, state.position, true);
-          state.position++;
-          return true;
-        } else if (ch === 92) {
-          captureSegment(state, captureStart, state.position, true);
-          ch = state.input.charCodeAt(++state.position);
-          if (is_EOL(ch)) {
-            skipSeparationSpace(state, false, nodeIndent);
-          } else if (ch < 256 && simpleEscapeCheck[ch]) {
-            state.result += simpleEscapeMap[ch];
-            state.position++;
-          } else if ((tmp = escapedHexLen(ch)) > 0) {
-            hexLength = tmp;
-            hexResult = 0;
-            for (; hexLength > 0; hexLength--) {
-              ch = state.input.charCodeAt(++state.position);
-              if ((tmp = fromHexCode(ch)) >= 0) {
-                hexResult = (hexResult << 4) + tmp;
+      状态.kind = "scalar"; // 種類是標量。
+      状态.result = ""; // 結果清空。
+      状态.position++; // 位置加一。
+      捕获始 = 捕获末 = 状态.position; // 捕獲始末。
+      while ((字符 = 状态.input.charCodeAt(状态.position)) !== 0) { // 循環直到結束。
+        if (字符 === 34) { // 如果是雙引號。
+          捕获片段(状态, 捕获始, 状态.position, true); // 捕獲片段。
+          状态.position++; // 位置加一。
+          return true; // 回真。
+        } else if (字符 === 92) { // 如果是反斜槓。
+          捕获片段(状态, 捕获始, 状态.position, true); // 捕獲片段。
+          字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
+          if 是行尾否(字符)) { // 如果是行尾。
+            跳过间隔(状态, false, 节点缩进); // 跳過間隔。
+          } else if (字符 < 256 && 简易转义查[字符]) { // 如果是簡易轉義。
+            状态.result += 简易转义图[字符]; // 加上轉義字符。
+            状态.position++; // 位置加一。
+          } else if ((臨時 = 转义十六长(字符)) > 0) { // 如果是十六進制轉義。
+            十六长 = 臨時; // 十六長。
+            十六结果 = 0; // 十六結果。
+            for (; 十六长 > 0; 十六长--) { // 循環。
+              字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
+              if ((臨時 = 十六转码(字符)) >= 0) { // 如果是十六進制碼。
+                十六结果 = (十六结果 << 4) + 臨時; // 加上十六進制結果。
               } else {
-                throwError(state, "expected hexadecimal character");
+                抛错处(状态, "要的是十六进制字符"); // 拋出十六進制字符錯誤。
               }
             }
-            state.result += charFromCodepoint(hexResult);
-            state.position++;
+            状态.result += 码点转字(十六结果); // 加上碼點轉字。
+            状态.position++; // 位置加一。
           } else {
-            throwError(state, "unknown escape sequence");
+            抛错处(状态, "不知名的转义符"); // 拋出不知名轉義符錯誤。
           }
-          captureStart = captureEnd = state.position;
-        } else if (is_EOL(ch)) {
-          captureSegment(state, captureStart, captureEnd, true);
-          writeFoldedLines(state, skipSeparationSpace(state, false, nodeIndent));
-          captureStart = captureEnd = state.position;
-        } else if (state.position === state.lineStart && testDocumentSeparator(state)) {
-          throwError(state, "unexpected end of the document within a double quoted scalar");
+          捕获始 = 捕获末 = 状态.position; // 捕獲始末。
+        } else if 是行尾否(字符)) { // 如果是行尾。
+          捕获片段(状态, 捕获始, 捕获末, true); // 捕獲片段。
+          写折叠行(状态, 跳过间隔(状态, false, 节点缩进)); // 寫折疊行。
+          捕获始 = 捕获末 = 状态.position; // 捕獲始末。
+        } else if (状态.position === 状态.lineStart && 测文档分隔(状态)) { // 如果是文檔分隔符。
+          抛错处(状态, "双引号标量里文档就没了，不合规矩"); // 拋出文檔結束錯誤。
         } else {
-          state.position++;
-          captureEnd = state.position;
+          状态.position++; // 位置加一。
+          捕获末 = 状态.position; // 捕獲末。
         }
       }
-      throwError(state, "unexpected end of the stream within a double quoted scalar");
+      抛错处(状态, "双引号标量里水流就没了，不合规矩"); // 拋出水流結束錯誤。
     }
-    function readFlowCollection(state, nodeIndent) {
-      var readNext = true, _line, _lineStart, _pos, _tag = state.tag, _result, _anchor = state.anchor, following, terminator, isPair, isExplicitPair, isMapping, overridableKeys = /* @__PURE__ */ Object.create(null), keyNode, keyTag, valueNode, ch;
-      ch = state.input.charCodeAt(state.position);
-      if (ch === 91) {
-        terminator = 93;
-        isMapping = false;
-        _result = [];
-      } else if (ch === 123) {
-        terminator = 125;
-        isMapping = true;
-        _result = {};
+
+    function 读流集合(状态, 节点缩进) { // 讀流集合。
+      var 读下个 = true, // 讀下個。
+        _行, _行始, _位置, _标签 = 状态.tag, _结果, _锚点 = 状态.anchor, 后面, 终止符, 是对子, 是显式对子, 是映射, 可覆盖钥匙 = /* @__PURE__ */ Object.create(null), 钥匙节点, 钥匙标签, 值节点, 字符; // 讀下個、行、行始、位置、標籤、結果、錨點、後面、終止符、是對子、是顯式對子、是映射、可覆蓋鑰匙、鑰匙節點、鑰匙標籤、值節點、字符。
+      字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+      if (字符 === 91) { // 如果是左方括號。
+        终止符 = 93; // 終止符是右方括號。
+        是映射 = false; // 不是映射。
+        _结果 = []; // 結果是陣列。
+      } else if (字符 === 123) { // 如果是左花括號。
+        终止符 = 125; // 終止符是右花括號。
+        是映射 = true; // 是映射。
+        _结果 = {}; // 結果是物件。
       } else {
-        return false;
+        return false; // 回假。
       }
-      if (state.anchor !== null) {
-        state.anchorMap[state.anchor] = _result;
+      if (状态.锚点 !== null) { // 如果有錨點。
+        状态.anchorMap[状态.锚点] = _结果; // 記錄錨點和結果。
       }
-      ch = state.input.charCodeAt(++state.position);
-      while (ch !== 0) {
-        skipSeparationSpace(state, true, nodeIndent);
-        ch = state.input.charCodeAt(state.position);
-        if (ch === terminator) {
-          state.position++;
-          state.tag = _tag;
-          state.anchor = _anchor;
-          state.kind = isMapping ? "mapping" : "sequence";
-          state.result = _result;
-          return true;
-        } else if (!readNext) {
-          throwError(state, "missed comma between flow collection entries");
-        } else if (ch === 44) {
-          throwError(state, "expected the node content, but found ','");
+      字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
+      while (字符 !== 0) { // 循環直到結束。
+        跳过间隔(状态, true, 节点缩进); // 跳過間隔。
+        字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+        if (字符 === 终止符) { // 如果是終止符。
+          状态.position++; // 位置加一。
+          状态.tag = _标签; // 標籤回退。
+          状态.anchor = _锚点; // 錨點回退。
+          状态.kind = 是映射 ? "mapping" : "sequence"; // 種類是映射或序列。
+          状态.result = _结果; // 結果。
+          return true; // 回真。
+        } else if (!读下个) { // 如果不讀下個。
+          抛错处(状态, "流集合条目之间少了逗号"); // 拋出少了逗號錯誤。
+        } else if (字符 === 44) { // 如果是逗號。
+          抛错处(状态, "要的是节点内容，却来了个逗号"); // 拋出逗號錯誤。
         }
-        keyTag = keyNode = valueNode = null;
-        isPair = isExplicitPair = false;
-        if (ch === 63) {
-          following = state.input.charCodeAt(state.position + 1);
-          if (is_WS_OR_EOL(following)) {
-            isPair = isExplicitPair = true;
-            state.position++;
-            skipSeparationSpace(state, true, nodeIndent);
+        钥匙标签 = 钥匙节点 = 值节点 = null; // 鑰匙標籤、鑰匙節點、值節點清空。
+        是对子 = 是显式对子 = false; // 是對子、是顯式對子。
+        if (字符 === 63) { // 如果是問號。
+          后面 = 状态.input.charCodeAt(状态.position + 1); // 取後面字符。
+          if (是空行否(后面)) { // 如果是空白。
+            是对子 = 是显式对子 = true; // 是對子、是顯式對子。
+            状态.position++; // 位置加一。
+            跳过间隔(状态, true, 节点缩进); // 跳過間隔。
           }
         }
-        _line = state.line;
-        _lineStart = state.lineStart;
-        _pos = state.position;
-        composeNode(state, nodeIndent, CONTEXT_FLOW_IN, false, true);
-        keyTag = state.tag;
-        keyNode = state.result;
-        skipSeparationSpace(state, true, nodeIndent);
-        ch = state.input.charCodeAt(state.position);
-        if ((isExplicitPair || state.line === _line) && ch === 58) {
-          isPair = true;
-          ch = state.input.charCodeAt(++state.position);
-          skipSeparationSpace(state, true, nodeIndent);
-          composeNode(state, nodeIndent, CONTEXT_FLOW_IN, false, true);
-          valueNode = state.result;
+        _行 = 状态.line; // 行號。
+        _行始 = 状态.lineStart; // 行始。
+        _位置 = 状态.position; // 位置。
+        组合节点(状态, 节点缩进, 流内境, false, true); // 組合節點。
+        钥匙标签 = 状态.tag; // 鑰匙標籤。
+        钥匙节点 = 状态.result; // 鑰匙節點。
+        跳过间隔(状态, true, 节点缩进); // 跳過間隔。
+        字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+        if ((是显式对子 || 状态.line === _行) && 字符 === 58) { // 如果是顯式對子或在同一行且是冒號。
+          是对子 = true; // 是對子。
+          字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
+          跳过间隔(状态, true, 节点缩进); // 跳過間隔。
+          组合节点(状态, 节点缩进, 流内境, false, true); // 組合節點。
+          值节点 = 状态.result; // 值節點。
         }
-        if (isMapping) {
-          storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, valueNode, _line, _lineStart, _pos);
-        } else if (isPair) {
-          _result.push(storeMappingPair(state, null, overridableKeys, keyTag, keyNode, valueNode, _line, _lineStart, _pos));
+        if (是映射) { // 如果是映射。
+          存储映射对(状态, _结果, 可覆盖钥匙, 钥匙标签, 钥匙节点, 值节点, _行, _行始, _位置); // 存儲映射對。
+        } else if (是对子) { // 如果是對子。
+          _结果.push(存储映射对(状态, null, 可覆盖钥匙, 钥匙标签, 钥匙节点, 值节点, _行, _行始, _位置)); // 推入映射對。
         } else {
-          _result.push(keyNode);
+          _结果.push(钥匙节点); // 推入鑰匙節點。
         }
-        skipSeparationSpace(state, true, nodeIndent);
-        ch = state.input.charCodeAt(state.position);
-        if (ch === 44) {
-          readNext = true;
-          ch = state.input.charCodeAt(++state.position);
+        跳过间隔(状态, true, 节点缩进); // 跳過間隔。
+        字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+        if (字符 === 44) { // 如果是逗號。
+          读下个 = true; // 讀下個。
+          字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
         } else {
-          readNext = false;
+          读下个 = false; // 不讀下個。
         }
       }
-      throwError(state, "unexpected end of the stream within a flow collection");
+      抛错处(状态, "流集合里水流就没了，不合规矩"); // 拋出水流結束錯誤。
     }
-    function readBlockScalar(state, nodeIndent) {
-      var captureStart, folding, chomping = CHOMPING_CLIP, didReadContent = false, detectedIndent = false, textIndent = nodeIndent, emptyLines = 0, atMoreIndented = false, tmp, ch;
-      ch = state.input.charCodeAt(state.position);
-      if (ch === 124) {
-        folding = false;
-      } else if (ch === 62) {
-        folding = true;
+
+    function 读块标量(状态, 节点缩进) { // 讀塊標量。
+      var 捕获始, 折叠, 啃食 = 剪切模式, // 捕獲始、折疊、啃食。
+        已读内容 = false, // 已讀內容。
+        已侦测缩进 = false, // 已偵測縮進。
+        文本缩进 = 节点缩进, // 文本縮進。
+        空行数 = 0, // 空行數。
+        更多缩进 = false, // 更多縮進。
+        臨時, 字符; // 臨時、字符。
+      字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+      if (字符 === 124) { // 如果是豎線。
+        折叠 = false; // 不折疊。
+      } else if (字符 === 62) { // 如果是大於號。
+        折叠 = true; // 折疊。
       } else {
-        return false;
+        return false; // 回假。
       }
-      state.kind = "scalar";
-      state.result = "";
-      while (ch !== 0) {
-        ch = state.input.charCodeAt(++state.position);
-        if (ch === 43 || ch === 45) {
-          if (CHOMPING_CLIP === chomping) {
-            chomping = ch === 43 ? CHOMPING_KEEP : CHOMPING_STRIP;
+      状态.kind = "scalar"; // 種類是標量。
+      状态.result = ""; // 結果清空。
+      while (字符 !== 0) { // 循環直到結束。
+        字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
+        if (字符 === 43 || 字符 === 45) { // 如果是加號或減號。
+          if (剪切模式 === 啃食) { // 如果是剪切模式。
+            啃食 = 字符 === 43 ? 保留模式 : 剥离模式; // 啃食模式。
           } else {
-            throwError(state, "repeat of a chomping mode identifier");
+            抛错处(状态, "啃食模式符重复了"); // 拋出重複啃食模式錯誤。
           }
-        } else if ((tmp = fromDecimalCode(ch)) >= 0) {
-          if (tmp === 0) {
-            throwError(state, "bad explicit indentation width of a block scalar; it cannot be less than one");
-          } else if (!detectedIndent) {
-            textIndent = nodeIndent + tmp - 1;
-            detectedIndent = true;
+        } else if ((臨時 = 十进制转码(字符)) >= 0) { // 如果是十進制碼。
+          if (臨時 === 0) { // 如果是零。
+            抛错处(状态, "块标量缩进宽度不对劲；不能小于一"); // 拋出縮進寬度錯誤。
+          } else if (!已侦测缩进) { // 如果沒偵測縮進。
+            文本缩进 = 节点缩进 + 臨時 - 1; // 文本縮進。
+            已侦测缩进 = true; // 已偵測縮進。
           } else {
-            throwError(state, "repeat of an indentation width identifier");
+            抛错处(状态, "缩进宽度符重复了"); // 拋出重複縮進寬度錯誤。
           }
         } else {
-          break;
+          break; // 跳出。
         }
       }
-      if (is_WHITE_SPACE(ch)) {
+      if (是空白否(字符)) { // 如果是空白。
         do {
-          ch = state.input.charCodeAt(++state.position);
-        } while (is_WHITE_SPACE(ch));
-        if (ch === 35) {
+          字符 = 状态.input.charCodeAt(++状态.position); // 跳過空白。
+        } while (是空白否(字符)); // 直到不是空白。
+        if (字符 === 35) { // 如果是井號。
           do {
-            ch = state.input.charCodeAt(++state.position);
-          } while (!is_EOL(ch) && ch !== 0);
+            字符 = 状态.input.charCodeAt(++状态.position); // 跳過註釋。
+          } while (!是行尾否(字符) && 字符 !== 0); // 直到行尾或結束。
         }
       }
-      while (ch !== 0) {
-        readLineBreak(state);
-        state.lineIndent = 0;
-        ch = state.input.charCodeAt(state.position);
-        while ((!detectedIndent || state.lineIndent < textIndent) && ch === 32) {
-          state.lineIndent++;
-          ch = state.input.charCodeAt(++state.position);
+      while (字符 !== 0) { // 循環直到結束。
+        读换行(状态); // 讀換行。
+        状态.lineIndent = 0; // 行縮進歸零。
+        字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+        while ((!已侦测缩进 || 状态.lineIndent < 文本缩进) && 字符 === 32) { // 如果沒偵測縮進或縮進不夠且是空格。
+          状态.lineIndent++; // 行縮進加一。
+          字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
         }
-        if (!detectedIndent && state.lineIndent > textIndent) {
-          textIndent = state.lineIndent;
+        if (!已侦测缩进 && 状态.lineIndent > 文本缩进) { // 如果沒偵測縮進且縮進過多。
+          文本缩进 = 状态.lineIndent; // 文本縮進。
         }
-        if (is_EOL(ch)) {
-          emptyLines++;
-          continue;
+        if 是行尾否(字符)) { // 如果是行尾。
+          空行数++; // 空行數加一。
+          continue; // 繼續。
         }
-        if (state.lineIndent < textIndent) {
-          if (chomping === CHOMPING_KEEP) {
-            state.result += common.repeat("\n", didReadContent ? 1 + emptyLines : emptyLines);
-          } else if (chomping === CHOMPING_CLIP) {
-            if (didReadContent) {
-              state.result += "\n";
+        if (状态.lineIndent < 文本缩进) { // 如果行縮進不夠。
+          if (啃食 === 保留模式) { // 如果是保留模式。
+            状态.result += 寻常.反复("\n", 已读内容 ? 1 + 空行数 : 空行数); // 加上換行。
+          } else if (啃食 === 剪切模式) { // 如果是剪切模式。
+            if (已读内容) { // 如果已讀內容。
+              状态.result += "\n"; // 加上換行。
             }
           }
-          break;
+          break; // 跳出。
         }
-        if (folding) {
-          if (is_WHITE_SPACE(ch)) {
-            atMoreIndented = true;
-            state.result += common.repeat("\n", didReadContent ? 1 + emptyLines : emptyLines);
-          } else if (atMoreIndented) {
-            atMoreIndented = false;
-            state.result += common.repeat("\n", emptyLines + 1);
-          } else if (emptyLines === 0) {
-            if (didReadContent) {
-              state.result += " ";
+        if (折叠) { // 如果是折疊。
+          if (是空白否(字符)) { // 如果是空白。
+            更多缩进 = true; // 更多縮進。
+            状态.result += 寻常.反复("\n", 已读内容 ? 1 + 空行数 : 空行数); // 加上換行。
+          } else if (更多缩进) { // 如果是更多縮進。
+            更多缩进 = false; // 沒更多縮進。
+            状态.result += 寻常.反复("\n", 空行数 + 1); // 加上換行。
+          } else if (空行数 === 0) { // 如果空行數是零。
+            if (已读内容) { // 如果已讀內容。
+              状态.result += " "; // 加上空格。
             }
           } else {
-            state.result += common.repeat("\n", emptyLines);
+            状态.result += 寻常.反复("\n", 空行数); // 加上換行。
           }
         } else {
-          state.result += common.repeat("\n", didReadContent ? 1 + emptyLines : emptyLines);
+          状态.result += 寻常.反复("\n", 已读内容 ? 1 + 空行数 : 空行数); // 加上換行。
         }
-        didReadContent = true;
-        detectedIndent = true;
-        emptyLines = 0;
-        captureStart = state.position;
-        while (!is_EOL(ch) && ch !== 0) {
-          ch = state.input.charCodeAt(++state.position);
+        已读内容 = true; // 已讀內容。
+        已侦测缩进 = true; // 已偵測縮進。
+        空行数 = 0; // 空行數歸零。
+        捕获始 = 状态.position; // 捕獲始。
+        while (!是行尾否(字符) && 字符 !== 0) { // 循環直到行尾或結束。
+          字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
         }
-        captureSegment(state, captureStart, state.position, false);
+        捕获片段(状态, 捕获始, 状态.position, false); // 捕獲片段。
       }
-      return true;
+      return true; // 回真。
     }
-    function readBlockSequence(state, nodeIndent) {
-      var _line, _tag = state.tag, _anchor = state.anchor, _result = [], following, detected = false, ch;
-      if (state.firstTabInLine !== -1)
-        return false;
-      if (state.anchor !== null) {
-        state.anchorMap[state.anchor] = _result;
+
+    function 读块序列(状态, 节点缩进) { // 讀塊序列。
+      var _行, _标签 = 状态.tag, _锚点 = 状态.anchor, _结果 = [], 后面, 已侦测 = false, 字符; // 行、標籤、錨點、結果、後面、已偵測、字符。
+      if (状态.firstTabInLine !== -1) // 如果行中第一個製表符不為負一。
+        return false; // 回假。
+      if (状态.锚点 !== null) { // 如果有錨點。
+        状态.anchorMap[状态.锚点] = _结果; // 記錄錨點和結果。
       }
-      ch = state.input.charCodeAt(state.position);
-      while (ch !== 0) {
-        if (state.firstTabInLine !== -1) {
-          state.position = state.firstTabInLine;
-          throwError(state, "tab characters must not be used in indentation");
+      字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+      while (字符 !== 0) { // 循環直到結束。
+        if (状态.firstTabInLine !== -1) { // 如果行中第一個製表符不為負一。
+          状态.position = 状态.firstTabInLine; // 位置回退。
+          抛错处(状态, "缩进里不能有制表符"); // 拋出製表符錯誤。
         }
-        if (ch !== 45) {
-          break;
+        if (字符 !== 45) { // 如果不是減號。
+          break; // 跳出。
         }
-        following = state.input.charCodeAt(state.position + 1);
-        if (!is_WS_OR_EOL(following)) {
-          break;
+        后面 = 状态.input.charCodeAt(状态.position + 1); // 取後面字符。
+        if (!是空行否(后面)) { // 如果不是空白。
+          break; // 跳出。
         }
-        detected = true;
-        state.position++;
-        if (skipSeparationSpace(state, true, -1)) {
-          if (state.lineIndent <= nodeIndent) {
-            _result.push(null);
-            ch = state.input.charCodeAt(state.position);
-            continue;
+        已侦测 = true; // 已偵測。
+        状态.position++; // 位置加一。
+        if (跳过间隔(状态, true, -1)) { // 跳過間隔。
+          if (状态.lineIndent <= 节点缩进) { // 如果行縮進小於等於節點縮進。
+            _结果.push(null); // 推入空。
+            字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+            continue; // 繼續。
           }
         }
-        _line = state.line;
-        composeNode(state, nodeIndent, CONTEXT_BLOCK_IN, false, true);
-        _result.push(state.result);
-        skipSeparationSpace(state, true, -1);
-        ch = state.input.charCodeAt(state.position);
-        if ((state.line === _line || state.lineIndent > nodeIndent) && ch !== 0) {
-          throwError(state, "bad indentation of a sequence entry");
-        } else if (state.lineIndent < nodeIndent) {
-          break;
+        _行 = 状态.line; // 行號。
+        组合节点(状态, 节点缩进, 块内境, false, true); // 組合節點。
+        _结果.push(状态.result); // 推入結果。
+        跳过间隔(状态, true, -1); // 跳過間隔。
+        字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+        if ((状态.line === _行 || 状态.lineIndent > 节点缩进) && 字符 !== 0) { // 如果在同一行或縮進過多且不是結束。
+          抛错处(状态, "序列条目缩进不对劲"); // 拋出縮進錯誤。
+        } else if (状态.lineIndent < 节点缩进) { // 如果行縮進不夠。
+          break; // 跳出。
         }
       }
-      if (detected) {
-        state.tag = _tag;
-        state.anchor = _anchor;
-        state.kind = "sequence";
-        state.result = _result;
-        return true;
+      if (已侦测) { // 如果已偵測。
+        状态.tag = _标签; // 標籤回退。
+        状态.anchor = _锚点; // 錨點回退。
+        状态.kind = "sequence"; // 種類是序列。
+        状态.result = _结果; // 結果。
+        return true; // 回真。
       }
-      return false;
+      return false; // 回假。
     }
-    function readBlockMapping(state, nodeIndent, flowIndent) {
-      var following, allowCompact, _line, _keyLine, _keyLineStart, _keyPos, _tag = state.tag, _anchor = state.anchor, _result = {}, overridableKeys = /* @__PURE__ */ Object.create(null), keyTag = null, keyNode = null, valueNode = null, atExplicitKey = false, detected = false, ch;
-      if (state.firstTabInLine !== -1)
-        return false;
-      if (state.anchor !== null) {
-        state.anchorMap[state.anchor] = _result;
+
+    function 读块映射(状态, 节点缩进, 流缩进) { // 讀塊映射。
+      var 后面, 允许紧凑, _行, _钥匙行, _钥匙行始, _钥匙位置, _标签 = 状态.tag, _锚点 = 状态.anchor, _结果 = {}, 可覆盖钥匙 = /* @__PURE__ */ Object.create(null), 钥匙标签 = null, 钥匙节点 = null, 值节点 = null, 在显式钥匙 = false, 已侦测 = false, 字符; // 後面、允許緊湊、行、鑰匙行、鑰匙行始、鑰匙位置、標籤、錨點、結果、可覆蓋鑰匙、鑰匙標籤、鑰匙節點、值節點、在顯式鑰匙、已偵測、字符。
+      if (状态.firstTabInLine !== -1) // 如果行中第一個製表符不為負一。
+        return false; // 回假。
+      if (状态.锚点 !== null) { // 如果有錨點。
+        状态.anchorMap[状态.锚点] = _结果; // 記錄錨點和結果。
       }
-      ch = state.input.charCodeAt(state.position);
-      while (ch !== 0) {
-        if (!atExplicitKey && state.firstTabInLine !== -1) {
-          state.position = state.firstTabInLine;
-          throwError(state, "tab characters must not be used in indentation");
+      字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+      while (字符 !== 0) { // 循環直到結束。
+        if (!在显式钥匙 && 状态.firstTabInLine !== -1) { // 如果不在顯式鑰匙且行中第一個製表符不為負一。
+          状态.position = 状态.firstTabInLine; // 位置回退。
+          抛错处(状态, "缩进里不能有制表符"); // 拋出製表符錯誤。
         }
-        following = state.input.charCodeAt(state.position + 1);
-        _line = state.line;
-        if ((ch === 63 || ch === 58) && is_WS_OR_EOL(following)) {
-          if (ch === 63) {
-            if (atExplicitKey) {
-              storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, null, _keyLine, _keyLineStart, _keyPos);
-              keyTag = keyNode = valueNode = null;
+        后面 = 状态.input.charCodeAt(状态.position + 1); // 取後面字符。
+        _行 = 状态.line; // 行號。
+        if ((字符 === 63 || 字符 === 58) && 是空行否(后面)) { // 如果是問號或冒號且是空白。
+          if (字符 === 63) { // 如果是問號。
+            if (在显式钥匙) { // 如果在顯式鑰匙。
+              存储映射对(状态, _结果, 可覆盖钥匙, 钥匙标签, 钥匙节点, null, _钥匙行, _钥匙行始, _钥匙位置); // 存儲映射對。
+              钥匙标签 = 钥匙节点 = 值节点 = null; // 鑰匙標籤、鑰匙節點、值節點清空。
             }
-            detected = true;
-            atExplicitKey = true;
-            allowCompact = true;
-          } else if (atExplicitKey) {
-            atExplicitKey = false;
-            allowCompact = true;
+            已侦测 = true; // 已偵測。
+            在显式钥匙 = true; // 在顯式鑰匙。
+            允许紧凑 = true; // 允許緊湊。
+          } else if (在显式钥匙) { // 如果在顯式鑰匙。
+            在显式钥匙 = false; // 不在顯式鑰匙。
+            允许紧凑 = true; // 允許緊湊。
           } else {
-            throwError(state, "incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line");
+            抛错处(状态, "显式映射对不完整；少了钥匙节点；或者后面跟着非制表的空行"); // 拋出不完整映射對錯誤。
           }
-          state.position += 1;
-          ch = following;
+          状态.position += 1; // 位置加一。
+          字符 = 后面; // 字符。
         } else {
-          _keyLine = state.line;
-          _keyLineStart = state.lineStart;
-          _keyPos = state.position;
-          if (!composeNode(state, flowIndent, CONTEXT_FLOW_OUT, false, true)) {
-            break;
+          _钥匙行 = 状态.line; // 鑰匙行。
+          _钥匙行始 = 状态.lineStart; // 鑰匙行始。
+          _钥匙位置 = 状态.position; // 鑰匙位置。
+          if (!组合节点(状态, 流缩进, 流外境, false, true)) { // 如果沒組合節點。
+            break; // 跳出。
           }
-          if (state.line === _line) {
-            ch = state.input.charCodeAt(state.position);
-            while (is_WHITE_SPACE(ch)) {
-              ch = state.input.charCodeAt(++state.position);
+          if (状态.line === _行) { // 如果在同一行。
+            字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+            while (是空白否(字符)) { // 跳過空白。
+              字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
             }
-            if (ch === 58) {
-              ch = state.input.charCodeAt(++state.position);
-              if (!is_WS_OR_EOL(ch)) {
-                throwError(state, "a whitespace character is expected after the key-value separator within a block mapping");
+            if (字符 === 58) { // 如果是冒號。
+              字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
+              if (!是空行否(字符)) { // 如果不是空白。
+                抛错处(状态, "块映射里键值分隔符后面得有个空白符"); // 拋出空白符錯誤。
               }
-              if (atExplicitKey) {
-                storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, null, _keyLine, _keyLineStart, _keyPos);
-                keyTag = keyNode = valueNode = null;
+              if (在显式钥匙) { // 如果在顯式鑰匙。
+                存储映射对(状态, _结果, 可覆盖钥匙, 钥匙标签, 钥匙节点, null, _钥匙行, _钥匙行始, _钥匙位置); // 存儲映射對。
+                钥匙标签 = 钥匙节点 = 值节点 = null; // 鑰匙標籤、鑰匙節點、值節點清空。
               }
-              detected = true;
-              atExplicitKey = false;
-              allowCompact = false;
-              keyTag = state.tag;
-              keyNode = state.result;
-            } else if (detected) {
-              throwError(state, "can not read an implicit mapping pair; a colon is missed");
+              已侦测 = true; // 已偵測。
+              在显式钥匙 = false; // 不在顯式鑰匙。
+              允许紧凑 = false; // 不允許緊湊。
+              钥匙标签 = 状态.tag; // 鑰匙標籤。
+              钥匙节点 = 状态.result; // 鑰匙節點。
+            } else if (已侦测) { // 如果已偵測。
+              抛错处(状态, "读不了隐式映射对；少了冒号"); // 拋出少了冒號錯誤。
             } else {
-              state.tag = _tag;
-              state.anchor = _anchor;
-              return true;
+              状态.tag = _标签; // 標籤回退。
+              状态.anchor = _锚点; // 錨點回退。
+              return true; // 回真。
             }
-          } else if (detected) {
-            throwError(state, "can not read a block mapping entry; a multiline key may not be an implicit key");
+          } else if (已侦测) { // 如果已偵測。
+            抛错处(状态, "读不了块映射条目；多行钥匙不能是隐式钥匙"); // 拋出多行鑰匙錯誤。
           } else {
-            state.tag = _tag;
-            state.anchor = _anchor;
-            return true;
+            状态.tag = _标签; // 標籤回退。
+            状态.anchor = _锚点; // 錨點回退。
+            return true; // 回真。
           }
         }
-        if (state.line === _line || state.lineIndent > nodeIndent) {
-          if (atExplicitKey) {
-            _keyLine = state.line;
-            _keyLineStart = state.lineStart;
-            _keyPos = state.position;
+        if (状态.line === _行 || 状态.lineIndent > 节点缩进) { // 如果在同一行或縮進過多。
+          if (在显式钥匙) { // 如果在顯式鑰匙。
+            _钥匙行 = 状态.line; // 鑰匙行。
+            _钥匙行始 = 状态.lineStart; // 鑰匙行始。
+            _钥匙位置 = 状态.position; // 鑰匙位置。
           }
-          if (composeNode(state, nodeIndent, CONTEXT_BLOCK_OUT, true, allowCompact)) {
-            if (atExplicitKey) {
-              keyNode = state.result;
+          if (组合节点(状态, 节点缩进, 块外境, true, 允许紧凑)) { // 組合節點。
+            if (在显式钥匙) { // 如果在顯式鑰匙。
+              钥匙节点 = 状态.result; // 鑰匙節點。
             } else {
-              valueNode = state.result;
+              值节点 = 状态.result; // 值節點。
             }
           }
-          if (!atExplicitKey) {
-            storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, valueNode, _keyLine, _keyLineStart, _keyPos);
-            keyTag = keyNode = valueNode = null;
+          if (!在显式钥匙) { // 如果不在顯式鑰匙。
+            存储映射对(状态, _结果, 可覆盖钥匙, 钥匙标签, 钥匙节点, 值节点, _钥匙行, _钥匙行始, _钥匙位置); // 存儲映射對。
+            钥匙标签 = 钥匙节点 = 值节点 = null; // 鑰匙標籤、鑰匙節點、值節點清空。
           }
-          skipSeparationSpace(state, true, -1);
-          ch = state.input.charCodeAt(state.position);
+          跳过间隔(状态, true, -1); // 跳過間隔。
+          字符 = 状态.input.charCodeAt(状态.position); // 取字符。
         }
-        if ((state.line === _line || state.lineIndent > nodeIndent) && ch !== 0) {
-          throwError(state, "bad indentation of a mapping entry");
-        } else if (state.lineIndent < nodeIndent) {
-          break;
+        if ((状态.line === _行 || 状态.lineIndent > 节点缩进) && 字符 !== 0) { // 如果在同一行或縮進過多且不是結束。
+          抛错处(状态, "映射条目缩进不对劲"); // 拋出縮進錯誤。
+        } else if (状态.lineIndent < 节点缩进) { // 如果行縮進不夠。
+          break; // 跳出。
         }
       }
-      if (atExplicitKey) {
-        storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, null, _keyLine, _keyLineStart, _keyPos);
+      if (在显式钥匙) { // 如果在顯式鑰匙。
+        存储映射对(状态, _结果, 可覆盖钥匙, 钥匙标签, 钥匙节点, null, _钥匙行, _钥匙行始, _钥匙位置); // 存儲映射對。
       }
-      if (detected) {
-        state.tag = _tag;
-        state.anchor = _anchor;
-        state.kind = "mapping";
-        state.result = _result;
+      if (已侦测) { // 如果已偵測。
+        状态.tag = _标签; // 標籤回退。
+        状态.anchor = _锚点; // 錨點回退。
+        状态.kind = "mapping"; // 種類是映射。
+        状态.result = _结果; // 結果。
       }
-      return detected;
+      return 已侦测; // 回已偵測。
     }
-    function readTagProperty(state) {
-      var _position, isVerbatim = false, isNamed = false, tagHandle, tagName, ch;
-      ch = state.input.charCodeAt(state.position);
-      if (ch !== 33)
-        return false;
-      if (state.tag !== null) {
-        throwError(state, "duplication of a tag property");
+
+    function 读标签属性(状态) { // 讀標籤屬性。
+      var _位置, 是字面 = false, 是命名 = false, 标签把手, 标签名, 字符; // 位置、是字面、是命名、標籤把手、標籤名、字符。
+      字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+      if (字符 !== 33) // 如果不是感嘆號。
+        return false; // 回假。
+      if (状态.tag !== null) { // 如果有標籤。
+        抛错处(状态, "标签属性重复了"); // 拋出重複標籤屬性錯誤。
       }
-      ch = state.input.charCodeAt(++state.position);
-      if (ch === 60) {
-        isVerbatim = true;
-        ch = state.input.charCodeAt(++state.position);
-      } else if (ch === 33) {
-        isNamed = true;
-        tagHandle = "!!";
-        ch = state.input.charCodeAt(++state.position);
+      字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
+      if (字符 === 60) { // 如果是小於號。
+        是字面 = true; // 是字面。
+        字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
+      } else if (字符 === 33) { // 如果是感嘆號。
+        是命名 = true; // 是命名。
+        标签把手 = "!!"; // 標籤把手。
+        字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
       } else {
-        tagHandle = "!";
+        标签把手 = "!"; // 標籤把手。
       }
-      _position = state.position;
-      if (isVerbatim) {
+      _位置 = 状态.position; // 位置。
+      if (是字面) { // 如果是字面。
         do {
-          ch = state.input.charCodeAt(++state.position);
-        } while (ch !== 0 && ch !== 62);
-        if (state.position < state.length) {
-          tagName = state.input.slice(_position, state.position);
-          ch = state.input.charCodeAt(++state.position);
+          字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
+        } while (字符 !== 0 && 字符 !== 62); // 直到結束或大於號。
+        if (状态.position < 状态.length) { // 如果位置小於長度。
+          标签名 = 状态.input.slice(_位置, 状态.position); // 標籤名。
+          字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
         } else {
-          throwError(state, "unexpected end of the stream within a verbatim tag");
+          抛错处(状态, "字面标签里水流就没了，不合规矩"); // 拋出水流結束錯誤。
         }
       } else {
-        while (ch !== 0 && !is_WS_OR_EOL(ch)) {
-          if (ch === 33) {
-            if (!isNamed) {
-              tagHandle = state.input.slice(_position - 1, state.position + 1);
-              if (!PATTERN_TAG_HANDLE.test(tagHandle)) {
-                throwError(state, "named tag handle cannot contain such characters");
+        while (字符 !== 0 && !是空行否(字符)) { // 循環直到結束或空行。
+          if (字符 === 33) { // 如果是感嘆號。
+            if (!是命名) { // 如果不是命名。
+              标签把手 = 状态.input.slice(_位置 - 1, 状态.position + 1); // 標籤把手。
+              if (!标签把手.test(标签把手)) { // 如果不符合標籤把手正規表達式。
+                抛错处(状态, "命名标签把手不能有这些字符"); // 拋出命名標籤把手錯誤。
               }
-              isNamed = true;
-              _position = state.position + 1;
+              是命名 = true; // 是命名。
+              _位置 = 状态.position + 1; // 位置。
             } else {
-              throwError(state, "tag suffix cannot contain exclamation marks");
+              抛错处(状态, "标签后缀不能有感叹号"); // 拋出標籤後綴錯誤。
             }
           }
-          ch = state.input.charCodeAt(++state.position);
+          字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
         }
-        tagName = state.input.slice(_position, state.position);
-        if (PATTERN_FLOW_INDICATORS.test(tagName)) {
-          throwError(state, "tag suffix cannot contain flow indicator characters");
+        标签名 = 状态.input.slice(_位置, 状态.position); // 標籤名。
+        if (流指示符.test(标签名)) { // 如果標籤名有流指示符。
+          抛错处(状态, "标签后缀不能有流指示符"); // 拋出標籤後綴錯誤。
         }
       }
-      if (tagName && !PATTERN_TAG_URI.test(tagName)) {
-        throwError(state, "tag name cannot contain such characters: " + tagName);
+      if (标签名 && !标签地址.test(标签名)) { // 如果標籤名不空且不符合標籤地址正規表達式。
+        抛错处(状态, "标签名不能有这些字符: " + 标签名); // 拋出標籤名錯誤。
       }
-      try {
-        tagName = decodeURIComponent(tagName);
-      } catch (err) {
-        throwError(state, "tag name is malformed: " + tagName);
+      try { // 嘗試解碼。
+        标签名 = decodeURIComponent(标签名); // 解碼。
+      } catch (错处) { // 捕獲錯誤。
+        抛错处(状态, "标签名歪了: " + 标签名); // 拋出標籤名歪了錯誤。
       }
-      if (isVerbatim) {
-        state.tag = tagName;
-      } else if (_hasOwnProperty.call(state.tagMap, tagHandle)) {
-        state.tag = state.tagMap[tagHandle] + tagName;
-      } else if (tagHandle === "!") {
-        state.tag = "!" + tagName;
-      } else if (tagHandle === "!!") {
-        state.tag = "tag:yaml.org,2002:" + tagName;
+      if (是字面) { // 如果是字面。
+        状态.tag = 标签名; // 標籤。
+      } else if (_hasOwnProperty.call(状态.tagMap, 标签把手)) { // 如果標籤圖譜裡有把手。
+        状态.tag = 状态.tagMap[标签把手] + 标签名; // 標籤。
+      } else if (标签把手 === "!") { // 如果是感嘆號。
+        状态.tag = "!" + 标签名; // 標籤。
+      } else if (标签把手 === "!!") { // 如果是兩個感嘆號。
+        状态.tag = "tag:yaml.org,2002:" + 标签名; // 標籤。
       } else {
-        throwError(state, 'undeclared tag handle "' + tagHandle + '"');
+        抛错处(状态, '没声明的标签把手 "' + 标签把手 + '"'); // 拋出沒聲明標籤把手錯誤。
       }
-      return true;
+      return true; // 回真。
     }
-    function readAnchorProperty(state) {
-      var _position, ch;
-      ch = state.input.charCodeAt(state.position);
-      if (ch !== 38)
-        return false;
-      if (state.anchor !== null) {
-        throwError(state, "duplication of an anchor property");
+
+    function 读锚点属性(状态) { // 讀錨點屬性。
+      var _位置, 字符; // 位置、字符。
+      字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+      if (字符 !== 38) // 如果不是與號。
+        return false; // 回假。
+      if (状态.anchor !== null) { // 如果有錨點。
+        抛错处(状态, "锚点属性重复了"); // 拋出重複錨點屬性錯誤。
       }
-      ch = state.input.charCodeAt(++state.position);
-      _position = state.position;
-      while (ch !== 0 && !is_WS_OR_EOL(ch) && !is_FLOW_INDICATOR(ch)) {
-        ch = state.input.charCodeAt(++state.position);
+      字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
+      _位置 = 状态.position; // 位置。
+      while (字符 !== 0 && !是空行否(字符) && !是流符否(字符)) { // 循環直到結束、空行或流符。
+        字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
       }
-      if (state.position === _position) {
-        throwError(state, "name of an anchor node must contain at least one character");
+      if (状态.position === _位置) { // 如果位置沒變。
+        抛错处(状态, "锚点节点名至少得有一个字符"); // 拋出錨點節點名錯誤。
       }
-      state.anchor = state.input.slice(_position, state.position);
-      return true;
+      状态.anchor = 状态.input.slice(_位置, 状态.position); // 錨點。
+      return true; // 回真。
     }
-    function readAlias(state) {
-      var _position, alias, ch;
-      ch = state.input.charCodeAt(state.position);
-      if (ch !== 42)
-        return false;
-      ch = state.input.charCodeAt(++state.position);
-      _position = state.position;
-      while (ch !== 0 && !is_WS_OR_EOL(ch) && !is_FLOW_INDICATOR(ch)) {
-        ch = state.input.charCodeAt(++state.position);
+
+    function 读别名(状态) { // 讀別名。
+      var _位置, 别名, 字符; // 位置、別名、字符。
+      字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+      if (字符 !== 42) // 如果不是星號。
+        return false; // 回假。
+      字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
+      _位置 = 状态.position; // 位置。
+      while (字符 !== 0 && !是空行否(字符) && !是流符否(字符)) { // 循環直到結束、空行或流符。
+        字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
       }
-      if (state.position === _position) {
-        throwError(state, "name of an alias node must contain at least one character");
+      if (状态.position === _位置) { // 如果位置沒變。
+        抛错处(状态, "别名节点名至少得有一个字符"); // 拋出別名節點名錯誤。
       }
-      alias = state.input.slice(_position, state.position);
-      if (!_hasOwnProperty.call(state.anchorMap, alias)) {
-        throwError(state, 'unidentified alias "' + alias + '"');
+      别名 = 状态.input.slice(_位置, 状态.position); // 別名。
+      if (!_hasOwnProperty.call(状态.anchorMap, 别名)) { // 如果錨點圖譜裡沒有別名。
+        抛错处(状态, '没认出来的别名 "' + 别名 + '"'); // 拋出沒認出來別名錯誤。
       }
-      state.result = state.anchorMap[alias];
-      skipSeparationSpace(state, true, -1);
-      return true;
+      状态.result = 状态.anchorMap[别名]; // 結果是錨點圖譜裡的別名。
+      跳过间隔(状态, true, -1); // 跳過間隔。
+      return true; // 回真。
     }
-    function composeNode(state, parentIndent, nodeContext, allowToSeek, allowCompact) {
-      var allowBlockStyles, allowBlockScalars, allowBlockCollections, indentStatus = 1, atNewLine = false, hasContent = false, typeIndex, typeQuantity, typeList, type, flowIndent, blockIndent;
-      if (state.listener !== null) {
-        state.listener("open", state);
+
+    function 组合节点(状态, 父缩进, 节点境, 允许寻找, 允许紧凑) { // 組合節點。
+      var 允许块样式, 允许块标量, 允许块集合, 缩进状态 = 1, // 允許塊樣式、允許塊標量、允許塊集合、縮進狀態。
+        在新行 = false, // 在新行。
+        有内容 = false, // 有內容。
+        类型索引, 类型数量, 类型列表, 类型, 流缩进, 块缩进; // 類型索引、類型數量、類型列表、類型、流縮進、塊縮進。
+      if (状态.listener !== null) { // 如果有監聽器。
+        状态.listener("open", 状态); // 調用監聽器。
       }
-      state.tag = null;
-      state.anchor = null;
-      state.kind = null;
-      state.result = null;
-      allowBlockStyles = allowBlockScalars = allowBlockCollections = CONTEXT_BLOCK_OUT === nodeContext || CONTEXT_BLOCK_IN === nodeContext;
-      if (allowToSeek) {
-        if (skipSeparationSpace(state, true, -1)) {
-          atNewLine = true;
-          if (state.lineIndent > parentIndent) {
-            indentStatus = 1;
-          } else if (state.lineIndent === parentIndent) {
-            indentStatus = 0;
-          } else if (state.lineIndent < parentIndent) {
-            indentStatus = -1;
+      状态.tag = null; // 標籤清空。
+      状态.anchor = null; // 錨點清空。
+      状态.kind = null; // 種類清空。
+      状态.result = null; // 結果清空。
+      允许块样式 = 允许块标量 = 允许块集合 = 块外境 === 节点境 || 块内境 === 节点境; // 允許塊樣式、塊標量、塊集合。
+      if (允许寻找) { // 如果允許尋找。
+        if (跳过间隔(状态, true, -1)) { // 跳過間隔。
+          在新行 = true; // 在新行。
+          if (状态.lineIndent > 父缩进) { // 如果行縮進大於父縮進。
+            缩进状态 = 1; // 縮進狀態是一。
+          } else if (状态.lineIndent === 父缩进) { // 如果行縮進等於父縮進。
+            缩进状态 = 0; // 縮進狀態是零。
+          } else if (状态.lineIndent < 父缩进) { // 如果行縮進小於父縮進。
+            缩进状态 = -1; // 縮進狀態是負一。
           }
         }
       }
-      if (indentStatus === 1) {
-        while (readTagProperty(state) || readAnchorProperty(state)) {
-          if (skipSeparationSpace(state, true, -1)) {
-            atNewLine = true;
-            allowBlockCollections = allowBlockStyles;
-            if (state.lineIndent > parentIndent) {
-              indentStatus = 1;
-            } else if (state.lineIndent === parentIndent) {
-              indentStatus = 0;
-            } else if (state.lineIndent < parentIndent) {
-              indentStatus = -1;
+      if (缩进状态 === 1) { // 如果縮進狀態是一。
+        while (读标签属性(状态) || 读锚点属性(状态)) { // 讀標籤屬性或錨點屬性。
+          if (跳过间隔(状态, true, -1)) { // 跳過間隔。
+            在新行 = true; // 在新行。
+            允许块集合 = 允许块样式; // 允許塊集合。
+            if (状态.lineIndent > 父缩进) { // 如果行縮進大於父縮進。
+              缩进状态 = 1; // 縮進狀態是一。
+            } else if (状态.lineIndent === 父缩进) { // 如果行縮進等於父縮進。
+              缩进状态 = 0; // 縮進狀態是零。
+            } else if (状态.lineIndent < 父缩进) { // 如果行縮進小於父縮進。
+              缩进状态 = -1; // 縮進狀態是負一。
             }
           } else {
-            allowBlockCollections = false;
+            允许块集合 = false; // 不允許塊集合。
           }
         }
       }
-      if (allowBlockCollections) {
-        allowBlockCollections = atNewLine || allowCompact;
+      if (允许块集合) { // 如果允許塊集合。
+        允许块集合 = 在新行 || 允许紧凑; // 允許塊集合。
       }
-      if (indentStatus === 1 || CONTEXT_BLOCK_OUT === nodeContext) {
-        if (CONTEXT_FLOW_IN === nodeContext || CONTEXT_FLOW_OUT === nodeContext) {
-          flowIndent = parentIndent;
+      if (缩进状态 === 1 || 块外境 === 节点境) { // 如果縮進狀態是一或塊外境。
+        if (流内境 === 节点境 || 流外境 === 节点境) { // 如果是流內境或流外境。
+          流缩进 = 父缩进; // 流縮進。
         } else {
-          flowIndent = parentIndent + 1;
+          流缩进 = 父缩进 + 1; // 流縮進。
         }
-        blockIndent = state.position - state.lineStart;
-        if (indentStatus === 1) {
-          if (allowBlockCollections && (readBlockSequence(state, blockIndent) || readBlockMapping(state, blockIndent, flowIndent)) || readFlowCollection(state, flowIndent)) {
-            hasContent = true;
+        块缩进 = 状态.position - 状态.lineStart; // 塊縮進。
+        if (缩进状态 === 1) { // 如果縮進狀態是一。
+          if (允许块集合 && (读块序列(状态, 块缩进) || 读块映射(状态, 块缩进, 流缩进)) || 读流集合(状态, 流缩进)) { // 讀塊序列、塊映射或流集合。
+            有内容 = true; // 有內容。
           } else {
-            if (allowBlockScalars && readBlockScalar(state, flowIndent) || readSingleQuotedScalar(state, flowIndent) || readDoubleQuotedScalar(state, flowIndent)) {
-              hasContent = true;
-            } else if (readAlias(state)) {
-              hasContent = true;
-              if (state.tag !== null || state.anchor !== null) {
-                throwError(state, "alias node should not have any properties");
+            if (允许块标量 && 读块标量(状态, 流缩进) || 读单引号标量(状态, 流缩进) || 读双引号标量(状态, 流缩进)) { // 讀塊標量、單引號標量或雙引號標量。
+              有内容 = true; // 有內容。
+            } else if (读别名(状态)) { // 讀別名。
+              有内容 = true; // 有內容。
+              if (状态.tag !== null || 状态.anchor !== null) { // 如果有標籤或錨點。
+                抛错处(状态, "别名节点不该有任何属性"); // 拋出別名節點錯誤。
               }
-            } else if (readPlainScalar(state, flowIndent, CONTEXT_FLOW_IN === nodeContext)) {
-              hasContent = true;
-              if (state.tag === null) {
-                state.tag = "?";
+            } else if (读普通标量(状态, 流缩进, 流内境 === 节点境)) { // 讀普通標量。
+              有内容 = true; // 有內容。
+              if (状态.tag === null) { // 如果沒有標籤。
+                状态.tag = "?"; // 標籤是問號。
               }
             }
-            if (state.anchor !== null) {
-              state.anchorMap[state.anchor] = state.result;
+            if (状态.锚点 !== null) { // 如果有錨點。
+              状态.anchorMap[状态.锚点] = 状态.result; // 記錄錨點和結果。
             }
           }
-        } else if (indentStatus === 0) {
-          hasContent = allowBlockCollections && readBlockSequence(state, blockIndent);
+        } else if (缩进状态 === 0) { // 如果縮進狀態是零。
+          有内容 = 允许块集合 && 读块序列(状态, 块缩进); // 有內容。
         }
       }
-      if (state.tag === null) {
-        if (state.anchor !== null) {
-          state.anchorMap[state.anchor] = state.result;
+      if (状态.tag === null) { // 如果沒有標籤。
+        if (状态.锚点 !== null) { // 如果有錨點。
+          状态.anchorMap[状态.锚点] = 状态.result; // 記錄錨點和結果。
         }
-      } else if (state.tag === "?") {
-        if (state.result !== null && state.kind !== "scalar") {
-          throwError(state, 'unacceptable node kind for !<?> tag; it should be "scalar", not "' + state.kind + '"');
+      } else if (状态.tag === "?") { // 如果標籤是問號。
+        if (状态.result !== null && 状态.kind !== "scalar") { // 如果結果不空且種類不是標量。
+          抛错处(状态, '!<?>标签的节点种类不中用；它该是“标量”，不是“' + 状态.kind + '”'); // 拋出節點種類錯誤。
         }
-        for (typeIndex = 0, typeQuantity = state.implicitTypes.length; typeIndex < typeQuantity; typeIndex += 1) {
-          type = state.implicitTypes[typeIndex];
-          if (type.resolve(state.result)) {
-            state.result = type.construct(state.result);
-            state.tag = type.tag;
-            if (state.anchor !== null) {
-              state.anchorMap[state.anchor] = state.result;
+        for (类型索引 = 0, 类型数量 = 状态.implicitTypes.length; 类型索引 < 类型数量; 类型索引 += 1) { // 循環隱式類型。
+          类型 = 状态.implicitTypes[类型索引]; // 類型。
+          if (类型.resolve(状态.result)) { // 如果能解析。
+            状态.result = 类型.construct(状态.result); // 構造結果。
+            状态.tag = 类型.tag; // 標籤。
+            if (状态.锚点 !== null) { // 如果有錨點。
+              状态.anchorMap[状态.锚点] = 状态.result; // 記錄錨點和結果。
             }
-            break;
+            break; // 跳出。
           }
         }
-      } else if (state.tag !== "!") {
-        if (_hasOwnProperty.call(state.typeMap[state.kind || "fallback"], state.tag)) {
-          type = state.typeMap[state.kind || "fallback"][state.tag];
+      } else if (状态.tag !== "!") { // 如果標籤不是感嘆號。
+        if (_hasOwnProperty.call(状态.typeMap[状态.kind || "fallback"], 状态.tag)) { // 如果類型圖譜裡有標籤。
+          类型 = 状态.typeMap[状态.kind || "fallback"][状态.tag]; // 類型。
         } else {
-          type = null;
-          typeList = state.typeMap.multi[state.kind || "fallback"];
-          for (typeIndex = 0, typeQuantity = typeList.length; typeIndex < typeQuantity; typeIndex += 1) {
-            if (state.tag.slice(0, typeList[typeIndex].tag.length) === typeList[typeIndex].tag) {
-              type = typeList[typeIndex];
-              break;
+          类型 = null; // 類型是空。
+          类型列表 = 状态.typeMap.multi[状态.kind || "fallback"]; // 類型列表。
+          for (类型索引 = 0, 类型数量 = 类型列表.length; 类型索引 < 类型数量; 类型索引 += 1) { // 循環類型列表。
+            if (状态.tag.slice(0, 类型列表[类型索引].tag.length) === 类型列表[类型索引].tag) { // 如果標籤匹配。
+              类型 = 类型列表[类型索引]; // 類型。
+              break; // 跳出。
             }
           }
         }
-        if (!type) {
-          throwError(state, "unknown tag !<" + state.tag + ">");
+        if (!类型) { // 如果沒有類型。
+          抛错处(状态, "不知名的标签 !<" + 状态.tag + ">"); // 拋出不知名標籤錯誤。
         }
-        if (state.result !== null && type.kind !== state.kind) {
-          throwError(state, "unacceptable node kind for !<" + state.tag + '> tag; it should be "' + type.kind + '", not "' + state.kind + '"');
+        if (状态.result !== null && 类型.kind !== 状态.kind) { // 如果結果不空且種類不匹配。
+          抛错处(状态, "不中用的节点种类 !<" + 状态.tag + '>标签；它该是“' + 类型.kind + '”，不是“' + 状态.kind + '”'); // 拋出節點種類錯誤。
         }
-        if (!type.resolve(state.result, state.tag)) {
-          throwError(state, "cannot resolve a node with !<" + state.tag + "> explicit tag");
+        if (!类型.resolve(状态.result, 状态.tag)) { // 如果不能解析。
+          抛错处(状态, "没法解析带 !<" + 状态.tag + "> 显式标签的节点"); // 拋出解析錯誤。
         } else {
-          state.result = type.construct(state.result, state.tag);
-          if (state.anchor !== null) {
-            state.anchorMap[state.anchor] = state.result;
+          状态.result = 类型.construct(状态.result, 状态.tag); // 構造結果。
+          if (状态.锚点 !== null) { // 如果有錨點。
+            状态.anchorMap[状态.锚点] = 状态.result; // 記錄錨點和結果。
           }
         }
       }
-      if (state.listener !== null) {
-        state.listener("close", state);
+      if (状态.listener !== null) { // 如果有監聽器。
+        状态.listener("close", 状态); // 調用監聽器。
       }
-      return state.tag !== null || state.anchor !== null || hasContent;
+      return 状态.tag !== null || 状态.anchor !== null || 有内容; // 回標籤、錨點或有內容。
     }
-    function readDocument(state) {
-      var documentStart = state.position, _position, directiveName, directiveArgs, hasDirectives = false, ch;
-      state.version = null;
-      state.checkLineBreaks = state.legacy;
-      state.tagMap = /* @__PURE__ */ Object.create(null);
-      state.anchorMap = /* @__PURE__ */ Object.create(null);
-      while ((ch = state.input.charCodeAt(state.position)) !== 0) {
-        skipSeparationSpace(state, true, -1);
-        ch = state.input.charCodeAt(state.position);
-        if (state.lineIndent > 0 || ch !== 37) {
-          break;
+
+    function 读文档(状态) { // 讀文檔。
+      var 文档始 = 状态.position, // 文檔始。
+        _位置, 指令名, 指令参数, 有指令 = false, 字符; // 位置、指令名、指令參數、有指令、字符。
+      状态.version = null; // 版本清空。
+      状态.checkLineBreaks = 状态.legacy; // 檢查換行。
+      状态.tagMap = /* @__PURE__ */ Object.create(null); // 標籤圖譜清空。
+      状态.anchorMap = /* @__PURE__ */ Object.create(null); // 錨點圖譜清空。
+      while ((字符 = 状态.input.charCodeAt(状态.position)) !== 0) { // 循環直到結束。
+        跳过间隔(状态, true, -1); // 跳過間隔。
+        字符 = 状态.input.charCodeAt(状态.position); // 取字符。
+        if (状态.lineIndent > 0 || 字符 !== 37) { // 如果行縮進大於零或不是百分號。
+          break; // 跳出。
         }
-        hasDirectives = true;
-        ch = state.input.charCodeAt(++state.position);
-        _position = state.position;
-        while (ch !== 0 && !is_WS_OR_EOL(ch)) {
-          ch = state.input.charCodeAt(++state.position);
+        有指令 = true; // 有指令。
+        字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
+        _位置 = 状态.position; // 位置。
+        while (字符 !== 0 && !是空行否(字符)) { // 循環直到結束或空行。
+          字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
         }
-        directiveName = state.input.slice(_position, state.position);
-        directiveArgs = [];
-        if (directiveName.length < 1) {
-          throwError(state, "directive name must not be less than one character in length");
+        指令名 = 状态.input.slice(_位置, 状态.position); // 指令名。
+        指令参数 = []; // 指令參數。
+        if (指令名.length < 1) { // 如果指令名長度小於一。
+          抛错处(状态, "指令名至少得有一个字符"); // 拋出指令名錯誤。
         }
-        while (ch !== 0) {
-          while (is_WHITE_SPACE(ch)) {
-            ch = state.input.charCodeAt(++state.position);
+        while (字符 !== 0) { // 循環直到結束。
+          while (是空白否(字符)) { // 跳過空白。
+            字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
           }
-          if (ch === 35) {
+          if (字符 === 35) { // 如果是井號。
             do {
-              ch = state.input.charCodeAt(++state.position);
-            } while (ch !== 0 && !is_EOL(ch));
-            break;
+              字符 = 状态.input.charCodeAt(++状态.position); // 跳過註釋。
+            } while (字符 !== 0 && !是行尾否(字符)); // 直到結束或行尾。
+            break; // 跳出。
           }
-          if (is_EOL(ch))
-            break;
-          _position = state.position;
-          while (ch !== 0 && !is_WS_OR_EOL(ch)) {
-            ch = state.input.charCodeAt(++state.position);
+          if 是行尾否(字符)) // 如果是行尾。
+            break; // 跳出。
+          _位置 = 状态.position; // 位置。
+          while (字符 !== 0 && !是空行否(字符)) { // 循環直到結束或空行。
+            字符 = 状态.input.charCodeAt(++状态.position); // 取下一個字符。
           }
-          directiveArgs.push(state.input.slice(_position, state.position));
+          指令参数.push(状态.input.slice(_位置, 状态.position)); // 推入指令參數。
         }
-        if (ch !== 0)
-          readLineBreak(state);
-        if (_hasOwnProperty.call(directiveHandlers, directiveName)) {
-          directiveHandlers[directiveName](state, directiveName, directiveArgs);
+        if (字符 !== 0) // 如果不是結束。
+          读换行(状态); // 讀換行。
+        if (_hasOwnProperty.call(指令处理者, 指令名)) { // 如果指令處理者裡有指令名。
+          指令处理者[指令名](状态, 指令名, 指令参数); // 調用指令處理者。
         } else {
-          throwWarning(state, 'unknown document directive "' + directiveName + '"');
+          抛警示(状态, '未知文档指令 "' + 指令名 + '"'); // 拋出未知指令警告。
         }
       }
-      skipSeparationSpace(state, true, -1);
-      if (state.lineIndent === 0 && state.input.charCodeAt(state.position) === 45 && state.input.charCodeAt(state.position + 1) === 45 && state.input.charCodeAt(state.position + 2) === 45) {
-        state.position += 3;
-        skipSeparationSpace(state, true, -1);
-      } else if (hasDirectives) {
-        throwError(state, "directives end mark is expected");
+      跳过间隔(状态, true, -1); // 跳過間隔。
+      if (状态.lineIndent === 0 && 状态.input.charCodeAt(状态.position) === 45 && 状态.input.charCodeAt(状态.position + 1) === 45 && 状态.input.charCodeAt(状态.position + 2) === 45) { // 如果是三個連字符。
+        状态.position += 3; // 位置加三。
+        跳过间隔(状态, true, -1); // 跳過間隔。
+      } else if (有指令) { // 如果有指令。
+        抛错处(状态, "指令结束标记不见了"); // 拋出指令結束標記錯誤。
       }
-      composeNode(state, state.lineIndent - 1, CONTEXT_BLOCK_OUT, false, true);
-      skipSeparationSpace(state, true, -1);
-      if (state.checkLineBreaks && PATTERN_NON_ASCII_LINE_BREAKS.test(state.input.slice(documentStart, state.position))) {
-        throwWarning(state, "non-ASCII line breaks are interpreted as content");
+      组合节点(状态, 状态.lineIndent - 1, 块外境, false, true); // 組合節點。
+      跳过间隔(状态, true, -1); // 跳過間隔。
+      if (状态.checkLineBreaks && 非西文换行.test(状态.input.slice(文档始, 状态.position))) { // 如果檢查換行且有非西文換行。
+        抛警示(状态, "非西文换行被当成内容了"); // 拋出非西文換行警告。
       }
-      state.documents.push(state.result);
-      if (state.position === state.lineStart && testDocumentSeparator(state)) {
-        if (state.input.charCodeAt(state.position) === 46) {
-          state.position += 3;
-          skipSeparationSpace(state, true, -1);
+      状态.documents.push(状态.result); // 推入文檔。
+      if (状态.position === 状态.lineStart && 测文档分隔(状态)) { // 如果是文檔分隔符。
+        if (状态.input.charCodeAt(状态.position) === 46) { // 如果是點。
+          状态.position += 3; // 位置加三。
+          跳过间隔(状态, true, -1); // 跳過間隔。
         }
-        return;
+        return; // 回。
       }
-      if (state.position < state.length - 1) {
-        throwError(state, "end of the stream or a document separator is expected");
+      if (状态.position < 状态.length - 1) { // 如果位置小於長度減一。
+        抛错处(状态, "水流尽头或文档分隔符不见了"); // 拋出水流盡頭錯誤。
       } else {
-        return;
+        return; // 回。
       }
     }
-    function loadDocuments(input, options) {
-      input = String(input);
-      options = options || {};
-      if (input.length !== 0) {
-        if (input.charCodeAt(input.length - 1) !== 10 && input.charCodeAt(input.length - 1) !== 13) {
-          input += "\n";
+
+    function 装载文档(输入, 选项) { // 裝載文檔。
+      输入 = String(输入); // 轉成字串。
+      选项 = 选项 || {}; // 選項。
+      if (输入.length !== 0) { // 如果輸入不空。
+        if (输入.charCodeAt(输入.length - 1) !== 10 && 输入.charCodeAt(输入.length - 1) !== 13) { // 如果末尾沒有換行。
+          输入 += "\n"; // 加上換行。
         }
-        if (input.charCodeAt(0) === 65279) {
-          input = input.slice(1);
+        if (输入.charCodeAt(0) === 65279) { // 如果有BOM。
+          输入 = 输入.slice(1); // 去掉BOM。
         }
       }
-      var state = new State(input, options);
-      var nullpos = input.indexOf("\0");
-      if (nullpos !== -1) {
-        state.position = nullpos;
-        throwError(state, "null byte is not allowed in input");
+      var 状态 = new 状态(输入, 选项); // 新狀態。
+      var 空字节位置 = 输入.indexOf("\0"); // 空字節位置。
+      if (空字节位置 !== -1) { // 如果有空字節。
+        状态.position = 空字节位置; // 位置。
+        抛错处(状态, "输入里不能有空字节"); // 拋出空字節錯誤。
       }
-      state.input += "\0";
-      while (state.input.charCodeAt(state.position) === 32) {
-        state.lineIndent += 1;
-        state.position += 1;
+      状态.input += "\0"; // 輸入加上空字節。
+      while (状态.input.charCodeAt(状态.position) === 32) { // 跳過開頭空格。
+        状态.lineIndent += 1; // 行縮進加一。
+        状态.position += 1; // 位置加一。
       }
-      while (state.position < state.length - 1) {
-        readDocument(state);
+      while (状态.position < 状态.length - 1) { // 循環直到結束。
+        读文档(状态); // 讀文檔。
       }
-      return state.documents;
+      return 状态.documents; // 回文檔列表。
     }
-    function loadAll(input, iterator, options) {
-      if (iterator !== null && typeof iterator === "object" && typeof options === "undefined") {
-        options = iterator;
-        iterator = null;
+
+    function 全装载(输入, 迭代器, 选项) { // 全裝載。
+      if (迭代器 !== null && typeof 迭代器 === "object" && typeof 选项 === "undefined") { // 如果迭代器是物件且選項是空。
+        选项 = 迭代器; // 選項。
+        迭代器 = null; // 迭代器清空。
       }
-      var documents = loadDocuments(input, options);
-      if (typeof iterator !== "function") {
-        return documents;
+      var 文档列表 = 装载文档(输入, 选项); // 裝載文檔。
+      if (typeof 迭代器 !== "function") { // 如果迭代器不是函數。
+        return 文档列表; // 回文檔列表。
       }
-      for (var index = 0, length = documents.length; index < length; index += 1) {
-        iterator(documents[index]);
+      for (var 索引 = 0, 长度 = 文档列表.length; 索引 < 长度; 索引 += 1) { // 循環。
+        迭代器(文档列表[索引]); // 調用迭代器。
       }
     }
-    function load(input, options) {
-      var documents = loadDocuments(input, options);
-      if (documents.length === 0) {
-        return void 0;
-      } else if (documents.length === 1) {
-        return documents[0];
+
+    function 装载(输入, 选项) { // 裝載。
+      var 文档列表 = 装载文档(输入, 选项); // 裝載文檔。
+      if (文档列表.length === 0) { // 如果文檔列表是空。
+        return void 0; // 回空。
+      } else if (文档列表.length === 1) { // 如果文檔列表只有一個。
+        return 文档列表[0]; // 回第一個。
       }
-      throw new YAMLException("expected a single document in the stream, but found more");
+      throw new 歪门邪道之祸("水流里只该有一个文档，结果多了"); // 拋出文檔數量錯誤。
     }
-    module.exports.loadAll = loadAll;
-    module.exports.load = load;
+    模块.exports.全装载 = 全装载; // 全裝載，出口。
+    模块.exports.装载 = 装载; // 裝載，出口。
   }
 });
 
 // node_modules/js-yaml/lib/dumper.js
-var require_dumper = __commonJS({
-  "node_modules/js-yaml/lib/dumper.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var common = require_common();
-    var YAMLException = require_exception();
-    var DEFAULT_SCHEMA = require_default();
-    var _toString = Object.prototype.toString;
-    var _hasOwnProperty = Object.prototype.hasOwnProperty;
-    var CHAR_BOM = 65279;
-    var CHAR_TAB = 9;
-    var CHAR_LINE_FEED = 10;
-    var CHAR_CARRIAGE_RETURN = 13;
-    var CHAR_SPACE = 32;
-    var CHAR_EXCLAMATION = 33;
-    var CHAR_DOUBLE_QUOTE = 34;
-    var CHAR_SHARP = 35;
-    var CHAR_PERCENT = 37;
-    var CHAR_AMPERSAND = 38;
-    var CHAR_SINGLE_QUOTE = 39;
-    var CHAR_ASTERISK = 42;
-    var CHAR_COMMA = 44;
-    var CHAR_MINUS = 45;
-    var CHAR_COLON = 58;
-    var CHAR_EQUALS = 61;
-    var CHAR_GREATER_THAN = 62;
-    var CHAR_QUESTION = 63;
-    var CHAR_COMMERCIAL_AT = 64;
-    var CHAR_LEFT_SQUARE_BRACKET = 91;
-    var CHAR_RIGHT_SQUARE_BRACKET = 93;
-    var CHAR_GRAVE_ACCENT = 96;
-    var CHAR_LEFT_CURLY_BRACKET = 123;
-    var CHAR_VERTICAL_LINE = 124;
-    var CHAR_RIGHT_CURLY_BRACKET = 125;
-    var ESCAPE_SEQUENCES = {};
-    ESCAPE_SEQUENCES[0] = "\\0";
-    ESCAPE_SEQUENCES[7] = "\\a";
-    ESCAPE_SEQUENCES[8] = "\\b";
-    ESCAPE_SEQUENCES[9] = "\\t";
-    ESCAPE_SEQUENCES[10] = "\\n";
-    ESCAPE_SEQUENCES[11] = "\\v";
-    ESCAPE_SEQUENCES[12] = "\\f";
-    ESCAPE_SEQUENCES[13] = "\\r";
-    ESCAPE_SEQUENCES[27] = "\\e";
-    ESCAPE_SEQUENCES[34] = '\\"';
-    ESCAPE_SEQUENCES[92] = "\\\\";
-    ESCAPE_SEQUENCES[133] = "\\N";
-    ESCAPE_SEQUENCES[160] = "\\_";
-    ESCAPE_SEQUENCES[8232] = "\\L";
-    ESCAPE_SEQUENCES[8233] = "\\P";
-    var DEPRECATED_BOOLEANS_SYNTAX = [
+var 寻倾倒 = 寻常货({ // 尋找傾倒，把東西都倒出去。
+  "node_modules/js-yaml/lib/dumper.js"(出口, 模块) { // 傾倒的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 寻常 = 寻常货栈(); // 尋常貨棧裡找尋常。
+    var 歪门邪道之祸 = 寻异端(); // 歪門邪道之禍。
+    var 默认纲要 = 寻默认(); // 默認綱要。
+    var _toString = Object.prototype.toString; // 轉字串。
+    var _hasOwnProperty = Object.prototype.hasOwnProperty; // 自己的屬性。
+    var 字节序标记 = 65279; // 字节序标记。
+    var 制表符 = 9; // 制表符。
+    var 换行符 = 10; // 换行符。
+    var 回车符 = 13; // 回车符。
+    var 空格符 = 32; // 空格符。
+    var 感叹符 = 33; // 感叹符。
+    var 双引号 = 34; // 双引号。
+    var 井号 = 35; // 井号。
+    var 百分符 = 37; // 百分符。
+    var 与符 = 38; // 与符。
+    var 单引号 = 39; // 单引号。
+    var 星号 = 42; // 星号。
+    var 逗号 = 44; // 逗号。
+    var 减号 = 45; // 减号。
+    var 冒号 = 58; // 冒号。
+    var 等号 = 61; // 等号。
+    var 大于号 = 62; // 大于号。
+    var 问号 = 63; // 问号。
+    var 艾特符 = 64; // 艾特符。
+    var 左方括号 = 91; // 左方括号。
+    var 右方括号 = 93; // 右方括号。
+    var 反引号 = 96; // 反引号。
+    var 左花括号 = 123; // 左花括号。
+    var 竖线符 = 124; // 竖线符。
+    var 右花括号 = 125; // 右花括号。
+    var 转义序列 = {}; // 转义序列。
+    转义序列[0] = "\\0"; // 空字符。
+    转义序列[7] = "\\a"; // 响铃。
+    转义序列[8] = "\\b"; // 退格。
+    转义序列[9] = "\\t"; // 制表符。
+    转义序列[10] = "\\n"; // 换行。
+    转义序列[11] = "\\v"; // 垂直制表符。
+    转义序列[12] = "\\f"; // 换页。
+    转义序列[13] = "\\r"; // 回车。
+    转义序列[27] = "\\e"; // ESC。
+    转义序列[34] = '\\"'; // 双引号。
+    转义序列[92] = "\\\\"; // 反斜杠。
+    转义序列[133] = "\\N"; // 下一行。
+    转义序列[160] = "\\_"; // 不间断空格。
+    转义序列[8232] = "\\L"; // 行分隔符。
+    转义序列[8233] = "\\P"; // 段落分隔符。
+    var 废弃布尔语法 = [ // 废弃布尔语法。
       "y",
       "Y",
       "yes",
@@ -2296,992 +2405,682 @@ var require_dumper = __commonJS({
       "Off",
       "OFF"
     ];
-    var DEPRECATED_BASE60_SYNTAX = /^[-+]?[0-9_]+(?::[0-9_]+)+(?:\.[0-9_]*)?$/;
-    function compileStyleMap(schema, map) {
-      var result, keys, index, length, tag, style, type;
-      if (map === null)
-        return {};
-      result = {};
-      keys = Object.keys(map);
-      for (index = 0, length = keys.length; index < length; index += 1) {
-        tag = keys[index];
-        style = String(map[tag]);
-        if (tag.slice(0, 2) === "!!") {
-          tag = "tag:yaml.org,2002:" + tag.slice(2);
+    var 废弃六十进制语法 = /^[-+]?[0-9_]+(?::[0-9_]+)+(?:\.[0-9_]*)?$/; // 废弃六十进制语法。
+    function 汇编样式图(纲要, 图谱) { // 汇编样式图。
+      var 结果, 钥匙, 索引, 长度, 标签, 样式, 类型; // 结果、钥匙、索引、长度、标签、样式、类型。
+      if (图谱 === null) // 如果图谱是空。
+        return {}; // 回空物件。
+      结果 = {}; // 结果。
+      钥匙 = Object.keys(图谱); // 钥匙。
+      for (索引 = 0, 长度 = 钥匙.length; 索引 < 长度; 索引 += 1) { // 循环。
+        标签 = 钥匙[索引]; // 标签。
+        样式 = String(图谱[标签]); // 样式。
+        if (标签.slice(0, 2) === "!!") { // 如果是两个感叹号。
+          标签 = "tag:yaml.org,2002:" + 标签.slice(2); // 标签。
         }
-        type = schema.compiledTypeMap["fallback"][tag];
-        if (type && _hasOwnProperty.call(type.styleAliases, style)) {
-          style = type.styleAliases[style];
+        类型 = 纲要.compiledTypeMap["fallback"][标签]; // 类型。
+        if (类型 && _hasOwnProperty.call(类型.styleAliases, 样式)) { // 如果类型有样式别名。
+          样式 = 类型.styleAliases[样式]; // 样式。
         }
-        result[tag] = style;
+        结果[标签] = 样式; // 结果。
       }
-      return result;
+      return 结果; // 回结果。
     }
-    function encodeHex(character) {
-      var string, handle, length;
-      string = character.toString(16).toUpperCase();
-      if (character <= 255) {
-        handle = "x";
-        length = 2;
-      } else if (character <= 65535) {
-        handle = "u";
-        length = 4;
-      } else if (character <= 4294967295) {
-        handle = "U";
-        length = 8;
+
+    function 编码十六进制(字符码) { // 编码十六进制。
+      var 字串, 把手, 长度; // 字串、把手、长度。
+      字串 = 字符码.toString(16).toUpperCase(); // 转成大写十六进制字串。
+      if (字符码 <= 255) { // 如果字符码小於等於255。
+        把手 = "x"; // 把手是x。
+        长度 = 2; // 长度是2。
+      } else if (字符码 <= 65535) { // 如果字符码小於等於65535。
+        把手 = "u"; // 把手是u。
+        长度 = 4; // 长度是4。
+      } else if (字符码 <= 4294967295) { // 如果字符码小於等於4294967295。
+        把手 = "U"; // 把手是U。
+        长度 = 8; // 长度是8。
       } else {
-        throw new YAMLException("code point within a string may not be greater than 0xFFFFFFFF");
+        throw new 歪门邪道之祸("字串里的码点不能超过0xFFFFFFFF"); // 抛出码点错误。
       }
-      return "\\" + handle + common.repeat("0", length - string.length) + string;
+      return "\\" + 把手 + 寻常.反复("0", 长度 - 字串.length) + 字串; // 回转义字串。
     }
-    var QUOTING_TYPE_SINGLE = 1;
-    var QUOTING_TYPE_DOUBLE = 2;
-    function State(options) {
-      this.schema = options["schema"] || DEFAULT_SCHEMA;
-      this.indent = Math.max(1, options["indent"] || 2);
-      this.noArrayIndent = options["noArrayIndent"] || false;
-      this.skipInvalid = options["skipInvalid"] || false;
-      this.flowLevel = common.isNothing(options["flowLevel"]) ? -1 : options["flowLevel"];
-      this.styleMap = compileStyleMap(this.schema, options["styles"] || null);
-      this.sortKeys = options["sortKeys"] || false;
-      this.lineWidth = options["lineWidth"] || 80;
-      this.noRefs = options["noRefs"] || false;
-      this.noCompatMode = options["noCompatMode"] || false;
-      this.condenseFlow = options["condenseFlow"] || false;
-      this.quotingType = options["quotingType"] === '"' ? QUOTING_TYPE_DOUBLE : QUOTING_TYPE_SINGLE;
-      this.forceQuotes = options["forceQuotes"] || false;
-      this.replacer = typeof options["replacer"] === "function" ? options["replacer"] : null;
-      this.implicitTypes = this.schema.compiledImplicit;
-      this.explicitTypes = this.schema.compiledExplicit;
-      this.tag = null;
-      this.result = "";
-      this.duplicates = [];
-      this.usedDuplicates = null;
+
+    var 单引号类型 = 1; // 单引号类型。
+    var 双引号类型 = 2; // 双引号类型。
+    function 状态(选项) { // 状态。
+      this.schema = 选项["schema"] || 默认纲要; // 纲要。
+      this.indent = Math.max(1, 选项["indent"] || 2); // 缩进。
+      this.noArrayIndent = 选项["noArrayIndent"] || false; // 不数组缩进。
+      this.skipInvalid = 选项["skipInvalid"] || false; // 跳过无效。
+      this.flowLevel = 寻常.空空如也(选项["flowLevel"]) ? -1 : 选项["flowLevel"]; // 流级别。
+      this.styleMap = 汇编样式图(this.schema, 选项["styles"] || null); // 样式图。
+      this.sortKeys = 选项["sortKeys"] || false; // 排序钥匙。
+      this.lineWidth = 选项["lineWidth"] || 80; // 行宽。
+      this.noRefs = 选项["noRefs"] || false; // 不引用。
+      this.noCompatMode = 选项["noCompatMode"] || false; // 不兼容模式。
+      this.condenseFlow = 选项["condenseFlow"] || false; // 凝缩流。
+      this.quotingType = 选项["quotingType"] === '"' ? 双引号类型 : 单引号类型; // 引号类型。
+      this.forceQuotes = 选项["forceQuotes"] || false; // 强制引号。
+      this.replacer = typeof 选项["replacer"] === "function" ? 选项["replacer"] : null; // 替换器。
+      this.implicitTypes = this.schema.compiledImplicit; // 隐式类型。
+      this.explicitTypes = this.schema.compiledExplicit; // 显式类型。
+      this.tag = null; // 标签。
+      this.result = ""; // 结果。
+      this.duplicates = []; // 重复。
+      this.usedDuplicates = null; // 已用重复。
     }
-    function indentString(string, spaces) {
-      var ind = common.repeat(" ", spaces), position = 0, next = -1, result = "", line, length = string.length;
-      while (position < length) {
-        next = string.indexOf("\n", position);
-        if (next === -1) {
-          line = string.slice(position);
-          position = length;
+
+    function 缩进字串(字串, 空格数) { // 缩进字串。
+      var 缩进 = 寻常.反复(" ", 空格数), // 缩进。
+        位置 = 0, // 位置。
+        下个 = -1, // 下个。
+        结果 = "", // 结果。
+        行, 长度 = 字串.length; // 行、长度。
+      while (位置 < 长度) { // 循环。
+        下个 = 字串.indexOf("\n", 位置); // 找到下个换行。
+        if (下个 === -1) { // 如果没有。
+          行 = 字串.slice(位置); // 行。
+          位置 = 长度; // 位置。
         } else {
-          line = string.slice(position, next + 1);
-          position = next + 1;
+          行 = 字串.slice(位置, 下个 + 1); // 行。
+          位置 = 下个 + 1; // 位置。
         }
-        if (line.length && line !== "\n")
-          result += ind;
-        result += line;
+        if (行.length && 行 !== "\n") // 如果行不空且不是换行。
+          结果 += 缩进; // 加上缩进。
+        结果 += 行; // 加上行。
       }
-      return result;
+      return 结果; // 回结果。
     }
-    function generateNextLine(state, level) {
-      return "\n" + common.repeat(" ", state.indent * level);
+
+    function 生成下行(状态, 级别) { // 生成下行。
+      return "\n" + 寻常.反复(" ", 状态.indent * 级别); // 回换行和缩进。
     }
-    function testImplicitResolving(state, str) {
-      var index, length, type;
-      for (index = 0, length = state.implicitTypes.length; index < length; index += 1) {
-        type = state.implicitTypes[index];
-        if (type.resolve(str)) {
-          return true;
+
+    function 测试隐式解析(状态, 字串) { // 测试隐式解析。
+      var 索引, 长度, 类型; // 索引、长度、类型。
+      for (索引 = 0, 长度 = 状态.implicitTypes.length; 索引 < 长度; 索引 += 1) { // 循环。
+        类型 = 状态.implicitTypes[索引]; // 类型。
+        if (类型.resolve(字串)) { // 如果能解析。
+          return true; // 回真。
         }
       }
-      return false;
+      return false; // 回假。
     }
-    function isWhitespace(c) {
-      return c === CHAR_SPACE || c === CHAR_TAB;
+
+    function 是空白否(字符码) { // 看看是不是空白。
+      return 字符码 === 空格符 || 字符码 === 制表符; // 判斷是不是空格或製表符。
     }
-    function isPrintable(c) {
-      return 32 <= c && c <= 126 || 161 <= c && c <= 55295 && c !== 8232 && c !== 8233 || 57344 <= c && c <= 65533 && c !== CHAR_BOM || 65536 <= c && c <= 1114111;
+
+    function 可打印否(字符码) { // 看看是不是可打印。
+      return 32 <= 字符码 && 字符码 <= 126 || 161 <= 字符码 && 字符码 <= 55295 && 字符码 !== 8232 && 字符码 !== 8233 || 57344 <= 字符码 && 字符码 <= 65533 && 字符码 !== 字节序标记 || 65536 <= 字符码 && 字符码 <= 1114111; // 判斷是不是可打印字符。
     }
-    function isNsCharOrWhitespace(c) {
-      return isPrintable(c) && c !== CHAR_BOM && c !== CHAR_CARRIAGE_RETURN && c !== CHAR_LINE_FEED;
+
+    function 是非空或空白否(字符码) { // 看看是不是非空或空白。
+      return 可打印否(字符码) && 字符码 !== 字节序标记 && 字符码 !== 回车符 && 字符码 !== 换行符; // 判斷是不是可打印且不是BOM、回車或換行。
     }
-    function isPlainSafe(c, prev, inblock) {
-      var cIsNsCharOrWhitespace = isNsCharOrWhitespace(c);
-      var cIsNsChar = cIsNsCharOrWhitespace && !isWhitespace(c);
+
+    function 是纯净安全否(字符码, 之前字符码, 在块中) { // 看看是不是纯净安全。
+      var 字符码是非空或空白 = 是非空或空白否(字符码); // 字符碼是非空或空白。
+      var 字符码是非空 = 字符码是非空或空白 && !是空白否(字符码); // 字符碼是非空。
       return (
         // ns-plain-safe
-        (inblock ? (
+        (在块中 ? (
           // c = flow-in
-          cIsNsCharOrWhitespace
-        ) : cIsNsCharOrWhitespace && c !== CHAR_COMMA && c !== CHAR_LEFT_SQUARE_BRACKET && c !== CHAR_RIGHT_SQUARE_BRACKET && c !== CHAR_LEFT_CURLY_BRACKET && c !== CHAR_RIGHT_CURLY_BRACKET) && c !== CHAR_SHARP && !(prev === CHAR_COLON && !cIsNsChar) || isNsCharOrWhitespace(prev) && !isWhitespace(prev) && c === CHAR_SHARP || prev === CHAR_COLON && cIsNsChar
-      );
+          字符码是非空或空白
+        ) : 字符码是非空或空白 && 字符码 !== 逗号 && 字符码 !== 左方括号 && 字符码 !== 右方括号 && 字符码 !== 左花括号 && 字符码 !== 右花括号) && 字符码 !== 井号 && !(之前字符码 === 冒号 && !字符码是非空) || 是非空或空白否(之前字符码) && !是空白否(之前字符码) && 字符码 === 井号 || 之前字符码 === 冒号 && 字符码是非空
+      ); // 判斷是不是純淨安全。
     }
-    function isPlainSafeFirst(c) {
-      return isPrintable(c) && c !== CHAR_BOM && !isWhitespace(c) && c !== CHAR_MINUS && c !== CHAR_QUESTION && c !== CHAR_COLON && c !== CHAR_COMMA && c !== CHAR_LEFT_SQUARE_BRACKET && c !== CHAR_RIGHT_SQUARE_BRACKET && c !== CHAR_LEFT_CURLY_BRACKET && c !== CHAR_RIGHT_CURLY_BRACKET && c !== CHAR_SHARP && c !== CHAR_AMPERSAND && c !== CHAR_ASTERISK && c !== CHAR_EXCLAMATION && c !== CHAR_VERTICAL_LINE && c !== CHAR_EQUALS && c !== CHAR_GREATER_THAN && c !== CHAR_SINGLE_QUOTE && c !== CHAR_DOUBLE_QUOTE && c !== CHAR_PERCENT && c !== CHAR_COMMERCIAL_AT && c !== CHAR_GRAVE_ACCENT;
+
+    function 是纯净安全首(字符码) { // 看看是不是纯净安全首。
+      return 可打印否(字符码) && 字符码 !== 字节序标记 && !是空白否(字符码) && 字符码 !== 减号 && 字符码 !== 问号 && 字符码 !== 冒号 && 字符码 !== 逗号 && 字符码 !== 左方括号 && 字符码 !== 右方括号 && 字符码 !== 左花括号 && 字符码 !== 右花括号 && 字符码 !== 井号 && 字符码 !== 与符 && 字符码 !== 星号 && 字符码 !== 感叹符 && 字符码 !== 竖线符 && 字符码 !== 等号 && 字符码 !== 大于号 && 字符码 !== 单引号 && 字符码 !== 双引号 && 字符码 !== 百分符 && 字符码 !== 艾特符 && 字符码 !== 反引号; // 判斷是不是純淨安全首。
     }
-    function isPlainSafeLast(c) {
-      return !isWhitespace(c) && c !== CHAR_COLON;
+
+    function 是纯净安全尾(字符码) { // 看看是不是纯净安全尾。
+      return !是空白否(字符码) && 字符码 !== 冒号; // 判斷是不是純淨安全尾。
     }
-    function codePointAt(string, pos) {
-      var first = string.charCodeAt(pos), second;
-      if (first >= 55296 && first <= 56319 && pos + 1 < string.length) {
-        second = string.charCodeAt(pos + 1);
-        if (second >= 56320 && second <= 57343) {
-          return (first - 55296) * 1024 + second - 56320 + 65536;
+
+    function 取码点(字串, 位置) { // 取码点。
+      var 第一个 = 字串.charCodeAt(位置), // 第一个。
+        第二个; // 第二个。
+      if (第一个 >= 55296 && 第一个 <= 56319 && 位置 + 1 < 字串.length) { // 如果是高位代理。
+        第二个 = 字串.charCodeAt(位置 + 1); // 第二个。
+        if (第二个 >= 56320 && 第二个 <= 57343) { // 如果是低位代理。
+          return (第一个 - 55296) * 1024 + 第二个 - 56320 + 65536; // 回码点。
         }
       }
-      return first;
+      return 第一个; // 回第一个。
     }
-    function needIndentIndicator(string) {
-      var leadingSpaceRe = /^\n* /;
-      return leadingSpaceRe.test(string);
+
+    function 需缩进指示否(字串) { // 看看是不是需要缩进指示。
+      var 开头空格正则 = /^\n* /; // 开头空格正则。
+      return 开头空格正则.test(字串); // 判斷是不是需要縮進指示。
     }
-    var STYLE_PLAIN = 1;
-    var STYLE_SINGLE = 2;
-    var STYLE_LITERAL = 3;
-    var STYLE_FOLDED = 4;
-    var STYLE_DOUBLE = 5;
-    function chooseScalarStyle(string, singleLineOnly, indentPerLevel, lineWidth, testAmbiguousType, quotingType, forceQuotes, inblock) {
-      var i;
-      var char = 0;
-      var prevChar = null;
-      var hasLineBreak = false;
-      var hasFoldableLine = false;
-      var shouldTrackWidth = lineWidth !== -1;
-      var previousLineBreak = -1;
-      var plain = isPlainSafeFirst(codePointAt(string, 0)) && isPlainSafeLast(codePointAt(string, string.length - 1));
-      if (singleLineOnly || forceQuotes) {
-        for (i = 0; i < string.length; char >= 65536 ? i += 2 : i++) {
-          char = codePointAt(string, i);
-          if (!isPrintable(char)) {
-            return STYLE_DOUBLE;
+
+    var 普通样式 = 1; // 普通样式。
+    var 单引号样式 = 2; // 单引号样式。
+    var 字面样式 = 3; // 字面样式。
+    var 折叠样式 = 4; // 折叠样式。
+    var 双引号样式 = 5; // 双引号样式。
+    function 选择标量样式(字串, 单行限定, 每级缩进, 行宽, 测试歧义类型, 引号类型, 强制引号, 在块中) { // 选择标量样式。
+      var 索引; // 索引。
+      var 字符 = 0; // 字符。
+      var 之前字符 = null; // 之前字符。
+      var 有换行 = false; // 有换行。
+      var 有可折叠行 = false; // 有可折叠行。
+      var 应跟踪宽度 = 行宽 !== -1; // 应跟踪宽度。
+      var 之前换行 = -1; // 之前换行。
+      var 纯净 = 是纯净安全首(取码点(字串, 0)) && 是纯净安全尾(取码点(字串, 字串.length - 1)); // 纯净。
+      if (单行限定 || 强制引号) { // 如果是单行限定或强制引号。
+        for (索引 = 0; 索引 < 字串.length; 字符 >= 65536 ? 索引 += 2 : 索引++) { // 循环。
+          字符 = 取码点(字串, 索引); // 取码点。
+          if (!可打印否(字符)) { // 如果不可打印。
+            return 双引号样式; // 回双引号样式。
           }
-          plain = plain && isPlainSafe(char, prevChar, inblock);
-          prevChar = char;
+          纯净 = 纯净 && 是纯净安全否(字符, 之前字符, 在块中); // 纯净。
+          之前字符 = 字符; // 之前字符。
         }
       } else {
-        for (i = 0; i < string.length; char >= 65536 ? i += 2 : i++) {
-          char = codePointAt(string, i);
-          if (char === CHAR_LINE_FEED) {
-            hasLineBreak = true;
-            if (shouldTrackWidth) {
-              hasFoldableLine = hasFoldableLine || // Foldable line = too long, and not more-indented.
-                i - previousLineBreak - 1 > lineWidth && string[previousLineBreak + 1] !== " ";
-              previousLineBreak = i;
+        for (索引 = 0; 索引 < 字串.length; 字符 >= 65536 ? 索引 += 2 : 索引++) { // 循环。
+          字符 = 取码点(字串, 索引); // 取码点。
+          if (字符 === 换行符) { // 如果是换行符。
+            有换行 = true; // 有换行。
+            if (应跟踪宽度) { // 如果应跟踪宽度。
+              有可折叠行 = 有可折叠行 || // 有可折叠行。
+                索引 - 之前换行 - 1 > 行宽 && 字串[之前换行 + 1] !== " "; // 超过行宽且不是空格。
+              之前换行 = 索引; // 之前换行。
             }
-          } else if (!isPrintable(char)) {
-            return STYLE_DOUBLE;
+          } else if (!可打印否(字符)) { // 如果不可打印。
+            return 双引号样式; // 回双引号样式。
           }
-          plain = plain && isPlainSafe(char, prevChar, inblock);
-          prevChar = char;
+          纯净 = 纯净 && 是纯净安全否(字符, 之前字符, 在块中); // 纯净。
+          之前字符 = 字符; // 之前字符。
         }
-        hasFoldableLine = hasFoldableLine || shouldTrackWidth && (i - previousLineBreak - 1 > lineWidth && string[previousLineBreak + 1] !== " ");
+        有可折叠行 = 有可折叠行 || 应跟踪宽度 && (索引 - 之前换行 - 1 > 行宽 && 字串[之前换行 + 1] !== " "); // 有可折叠行。
       }
-      if (!hasLineBreak && !hasFoldableLine) {
-        if (plain && !forceQuotes && !testAmbiguousType(string)) {
-          return STYLE_PLAIN;
+      if (!有换行 && !有可折叠行) { // 如果没有换行也没有可折叠行。
+        if (纯净 && !强制引号 && !测试歧义类型(字串)) { // 如果纯净且不强制引号且不歧义。
+          return 普通样式; // 回普通样式。
         }
-        return quotingType === QUOTING_TYPE_DOUBLE ? STYLE_DOUBLE : STYLE_SINGLE;
+        return 引号类型 === 双引号类型 ? 双引号样式 : 单引号样式; // 回引号类型。
       }
-      if (indentPerLevel > 9 && needIndentIndicator(string)) {
-        return STYLE_DOUBLE;
+      if (每级缩进 > 9 && 需缩进指示否(字串)) { // 如果每级缩进大于9且需要缩进指示。
+        return 双引号样式; // 回双引号样式。
       }
-      if (!forceQuotes) {
-        return hasFoldableLine ? STYLE_FOLDED : STYLE_LITERAL;
+      if (!强制引号) { // 如果不强制引号。
+        return 有可折叠行 ? 折叠样式 : 字面样式; // 回折叠样式或字面样式。
       }
-      return quotingType === QUOTING_TYPE_DOUBLE ? STYLE_DOUBLE : STYLE_SINGLE;
+      return 引号类型 === 双引号类型 ? 双引号样式 : 单引号样式; // 回引号类型。
     }
-    function writeScalar(state, string, level, iskey, inblock) {
-      state.dump = function () {
-        if (string.length === 0) {
-          return state.quotingType === QUOTING_TYPE_DOUBLE ? '""' : "''";
+
+    function 写标量(状态, 字串, 级别, 是钥匙, 在块中) { // 写标量。
+      状态.dump = function () { // 倾倒。
+        if (字串.length === 0) { // 如果字串是空。
+          return 状态.quotingType === 双引号类型 ? '""' : "''"; // 回空引号。
         }
-        if (!state.noCompatMode) {
-          if (DEPRECATED_BOOLEANS_SYNTAX.indexOf(string) !== -1 || DEPRECATED_BASE60_SYNTAX.test(string)) {
-            return state.quotingType === QUOTING_TYPE_DOUBLE ? '"' + string + '"' : "'" + string + "'";
+        if (!状态.noCompatMode) { // 如果不兼容模式。
+          if (废弃布尔语法.indexOf(字串) !== -1 || 废弃六十进制语法.test(字串)) { // 如果是废弃布尔语法或废弃六十进制语法。
+            return 状态.quotingType === 双引号类型 ? '"' + 字串 + '"' : "'" + 字串 + "'"; // 回引号字串。
           }
         }
-        var indent = state.indent * Math.max(1, level);
-        var lineWidth = state.lineWidth === -1 ? -1 : Math.max(Math.min(state.lineWidth, 40), state.lineWidth - indent);
-        var singleLineOnly = iskey || state.flowLevel > -1 && level >= state.flowLevel;
-        function testAmbiguity(string2) {
-          return testImplicitResolving(state, string2);
+        var 缩进 = 状态.indent * Math.max(1, 级别); // 缩进。
+        var 行宽 = 状态.lineWidth === -1 ? -1 : Math.max(Math.min(状态.lineWidth, 40), 状态.lineWidth - 缩进); // 行宽。
+        var 单行限定 = 是钥匙 || 状态.flowLevel > -1 && 级别 >= 状态.flowLevel; // 单行限定。
+        function 测试歧义(字串2) { // 测试歧义。
+          return 测试隐式解析(状态, 字串2); // 回测试隐式解析。
         }
-        switch (chooseScalarStyle(
-          string,
-          singleLineOnly,
-          state.indent,
-          lineWidth,
-          testAmbiguity,
-          state.quotingType,
-          state.forceQuotes && !iskey,
-          inblock
+        switch (选择标量样式( // 选择标量样式。
+          字串, // 字串。
+          单行限定, // 单行限定。
+          状态.indent, // 缩进。
+          行宽, // 行宽。
+          测试歧义, // 测试歧义。
+          状态.quotingType, // 引号类型。
+          状态.forceQuotes && !是钥匙, // 强制引号。
+          在块中 // 在块中。
         )) {
-          case STYLE_PLAIN:
-            return string;
-          case STYLE_SINGLE:
-            return "'" + string.replace(/'/g, "''") + "'";
-          case STYLE_LITERAL:
-            return "|" + blockHeader(string, state.indent) + dropEndingNewline(indentString(string, indent));
-          case STYLE_FOLDED:
-            return ">" + blockHeader(string, state.indent) + dropEndingNewline(indentString(foldString(string, lineWidth), indent));
-          case STYLE_DOUBLE:
-            return '"' + escapeString(string, lineWidth) + '"';
+          case 普通样式: // 普通样式。
+            return 字串; // 回字串。
+          case 单引号样式: // 单引号样式。
+            return "'" + 字串.replace(/'/g, "''") + "'"; // 回单引号字串。
+          case 字面样式: // 字面样式。
+            return "|" + 块头(字串, 状态.indent) + 丢弃末尾换行(缩进字串(字串, 缩进)); // 回字面样式字串。
+          case 折叠样式: // 折叠样式。
+            return ">" + 块头(字串, 状态.indent) + 丢弃末尾换行(缩进字串(折叠字串(字串, 行宽), 缩进)); // 回折叠样式字串。
+          case 双引号样式: // 双引号样式。
+            return '"' + 转义字串(字串, 行宽) + '"'; // 回双引号字串。
           default:
-            throw new YAMLException("impossible error: invalid scalar style");
+            throw new 歪门邪道之祸("不可能的错处：标量样式不对劲"); // 抛出不可能的错处。
         }
       }();
     }
-    function blockHeader(string, indentPerLevel) {
-      var indentIndicator = needIndentIndicator(string) ? String(indentPerLevel) : "";
-      var clip = string[string.length - 1] === "\n";
-      var keep = clip && (string[string.length - 2] === "\n" || string === "\n");
-      var chomp = keep ? "+" : clip ? "" : "-";
-      return indentIndicator + chomp + "\n";
+
+    function 块头(字串, 每级缩进) { // 块头。
+      var 缩进指示符 = 需缩进指示否(字串) ? String(每级缩进) : ""; // 缩进指示符。
+      var 剪切 = 字串[字串.length - 1] === "\n"; // 剪切。
+      var 保留 = 剪切 && (字串[字串.length - 2] === "\n" || 字串 === "\n"); // 保留。
+      var 啃食 = 保留 ? "+" : 剪切 ? "" : "-"; // 啃食。
+      return 缩进指示符 + 啃食 + "\n"; // 回缩进指示符、啃食和换行。
     }
-    function dropEndingNewline(string) {
-      return string[string.length - 1] === "\n" ? string.slice(0, -1) : string;
+
+    function 丢弃末尾换行(字串) { // 丢弃末尾换行。
+      return 字串[字串.length - 1] === "\n" ? 字串.slice(0, -1) : 字串; // 回去掉末尾换行的字串。
     }
-    function foldString(string, width) {
-      var lineRe = /(\n+)([^\n]*)/g;
-      var result = function () {
-        var nextLF = string.indexOf("\n");
-        nextLF = nextLF !== -1 ? nextLF : string.length;
-        lineRe.lastIndex = nextLF;
-        return foldLine(string.slice(0, nextLF), width);
+
+    function 折叠字串(字串, 宽度) { // 折叠字串。
+      var 行正则 = /(\n+)([^\n]*)/g; // 行正则。
+      var 结果 = function () { // 结果。
+        var 下个换行 = 字串.indexOf("\n"); // 下个换行。
+        下个换行 = 下个换行 !== -1 ? 下个换行 : 字串.length; // 下个换行。
+        行正则.lastIndex = 下个换行; // 行正则的lastIndex。
+        return 折叠行(字串.slice(0, 下个换行), 宽度); // 回折叠行。
       }();
-      var prevMoreIndented = string[0] === "\n" || string[0] === " ";
-      var moreIndented;
-      var match;
-      while (match = lineRe.exec(string)) {
-        var prefix = match[1], line = match[2];
-        moreIndented = line[0] === " ";
-        result += prefix + (!prevMoreIndented && !moreIndented && line !== "" ? "\n" : "") + foldLine(line, width);
-        prevMoreIndented = moreIndented;
+      var 之前更多缩进 = 字串[0] === "\n" || 字串[0] === " "; // 之前更多缩进。
+      var 更多缩进; // 更多缩进。
+      var 匹配; // 匹配。
+      while (匹配 = 行正则.exec(字串)) { // 循环。
+        var 前缀 = 匹配[1], // 前缀。
+          行 = 匹配[2]; // 行。
+        更多缩进 = 行[0] === " "; // 更多缩进。
+        结果 += 前缀 + (!之前更多缩进 && !更多缩进 && 行 !== "" ? "\n" : "") + 折叠行(行, 宽度); // 加上前缀、换行和折叠行。
+        之前更多缩进 = 更多缩进; // 之前更多缩进。
       }
-      return result;
+      return 结果; // 回结果。
     }
-    function foldLine(line, width) {
-      if (line === "" || line[0] === " ")
-        return line;
-      var breakRe = / [^ ]/g;
-      var match;
-      var start = 0, end, curr = 0, next = 0;
-      var result = "";
-      while (match = breakRe.exec(line)) {
-        next = match.index;
-        if (next - start > width) {
-          end = curr > start ? curr : next;
-          result += "\n" + line.slice(start, end);
-          start = end + 1;
+
+    function 折叠行(行, 宽度) { // 折叠行。
+      if (行 === "" || 行[0] === " ") // 如果行是空或开头是空格。
+        return 行; // 回行。
+      var 分隔正则 = / [^ ]/g; // 分隔正则。
+      var 匹配; // 匹配。
+      var 始 = 0, // 始。
+        末, 当前 = 0, // 末、当前。
+        下个 = 0; // 下个。
+      var 结果 = ""; // 结果。
+      while (匹配 = 分隔正则.exec(行)) { // 循环。
+        下个 = 匹配.index; // 下个。
+        if (下个 - 始 > 宽度) { // 如果超过宽度。
+          末 = 当前 > 始 ? 当前 : 下个; // 末。
+          结果 += "\n" + 行.slice(始, 末); // 加上换行和行。
+          始 = 末 + 1; // 始。
         }
-        curr = next;
+        当前 = 下个; // 当前。
       }
-      result += "\n";
-      if (line.length - start > width && curr > start) {
-        result += line.slice(start, curr) + "\n" + line.slice(curr + 1);
+      结果 += "\n"; // 加上换行。
+      if (行.length - 始 > 宽度 && 当前 > 始) { // 如果行长超过宽度且当前大于始。
+        结果 += 行.slice(始, 当前) + "\n" + 行.slice(当前 + 1); // 加上行和换行。
       } else {
-        result += line.slice(start);
+        结果 += 行.slice(始); // 加上行。
       }
-      return result.slice(1);
+      return 结果.slice(1); // 回结果。
     }
-    function escapeString(string) {
-      var result = "";
-      var char = 0;
-      var escapeSeq;
-      for (var i = 0; i < string.length; char >= 65536 ? i += 2 : i++) {
-        char = codePointAt(string, i);
-        escapeSeq = ESCAPE_SEQUENCES[char];
-        if (!escapeSeq && isPrintable(char)) {
-          result += string[i];
-          if (char >= 65536)
-            result += string[i + 1];
+
+    function 转义字串(字串) { // 转义字串。
+      var 结果 = ""; // 结果。
+      var 字符 = 0; // 字符。
+      var 转义序列符; // 转义序列符。
+      for (var 索引 = 0; 索引 < 字串.length; 字符 >= 65536 ? 索引 += 2 : 索引++) { // 循环。
+        字符 = 取码点(字串, 索引); // 取码点。
+        转义序列符 = 转义序列[字符]; // 转义序列符。
+        if (!转义序列符 && 可打印否(字符)) { // 如果没有转义序列符且可打印。
+          结果 += 字串[索引]; // 加上字符。
+          if (字符 >= 65536) // 如果字符码大于等于65536。
+            结果 += 字串[索引 + 1]; // 加上字符。
         } else {
-          result += escapeSeq || encodeHex(char);
+          结果 += 转义序列符 || 编码十六进制(字符); // 加上转义序列符或编码十六进制。
         }
       }
-      return result;
+      return 结果; // 回结果。
     }
-    function writeFlowSequence(state, level, object) {
-      var _result = "", _tag = state.tag, index, length, value;
-      for (index = 0, length = object.length; index < length; index += 1) {
-        value = object[index];
-        if (state.replacer) {
-          value = state.replacer.call(object, String(index), value);
+
+    function 写流序列(状态, 级别, 物件) { // 写流序列。
+      var _结果 = "", // 结果。
+        _标签 = 状态.tag, // 标签。
+        索引, 长度, 值; // 索引、长度、值。
+      for (索引 = 0, 长度 = 物件.length; 索引 < 长度; 索引 += 1) { // 循环。
+        值 = 物件[索引]; // 值。
+        if (状态.replacer) { // 如果有替换器。
+          值 = 状态.replacer.call(物件, String(索引), 值); // 调用替换器。
         }
-        if (writeNode(state, level, value, false, false) || typeof value === "undefined" && writeNode(state, level, null, false, false)) {
-          if (_result !== "")
-            _result += "," + (!state.condenseFlow ? " " : "");
-          _result += state.dump;
+        if (写节点(状态, 级别, 值, false, false) || typeof 值 === "undefined" && 写节点(状态, 级别, null, false, false)) { // 写节点。
+          if (_结果 !== "") // 如果结果不空。
+            _结果 += "," + (!状态.condenseFlow ? " " : ""); // 加上逗号和空格。
+          _结果 += 状态.dump; // 加上倾倒。
         }
       }
-      state.tag = _tag;
-      state.dump = "[" + _result + "]";
+      状态.tag = _标签; // 标签回退。
+      状态.dump = "[" + _结果 + "]"; // 倾倒。
     }
-    function writeBlockSequence(state, level, object, compact) {
-      var _result = "", _tag = state.tag, index, length, value;
-      for (index = 0, length = object.length; index < length; index += 1) {
-        value = object[index];
-        if (state.replacer) {
-          value = state.replacer.call(object, String(index), value);
+
+    function 写块序列(状态, 级别, 物件, 紧凑) { // 写块序列。
+      var _结果 = "", // 结果。
+        _标签 = 状态.tag, // 标签。
+        索引, 长度, 值; // 索引、长度、值。
+      for (索引 = 0, 长度 = 物件.length; 索引 < 长度; 索引 += 1) { // 循环。
+        值 = 物件[索引]; // 值。
+        if (状态.replacer) { // 如果有替换器。
+          值 = 状态.replacer.call(物件, String(索引), 值); // 调用替换器。
         }
-        if (writeNode(state, level + 1, value, true, true, false, true) || typeof value === "undefined" && writeNode(state, level + 1, null, true, true, false, true)) {
-          if (!compact || _result !== "") {
-            _result += generateNextLine(state, level);
+        if (写节点(状态, 级别 + 1, 值, true, true, false, true) || typeof 值 === "undefined" && 写节点(状态, 级别 + 1, null, true, true, false, true)) { // 写节点。
+          if (!紧凑 || _结果 !== "") { // 如果不紧凑或结果不空。
+            _结果 += 生成下行(状态, 级别); // 加上下行。
           }
-          if (state.dump && CHAR_LINE_FEED === state.dump.charCodeAt(0)) {
-            _result += "-";
+          if (状态.dump && 换行符 === 状态.dump.charCodeAt(0)) { // 如果倾倒有内容且开头是换行符。
+            _结果 += "-"; // 加上减号。
           } else {
-            _result += "- ";
+            _结果 += "- "; // 加上减号和空格。
           }
-          _result += state.dump;
+          _结果 += 状态.dump; // 加上倾倒。
         }
       }
-      state.tag = _tag;
-      state.dump = _result || "[]";
+      状态.tag = _标签; // 标签回退。
+      状态.dump = _结果 || "[]"; // 倾倒。
     }
-    function writeFlowMapping(state, level, object) {
-      var _result = "", _tag = state.tag, objectKeyList = Object.keys(object), index, length, objectKey, objectValue, pairBuffer;
-      for (index = 0, length = objectKeyList.length; index < length; index += 1) {
-        pairBuffer = "";
-        if (_result !== "")
-          pairBuffer += ", ";
-        if (state.condenseFlow)
-          pairBuffer += '"';
-        objectKey = objectKeyList[index];
-        objectValue = object[objectKey];
-        if (state.replacer) {
-          objectValue = state.replacer.call(object, objectKey, objectValue);
+
+    function 写流映射(状态, 级别, 物件) { // 写流映射。
+      var _结果 = "", // 结果。
+        _标签 = 状态.tag, // 标签。
+        物件钥匙列表 = Object.keys(物件), // 物件钥匙列表。
+        索引, 长度, 物件钥匙, 物件值, 对子缓冲区; // 索引、长度、物件钥匙、物件值、对子缓冲区。
+      for (索引 = 0, 长度 = 物件钥匙列表.length; 索引 < 长度; 索引 += 1) { // 循环。
+        对子缓冲区 = ""; // 对子缓冲区。
+        if (_结果 !== "") // 如果结果不空。
+          对子缓冲区 += ", " + (!状态.condenseFlow ? " " : ""); // 加上逗号和空格。
+        if (状态.condenseFlow) // 如果凝缩流。
+          对子缓冲区 += '"'; // 加上双引号。
+        物件钥匙 = 物件钥匙列表[索引]; // 物件钥匙。
+        物件值 = 物件[物件钥匙]; // 物件值。
+        if (状态.replacer) { // 如果有替换器。
+          物件值 = 状态.replacer.call(物件, 物件钥匙, 物件值); // 调用替换器。
         }
-        if (!writeNode(state, level, objectKey, false, false)) {
-          continue;
+        if (!写节点(状态, 级别, 物件钥匙, false, false)) { // 写节点。
+          continue; // 继续。
         }
-        if (state.dump.length > 1024)
-          pairBuffer += "? ";
-        pairBuffer += state.dump + (state.condenseFlow ? '"' : "") + ":" + (state.condenseFlow ? "" : " ");
-        if (!writeNode(state, level, objectValue, false, false)) {
-          continue;
+        if (状态.dump.length > 1024) // 如果倾倒长度大于1024。
+          对子缓冲区 += "? "; // 加上问号和空格。
+        对子缓冲区 += 状态.dump + (状态.condenseFlow ? '"' : "") + ":" + (状态.condenseFlow ? "" : " "); // 加上倾倒、引号和冒号。
+        if (!写节点(状态, 级别, 物件值, false, false)) { // 写节点。
+          continue; // 继续。
         }
-        pairBuffer += state.dump;
-        _result += pairBuffer;
+        对子缓冲区 += 状态.dump; // 加上倾倒。
+        _结果 += 对子缓冲区; // 加上对子缓冲区。
       }
-      state.tag = _tag;
-      state.dump = "{" + _result + "}";
+      状态.tag = _标签; // 标签回退。
+      状态.dump = "{" + _结果 + "}"; // 倾倒。
     }
-    function writeBlockMapping(state, level, object, compact) {
-      var _result = "", _tag = state.tag, objectKeyList = Object.keys(object), index, length, objectKey, objectValue, explicitPair, pairBuffer;
-      if (state.sortKeys === true) {
-        objectKeyList.sort();
-      } else if (typeof state.sortKeys === "function") {
-        objectKeyList.sort(state.sortKeys);
-      } else if (state.sortKeys) {
-        throw new YAMLException("sortKeys must be a boolean or a function");
+
+    function 写块映射(状态, 级别, 物件, 紧凑) { // 写块映射。
+      var _结果 = "", // 结果。
+        _标签 = 状态.tag, // 标签。
+        物件钥匙列表 = Object.keys(物件), // 物件钥匙列表。
+        索引, 长度, 物件钥匙, 物件值, 显式对子, 对子缓冲区; // 索引、长度、物件钥匙、物件值、显式对子、对子缓冲区。
+      if (状态.sortKeys === true) { // 如果排序钥匙是真。
+        物件钥匙列表.sort(); // 排序。
+      } else if (typeof 状态.sortKeys === "function") { // 如果排序钥匙是函数。
+        物件钥匙列表.sort(状态.sortKeys); // 调用排序函数。
+      } else if (状态.sortKeys) { // 如果排序钥匙是真。
+        throw new 歪门邪道之祸("排序钥匙得是真假值或函数"); // 抛出排序钥匙错误。
       }
-      for (index = 0, length = objectKeyList.length; index < length; index += 1) {
-        pairBuffer = "";
-        if (!compact || _result !== "") {
-          pairBuffer += generateNextLine(state, level);
+      for (索引 = 0, 长度 = 物件钥匙列表.length; 索引 < 长度; 索引 += 1) { // 循环。
+        对子缓冲区 = ""; // 对子缓冲区。
+        if (!紧凑 || _结果 !== "") { // 如果不紧凑或结果不空。
+          对子缓冲区 += 生成下行(状态, 级别); // 加上下行。
         }
-        objectKey = objectKeyList[index];
-        objectValue = object[objectKey];
-        if (state.replacer) {
-          objectValue = state.replacer.call(object, objectKey, objectValue);
+        物件钥匙 = 物件钥匙列表[索引]; // 物件钥匙。
+        物件值 = 物件[物件钥匙]; // 物件值。
+        if (状态.replacer) { // 如果有替换器。
+          物件值 = 状态.replacer.call(物件, 物件钥匙, 物件值); // 调用替换器。
         }
-        if (!writeNode(state, level + 1, objectKey, true, true, true)) {
-          continue;
+        if (!写节点(状态, 级别 + 1, 物件钥匙, true, true, true)) { // 写节点。
+          continue; // 继续。
         }
-        explicitPair = state.tag !== null && state.tag !== "?" || state.dump && state.dump.length > 1024;
-        if (explicitPair) {
-          if (state.dump && CHAR_LINE_FEED === state.dump.charCodeAt(0)) {
-            pairBuffer += "?";
+        显式对子 = 状态.tag !== null && 状态.tag !== "?" || 状态.dump && 状态.dump.length > 1024; // 显式对子。
+        if (显式对子) { // 如果是显式对子。
+          if (状态.dump && 换行符 === 状态.dump.charCodeAt(0)) { // 如果倾倒有内容且开头是换行符。
+            对子缓冲区 += "?"; // 加上问号。
           } else {
-            pairBuffer += "? ";
+            对子缓冲区 += "? "; // 加上问号和空格。
           }
         }
-        pairBuffer += state.dump;
-        if (explicitPair) {
-          pairBuffer += generateNextLine(state, level);
+        对子缓冲区 += 状态.dump; // 加上倾倒。
+        if (显式对子) { // 如果是显式对子。
+          对子缓冲区 += 生成下行(状态, 级别); // 加上下行。
         }
-        if (!writeNode(state, level + 1, objectValue, true, explicitPair)) {
-          continue;
+        if (!写节点(状态, 级别 + 1, 物件值, true, 显式对子)) { // 写节点。
+          continue; // 继续。
         }
-        if (state.dump && CHAR_LINE_FEED === state.dump.charCodeAt(0)) {
-          pairBuffer += ":";
+        if (状态.dump && 换行符 === 状态.dump.charCodeAt(0)) { // 如果倾倒有内容且开头是换行符。
+          对子缓冲区 += ":"; // 加上冒号。
         } else {
-          pairBuffer += ": ";
+          对子缓冲区 += ": "; // 加上冒号和空格。
         }
-        pairBuffer += state.dump;
-        _result += pairBuffer;
+        对子缓冲区 += 状态.dump; // 加上倾倒。
+        _结果 += 对子缓冲区; // 加上对子缓冲区。
       }
-      state.tag = _tag;
-      state.dump = _result || "{}";
+      状态.tag = _标签; // 标签回退。
+      状态.dump = _结果 || "{}"; // 倾倒。
     }
-    function detectType(state, object, explicit) {
-      var _result, typeList, index, length, type, style;
-      typeList = explicit ? state.explicitTypes : state.implicitTypes;
-      for (index = 0, length = typeList.length; index < length; index += 1) {
-        type = typeList[index];
-        if ((type.instanceOf || type.predicate) && (!type.instanceOf || typeof object === "object" && object instanceof type.instanceOf) && (!type.predicate || type.predicate(object))) {
-          if (explicit) {
-            if (type.multi && type.representName) {
-              state.tag = type.representName(object);
+
+    function 侦测类型(状态, 物件, 显式) { // 侦测类型。
+      var _结果, 类型列表, 索引, 长度, 类型, 样式; // 结果、类型列表、索引、长度、类型、样式。
+      类型列表 = 显式 ? 状态.explicitTypes : 状态.implicitTypes; // 类型列表。
+      for (索引 = 0, 长度 = 类型列表.length; 索引 < 长度; 索引 += 1) { // 循环。
+        类型 = 类型列表[索引]; // 类型。
+        if ((类型.instanceOf || 类型.predicate) && (!类型.instanceOf || typeof 物件 === "object" && 物件 instanceof 类型.instanceOf) && (!类型.predicate || 类型.predicate(物件))) { // 如果有实例或判断且符合。
+          if (显式) { // 如果是显式。
+            if (类型.multi && 类型.representName) { // 如果是多类型且有表示名。
+              状态.tag = 类型.representName(物件); // 标签。
             } else {
-              state.tag = type.tag;
+              状态.tag = 类型.tag; // 标签。
             }
           } else {
-            state.tag = "?";
+            状态.tag = "?"; // 标签是问号。
           }
-          if (type.represent) {
-            style = state.styleMap[type.tag] || type.defaultStyle;
-            if (_toString.call(type.represent) === "[object Function]") {
-              _result = type.represent(object, style);
-            } else if (_hasOwnProperty.call(type.represent, style)) {
-              _result = type.represent[style](object, style);
+          if (类型.represent) { // 如果有表示。
+            样式 = 状态.styleMap[类型.tag] || 类型.defaultStyle; // 样式。
+            if (_toString.call(类型.represent) === "[object Function]") { // 如果表示是函数。
+              _结果 = 类型.represent(物件, 样式); // 调用表示函数。
+            } else if (_hasOwnProperty.call(类型.represent, 样式)) { // 如果表示有样式。
+              _结果 = 类型.represent[样式](物件, 样式); // 调用表示样式函数。
             } else {
-              throw new YAMLException("!<" + type.tag + '> tag resolver accepts not "' + style + '" style');
+              throw new 歪门邪道之祸("!<" + 类型.tag + '>标签解析器不认“' + 样式 + '”样式'); // 抛出标签解析器错误。
             }
-            state.dump = _result;
+            状态.dump = _结果; // 倾倒。
           }
-          return true;
+          return true; // 回真。
         }
       }
-      return false;
+      return false; // 回假。
     }
-    function writeNode(state, level, object, block, compact, iskey, isblockseq) {
-      state.tag = null;
-      state.dump = object;
-      if (!detectType(state, object, false)) {
-        detectType(state, object, true);
+
+    function 写节点(状态, 级别, 物件, 块, 紧凑, 是钥匙, 是块序列) { // 写节点。
+      状态.tag = null; // 标签清空。
+      状态.dump = 物件; // 倾倒。
+      if (!侦测类型(状态, 物件, false)) { // 如果没侦测到类型。
+        侦测类型(状态, 物件, true); // 侦测显式类型。
       }
-      var type = _toString.call(state.dump);
-      var inblock = block;
-      var tagStr;
-      if (block) {
-        block = state.flowLevel < 0 || state.flowLevel > level;
+      var 类型 = _toString.call(状态.dump); // 类型。
+      var 在块中 = 块; // 在块中。
+      var 标签字串; // 标签字串。
+      if (块) { // 如果是块。
+        块 = 状态.flowLevel < 0 || 状态.flowLevel > 级别; // 块。
       }
-      var objectOrArray = type === "[object Object]" || type === "[object Array]", duplicateIndex, duplicate;
-      if (objectOrArray) {
-        duplicateIndex = state.duplicates.indexOf(object);
-        duplicate = duplicateIndex !== -1;
+      var 物件或阵列 = 类型 === "[object Object]" || 类型 === "[object Array]", // 物件或阵列。
+        重复索引, 重复; // 重复索引、重复。
+      if (物件或阵列) { // 如果是物件或阵列。
+        重复索引 = 状态.duplicates.indexOf(物件); // 重复索引。
+        重复 = 重复索引 !== -1; // 重复。
       }
-      if (state.tag !== null && state.tag !== "?" || duplicate || state.indent !== 2 && level > 0) {
-        compact = false;
+      if (状态.tag !== null && 状态.tag !== "?" || 重复 || 状态.indent !== 2 && 级别 > 0) { // 如果有标签或重复或缩进不为2且级别大于0。
+        紧凑 = false; // 不紧凑。
       }
-      if (duplicate && state.usedDuplicates[duplicateIndex]) {
-        state.dump = "*ref_" + duplicateIndex;
+      if (重复 && 状态.usedDuplicates[重复索引]) { // 如果重复且已用重复。
+        状态.dump = "*ref_" + 重复索引; // 倾倒。
       } else {
-        if (objectOrArray && duplicate && !state.usedDuplicates[duplicateIndex]) {
-          state.usedDuplicates[duplicateIndex] = true;
+        if (物件或阵列 && 重复 && !状态.usedDuplicates[重复索引]) { // 如果是物件或阵列且重复且未用重复。
+          状态.usedDuplicates[重复索引] = true; // 已用重复。
         }
-        if (type === "[object Object]") {
-          if (block && Object.keys(state.dump).length !== 0) {
-            writeBlockMapping(state, level, state.dump, compact);
-            if (duplicate) {
-              state.dump = "&ref_" + duplicateIndex + state.dump;
+        if (类型 === "[object Object]") { // 如果是物件。
+          if (块 && Object.keys(状态.dump).length !== 0) { // 如果是块且倾倒不空。
+            写块映射(状态, 级别, 状态.dump, 紧凑); // 写块映射。
+            if (重复) { // 如果重复。
+              状态.dump = "&ref_" + 重复索引 + 状态.dump; // 倾倒。
             }
           } else {
-            writeFlowMapping(state, level, state.dump);
-            if (duplicate) {
-              state.dump = "&ref_" + duplicateIndex + " " + state.dump;
+            写流映射(状态, 级别, 状态.dump); // 写流映射。
+            if (重复) { // 如果重复。
+              状态.dump = "&ref_" + 重复索引 + " " + 状态.dump; // 倾倒。
             }
           }
-        } else if (type === "[object Array]") {
-          if (block && state.dump.length !== 0) {
-            if (state.noArrayIndent && !isblockseq && level > 0) {
-              writeBlockSequence(state, level - 1, state.dump, compact);
+        } else if (类型 === "[object Array]") { // 如果是阵列。
+          if (块 && 状态.dump.length !== 0) { // 如果是块且倾倒不空。
+            if (状态.noArrayIndent && !是块序列 && 级别 > 0) { // 如果不数组缩进且不是块序列且级别大于0。
+              写块序列(状态, 级别 - 1, 状态.dump, 紧凑); // 写块序列。
             } else {
-              writeBlockSequence(state, level, state.dump, compact);
+              写块序列(状态, 级别, 状态.dump, 紧凑); // 写块序列。
             }
-            if (duplicate) {
-              state.dump = "&ref_" + duplicateIndex + state.dump;
+            if (重复) { // 如果重复。
+              状态.dump = "&ref_" + 重复索引 + 状态.dump; // 倾倒。
             }
           } else {
-            writeFlowSequence(state, level, state.dump);
-            if (duplicate) {
-              state.dump = "&ref_" + duplicateIndex + " " + state.dump;
+            写流序列(状态, 级别, 状态.dump); // 写流序列。
+            if (重复) { // 如果重复。
+              状态.dump = "&ref_" + 重复索引 + " " + 状态.dump; // 倾倒。
             }
           }
-        } else if (type === "[object String]") {
-          if (state.tag !== "?") {
-            writeScalar(state, state.dump, level, iskey, inblock);
+        } else if (类型 === "[object String]") { // 如果是字串。
+          if (状态.tag !== "?") { // 如果标签不是问号。
+            写标量(状态, 状态.dump, 级别, 是钥匙, 在块中); // 写标量。
           }
-        } else if (type === "[object Undefined]") {
-          return false;
+        } else if (类型 === "[object Undefined]") { // 如果是未定义。
+          return false; // 回假。
         } else {
-          if (state.skipInvalid)
-            return false;
-          throw new YAMLException("unacceptable kind of an object to dump " + type);
+          if (状态.skipInvalid) // 如果跳过无效。
+            return false; // 回假。
+          throw new 歪门邪道之祸("不中用的物件种类，没法倾倒 " + 类型); // 抛出物件种类错误。
         }
-        if (state.tag !== null && state.tag !== "?") {
-          tagStr = encodeURI(
-            state.tag[0] === "!" ? state.tag.slice(1) : state.tag
-          ).replace(/!/g, "%21");
-          if (state.tag[0] === "!") {
-            tagStr = "!" + tagStr;
-          } else if (tagStr.slice(0, 18) === "tag:yaml.org,2002:") {
-            tagStr = "!!" + tagStr.slice(18);
+        if (状态.tag !== null && 状态.tag !== "?") { // 如果有标签且不是问号。
+          标签字串 = encodeURI( // 编码URI。
+            状态.tag[0] === "!" ? 状态.tag.slice(1) : 状态.tag // 标签。
+          ).replace(/!/g, "%21"); // 替换感叹号。
+          if (状态.tag[0] === "!") { // 如果标签开头是感叹号。
+            标签字串 = "!" + 标签字串; // 加上感叹号。
+          } else if (标签字串.slice(0, 18) === "tag:yaml.org,2002:") { // 如果标签字串开头是tag:yaml.org,2002:。
+            标签字串 = "!!" + 标签字串.slice(18); // 加上两个感叹号。
           } else {
-            tagStr = "!<" + tagStr + ">";
+            标签字串 = "!<" + 标签字串 + ">"; // 加上!<和>。
           }
-          state.dump = tagStr + " " + state.dump;
+          状态.dump = 标签字串 + " " + 状态.dump; // 倾倒。
         }
       }
-      return true;
+      return true; // 回真。
     }
-    function getDuplicateReferences(object, state) {
-      var objects = [], duplicatesIndexes = [], index, length;
-      inspectNode(object, objects, duplicatesIndexes);
-      for (index = 0, length = duplicatesIndexes.length; index < length; index += 1) {
-        state.duplicates.push(objects[duplicatesIndexes[index]]);
+
+    function 取重复引用(物件, 状态) { // 取重复引用。
+      var 物件列表 = [], // 物件列表。
+        重复索引列表 = [], // 重复索引列表。
+        索引, 长度; // 索引、长度。
+      检查节点(物件, 物件列表, 重复索引列表); // 检查节点。
+      for (索引 = 0, 长度 = 重复索引列表.length; 索引 < 长度; 索引 += 1) { // 循环。
+        状态.duplicates.push(物件列表[重复索引列表[索引]]); // 推入重复。
       }
-      state.usedDuplicates = new Array(length);
+      状态.usedDuplicates = new Array(长度); // 已用重复。
     }
-    function inspectNode(object, objects, duplicatesIndexes) {
-      var objectKeyList, index, length;
-      if (object !== null && typeof object === "object") {
-        index = objects.indexOf(object);
-        if (index !== -1) {
-          if (duplicatesIndexes.indexOf(index) === -1) {
-            duplicatesIndexes.push(index);
+
+    function 检查节点(物件, 物件列表, 重复索引列表) { // 检查节点。
+      var 物件钥匙列表, 索引, 长度; // 物件钥匙列表、索引、长度。
+      if (物件 !== null && typeof 物件 === "object") { // 如果物件不空且是物件。
+        索引 = 物件列表.indexOf(物件); // 索引。
+        if (索引 !== -1) { // 如果索引不为负一。
+          if (重复索引列表.indexOf(索引) === -1) { // 如果重复索引列表里没有索引。
+            重复索引列表.push(索引); // 推入索引。
           }
         } else {
-          objects.push(object);
-          if (Array.isArray(object)) {
-            for (index = 0, length = object.length; index < length; index += 1) {
-              inspectNode(object[index], objects, duplicatesIndexes);
+          物件列表.push(物件); // 推入物件。
+          if (Array.isArray(物件)) { // 如果是阵列。
+            for (索引 = 0, 长度 = 物件.length; 索引 < 长度; 索引 += 1) { // 循环。
+              检查节点(物件[索引], 物件列表, 重复索引列表); // 检查节点。
             }
           } else {
-            objectKeyList = Object.keys(object);
-            for (index = 0, length = objectKeyList.length; index < length; index += 1) {
-              inspectNode(object[objectKeyList[index]], objects, duplicatesIndexes);
+            物件钥匙列表 = Object.keys(物件); // 物件钥匙列表。
+            for (索引 = 0, 长度 = 物件钥匙列表.length; 索引 < 长度; 索引 += 1) { // 循环。
+              检查节点(物件[物件钥匙列表[索引]], 物件列表, 重复索引列表); // 检查节点。
             }
           }
         }
       }
     }
-    function dump(input, options) {
-      options = options || {};
-      var state = new State(options);
-      if (!state.noRefs)
-        getDuplicateReferences(input, state);
-      var value = input;
-      if (state.replacer) {
-        value = state.replacer.call({ "": value }, "", value);
+
+    function 倾倒(输入, 选项) { // 倾倒。
+      选项 = 选项 || {}; // 选项。
+      var 状态 = new 状态(选项); // 新状态。
+      if (!状态.noRefs) // 如果不引用。
+        取重复引用(输入, 状态); // 取重复引用。
+      var 值 = 输入; // 值。
+      if (状态.replacer) { // 如果有替换器。
+        值 = 状态.replacer.call({ "": 值 }, "", 值); // 调用替换器。
       }
-      if (writeNode(state, 0, value, true, true))
-        return state.dump + "\n";
-      return "";
+      if (写节点(状态, 0, 值, true, true)) // 写节点。
+        return 状态.dump + "\n"; // 回倾倒和换行。
+      return ""; // 回空字串。
     }
-    module.exports.dump = dump;
+    模块.exports.倾倒 = 倾倒; // 倾倒，出口。
   }
 });
 
 // node_modules/js-yaml/index.js
-var require_js_yaml = __commonJS({
-  "node_modules/js-yaml/index.js"(exports, module) {
-    "use strict";
-    init_modules_watch_stub();
-    var loader = require_loader();
-    var dumper = require_dumper();
-    function renamed(from, to) {
-      return function () {
-        throw new Error("Function yaml." + from + " is removed in js-yaml 4. Use yaml." + to + " instead, which is now safe by default.");
+var 寻歪门邪道 = 寻常货({ // 尋找歪門邪道，這是咱們山寨的總綱。
+  "node_modules/js-yaml/index.js"(出口, 模块) { // 歪門邪道的規矩。
+    "use strict"; // 嚴格執行。
+    启动小跟班(); // 小跟班又來了。
+    var 装载器 = 寻装载(); // 装载器。
+    var 倾倒器 = 寻倾倒(); // 倾倒器。
+    function 改名(从何, 到何) { // 改名。
+      return function () { // 回函数。
+        throw new Error("函数 yaml." + 从何 + " 在 js-yaml 4 中已移除。请改用 yaml." + 到何 + "，它现在默认是安全的。"); // 抛出错误。
       };
     }
-    module.exports.Type = require_type();
-    module.exports.Schema = require_schema();
-    module.exports.FAILSAFE_SCHEMA = require_failsafe();
-    module.exports.JSON_SCHEMA = require_json();
-    module.exports.CORE_SCHEMA = require_core();
-    module.exports.DEFAULT_SCHEMA = require_default();
-    module.exports.load = loader.load;
-    module.exports.loadAll = loader.loadAll;
-    module.exports.dump = dumper.dump;
-    module.exports.YAMLException = require_exception();
-    module.exports.types = {
-      binary: require_binary(),
-      float: require_float(),
-      map: require_map(),
-      null: require_null(),
-      pairs: require_pairs(),
-      set: require_set(),
-      timestamp: require_timestamp(),
-      bool: require_bool(),
-      int: require_int(),
-      merge: require_merge(),
-      omap: require_omap(),
-      seq: require_seq(),
-      str: require_str()
+    模块.exports.Type = 寻类型(); // 类型。
+    模块.exports.Schema = 寻纲要(); // 纲要。
+    模块.exports.FAILSAFE_SCHEMA = 寻保底(); // 保底纲要。
+    模块.exports.JSON_SCHEMA = 寻秘档(); // 秘档纲要。
+    模块.exports.CORE_SCHEMA = 寻核心(); // 核心纲要。
+    模块.exports.DEFAULT_SCHEMA = 寻默认(); // 默认纲要。
+    模块.exports.load = 装载器.装载; // 装载。
+    模块.exports.loadAll = 装载器.全装载; // 全装载。
+    模块.exports.dump = 倾倒器.倾倒; // 倾倒。
+    模块.exports.YAMLException = 寻异端(); // 歪门邪道之祸。
+    模块.exports.types = { // 类型。
+      binary: 寻二进(), // 二进。
+      float: 寻浮点(), // 浮点。
+      map: 寻映射(), // 映射。
+      null: 寻空值(), // 空值。
+      pairs: 寻对子(), // 对子。
+      set: 寻集合(), // 集合。
+      timestamp: 寻时戳(), // 时戳。
+      bool: 寻真假(), // 真假。
+      int: 寻整数(), // 整数。
+      merge: 寻合并(), // 合并。
+      omap: 寻有序图(), // 有序图。
+      seq: 寻序列(), // 序列。
+      str: 寻字串() // 字串。
     };
-    module.exports.safeLoad = renamed("safeLoad", "load");
-    module.exports.safeLoadAll = renamed("safeLoadAll", "loadAll");
-    module.exports.safeDump = renamed("safeDump", "dump");
+    模块.exports.safeLoad = 改名("safeLoad", "load"); // 安全装载。
+    模块.exports.safeLoadAll = 改名("safeLoadAll", "loadAll"); // 安全全装载。
+    模块.exports.safeDump = 改名("safeDump", "dump"); // 安全倾倒。
   }
 });
 
 // src/index.js
-init_modules_watch_stub();
-var yaml = require_js_yaml();
-var src_default = {
-  async fetch(request, env) {
-    const url = new URL(request.url);
-    const host = url.origin;
-    const frontendUrl = 'https://raw.githubusercontent.com/yzcjd/sub-trans/main/frontend.html';
-    const SUB_BUCKET = env.SUB_BUCKET;
-    let backend = env.BACKEND.replace(/(https?:\/\/[^/]+).*$/, "$1");
-    const subDir = "subscription";
-    const pathSegments = url.pathname.split("/").filter((segment) => segment.length > 0);
-    if (pathSegments.length === 0) {
-      const response = await fetch(frontendUrl);
-      if (response.status !== 200) {
-        return new Response('Failed to fetch frontend', { status: response.status });
-      }
-      const originalHtml = await response.text();
-      const modifiedHtml = originalHtml.replace(/https:\/\/bulianglin2023\.dev/, host);
-      return new Response(modifiedHtml, {
-        status: 200,
-        headers: {
-          'Content-Type': 'text/html',
-        },
-      });
-    } else if (pathSegments[0] === subDir) {
-      const key = pathSegments[pathSegments.length - 1];
-      const object = await SUB_BUCKET.get(key);
-      const object_headers = await SUB_BUCKET.get(key + "_headers");
-      if (object === null)
-        return new Response("Not Found", { status: 404 });
-      if ("R2Bucket" === SUB_BUCKET.constructor.name) {
-        const headers = object_headers ? new Headers(await object_headers.json()) : new Headers({ "Content-Type": "text/plain;charset=UTF-8" });
-        return new Response(object.body, { headers });
-      } else {
-        const headers = object_headers ? new Headers(JSON.parse(object_headers)) : new Headers({ "Content-Type": "text/plain;charset=UTF-8" });
-        return new Response(object, { headers });
-      }
-    }
-
-    const urlParam = url.searchParams.get("url");
-    if (!urlParam)
-      return new Response("Missing URL parameter", { status: 400 });
-    const backendParam = url.searchParams.get("bd");
-    if (backendParam && /^(https?:\/\/[^/]+)[.].+$/g.test(backendParam))
-      backend = backendParam.replace(/(https?:\/\/[^/]+).*$/, "$1");
-    const replacements = {};
-    const replacedURIs = [];
-    const keys = [];
-    if (urlParam.startsWith("proxies:")) {
-      const { format, data } = parseData(urlParam.replace(/\|/g, "\r\n"));
-      if ("yaml" === format) {
-        const key = generateRandomStr(11);
-        const replacedYAMLData = replaceYAML(data, replacements);
-        if (replacedYAMLData) {
-          await SUB_BUCKET.put(key, replacedYAMLData);
-          keys.push(key);
-          replacedURIs.push(`${host}/${subDir}/${key}`);
-        }
-      }
-    } else {
-      const urlParts = urlParam.split("|").filter((part) => part.trim() !== "");
-      if (urlParts.length === 0)
-        return new Response("There are no valid links", { status: 400 });
-      let response, parsedObj;
-      for (const url2 of urlParts) {
-        const key = generateRandomStr(11);
-        if (url2.startsWith("https://") || url2.startsWith("http://")) {
-          response = await fetch(url2, {
-            method: request.method,
-            headers: request.headers,
-            redirect: 'follow', // https://developers.cloudflare.com/workers/runtime-apis/request#constructor
-          });
-          if (!response.ok)
-            continue;
-          const plaintextData = await response.text();
-          parsedObj = parseData(plaintextData);
-          await SUB_BUCKET.put(key + "_headers", JSON.stringify(Object.fromEntries(response.headers)));
-          keys.push(key);
-        } else {
-          parsedObj = parseData(url2);
-        }
-        if (/^(ssr?|vmess1?|trojan|vless|hysteria):\/\//.test(url2)) {
-          const newLink = replaceInUri(url2, replacements, false);
-          if (newLink)
-            replacedURIs.push(newLink);
-          continue;
-        } else if ("base64" === parsedObj.format) {
-          const links = parsedObj.data.split(/\r?\n/).filter((link) => link.trim() !== "");
-          const newLinks = [];
-          for (const link of links) {
-            const newLink = replaceInUri(link, replacements, false);
-            if (newLink)
-              newLinks.push(newLink);
-          }
-          const replacedBase64Data = btoa(newLinks.join("\r\n"));
-          if (replacedBase64Data) {
-            await SUB_BUCKET.put(key, replacedBase64Data);
-            keys.push(key);
-            replacedURIs.push(`${host}/${subDir}/${key}`);
-          }
-        } else if ("yaml" === parsedObj.format) {
-          const replacedYAMLData = replaceYAML(parsedObj.data, replacements);
-          if (replacedYAMLData) {
-            await SUB_BUCKET.put(key, replacedYAMLData);
-            keys.push(key);
-            replacedURIs.push(`${host}/${subDir}/${key}`);
-          }
-        }
-      }
-    }
-    const newUrl = replacedURIs.join("|");
-    url.searchParams.set("url", newUrl);
-    const modifiedRequest = new Request(backend + url.pathname + url.search, request);
-    const rpResponse = await fetch(modifiedRequest);
-    for (const key of keys) {
-      await SUB_BUCKET.delete(key);
-    }
-    if (rpResponse.status === 200) {
-      const plaintextData = await rpResponse.text();
-      try {
-        const decodedData = urlSafeBase64Decode(plaintextData);
-        const links = decodedData.split(/\r?\n/).filter((link) => link.trim() !== "");
-        const newLinks = [];
-        for (const link of links) {
-          const newLink = replaceInUri(link, replacements, true);
-          if (newLink)
-            newLinks.push(newLink);
-        }
-        const replacedBase64Data = btoa(newLinks.join("\r\n"));
-        return new Response(replacedBase64Data, rpResponse);
-      } catch (base64Error) {
-        const result = plaintextData.replace(
-          new RegExp(Object.keys(replacements).join("|"), "g"),
-          (match) => replacements[match] || match
-        );
-        return new Response(result, rpResponse);
-      }
-    }
-    return rpResponse;
-  }
-};
-function replaceInUri(link, replacements, isRecovery) {
-  switch (true) {
-    case link.startsWith("ss://"):
-      return replaceSS(link, replacements, isRecovery);
-    case link.startsWith("ssr://"):
-      return replaceSSR(link, replacements, isRecovery);
-    case link.startsWith("vmess://"):
-    case link.startsWith("vmess1://"):
-      return replaceVmess(link, replacements, isRecovery);
-    case link.startsWith("trojan://"):
-    case link.startsWith("vless://"):
-      return replaceTrojan(link, replacements, isRecovery);
-    case link.startsWith("hysteria://"):
-      return replaceHysteria(link, replacements);
-    default:
-      return;
-  }
-}
-function replaceSSR(link, replacements, isRecovery) {
-  link = link.slice("ssr://".length).replace("\r", "").split("#")[0];
-  link = urlSafeBase64Decode(link);
-  const regexMatch = link.match(/(\S+):(\d+?):(\S+?):(\S+?):(\S+?):(\S+)\//);
-  if (!regexMatch) {
-    return;
-  }
-  const [, server, , , , , password] = regexMatch;
-  let replacedString;
-  if (isRecovery) {
-    replacedString = "ssr://" + urlSafeBase64Encode(link.replace(password, urlSafeBase64Encode(replacements[urlSafeBase64Decode(password)])).replace(server, replacements[server]));
-  } else {
-    const randomPassword = generateRandomStr(12);
-    const randomDomain = generateRandomStr(12) + ".com";
-    replacements[randomDomain] = server;
-    replacements[randomPassword] = urlSafeBase64Decode(password);
-    replacedString = "ssr://" + urlSafeBase64Encode(link.replace(server, randomDomain).replace(password, urlSafeBase64Encode(randomPassword)));
-  }
-  return replacedString;
-}
-function replaceVmess(link, replacements, isRecovery) {
-  const randomUUID = generateRandomUUID();
-  const randomDomain = generateRandomStr(10) + ".com";
-  const regexMatchRocketStyle = link.match(/vmess:\/\/([A-Za-z0-9-_]+)\?(.*)/);
-  if (regexMatchRocketStyle) {
-    const base64Data = regexMatchRocketStyle[1];
-    const regexMatch = urlSafeBase64Decode(base64Data).match(/(.*?):(.*?)@(.*):(.*)/);
-    if (!regexMatch)
-      return;
-    const [, cipher, uuid, server, port] = regexMatch;
-    replacements[randomDomain] = server;
-    replacements[randomUUID] = uuid;
-    const newStr = urlSafeBase64Encode(`${cipher}:${randomUUID}@${randomDomain}:${port}`);
-    const result = link.replace(base64Data, newStr);
-    return result;
-  }
-  const regexMatchKitsunebiStyle = link.match(/vmess1:\/\/(.*?)@(.*):(.*?)\?(.*)/);
-  if (regexMatchKitsunebiStyle) {
-    const [, uuid, server] = regexMatchKitsunebiStyle;
-    replacements[randomDomain] = server;
-    replacements[randomUUID] = uuid;
-    const regex = new RegExp(`${uuid}|${server}`, "g");
-    const result = link.replace(regex, (match) => cReplace(match, uuid, randomUUID, server, randomDomain));
-    return result;
-  }
-  let tempLink = link.replace(/vmess:\/\/|vmess1:\/\//g, "");
-  try {
-    tempLink = urlSafeBase64Decode(tempLink);
-    const regexMatchQuanStyle = tempLink.match(/(.*?) = (.*)/);
-    if (regexMatchQuanStyle) {
-      const configs = regexMatchQuanStyle[2].split(",");
-      if (configs.length < 6)
-        return;
-      const server2 = configs[1].trim();
-      const uuid2 = configs[4].trim().replace(/^"|"$/g, "");
-      replacements[randomDomain] = server2;
-      replacements[randomUUID] = uuid2;
-      const regex2 = new RegExp(`${uuid2}|${server2}`, "g");
-      const result2 = tempLink.replace(regex2, (match) => cReplace(match, uuid2, randomUUID, server2, randomDomain));
-      return "vmess://" + btoa(result2);
-    }
-    const jsonData = JSON.parse(tempLink);
-    const server = jsonData.add;
-    const uuid = jsonData.id;
-    const regex = new RegExp(`${uuid}|${server}`, "g");
-    let result;
-    if (isRecovery) {
-      result = tempLink.replace(regex, (match) => cReplace(match, uuid, replacements[uuid], server, replacements[server]));
-    } else {
-      replacements[randomDomain] = server;
-      replacements[randomUUID] = uuid;
-      result = tempLink.replace(regex, (match) => cReplace(match, uuid, randomUUID, server, randomDomain));
-    }
-    return "vmess://" + btoa(result);
-  } catch (error) {
-    return;
-  }
-}
-function replaceSS(link, replacements, isRecovery) {
-  const randomPassword = generateRandomStr(12);
-  const randomDomain = randomPassword + ".com";
-  let replacedString;
-  let tempLink = link.slice("ss://".length).split("#")[0];
-  if (tempLink.includes("@")) {
-    const regexMatch1 = tempLink.match(/(\S+?)@(\S+):/);
-    if (!regexMatch1) {
-      return;
-    }
-    const [, base64Data, server] = regexMatch1;
-    const regexMatch2 = urlSafeBase64Decode(base64Data).match(/(\S+?):(\S+)/);
-    if (!regexMatch2) {
-      return;
-    }
-    const [, encryption, password] = regexMatch2;
-    if (isRecovery) {
-      const newStr = urlSafeBase64Encode(encryption + ":" + replacements[password]);
-      replacedString = link.replace(base64Data, newStr).replace(server, replacements[server]);
-    } else {
-      replacements[randomDomain] = server;
-      replacements[randomPassword] = password;
-      const newStr = urlSafeBase64Encode(encryption + ":" + randomPassword);
-      replacedString = link.replace(base64Data, newStr).replace(/@.*:/, `@${randomDomain}:`);
-    }
-  } else {
-    try {
-      const decodedValue = urlSafeBase64Decode(tempLink);
-      const regexMatch = decodedValue.match(/(\S+?):(\S+)@(\S+):/);
-      if (!regexMatch) {
-        return;
-      }
-      const [, , password, server] = regexMatch;
-      replacements[randomDomain] = server;
-      replacements[randomPassword] = password;
-      replacedString = "ss://" + urlSafeBase64Encode(decodedValue.replace(/:.*@/, `:${randomPassword}@`).replace(/@.*:/, `@${randomDomain}:`));
-      const hashPart = link.match(/#.*/);
-      if (hashPart)
-        replacedString += hashPart[0];
-    } catch (error) {
-      return;
-    }
-  }
-  return replacedString;
-}
-function replaceTrojan(link, replacements, isRecovery) {
-  const randomUUID = generateRandomUUID();
-  const randomDomain = generateRandomStr(10) + ".com";
-  const regexMatch = link.match(/(vless|trojan):\/\/(.*?)@(.*):/);
-  if (!regexMatch) {
-    return;
-  }
-  const [, , uuid, server] = regexMatch;
-  replacements[randomDomain] = server;
-  replacements[randomUUID] = uuid;
-  const regex = new RegExp(`${uuid}|${server}`, "g");
-  if (isRecovery) {
-    return link.replace(regex, (match) => cReplace(match, uuid, replacements[uuid], server, replacements[server]));
-  } else {
-    return link.replace(regex, (match) => cReplace(match, uuid, randomUUID, server, randomDomain));
-  }
-}
-function replaceHysteria(link, replacements) {
-  const regexMatch = link.match(/hysteria:\/\/(.*):(.*?)\?/);
-  if (!regexMatch) {
-    return;
-  }
-  const server = regexMatch[1];
-  const randomDomain = generateRandomStr(12) + ".com";
-  replacements[randomDomain] = server;
-  return link.replace(server, randomDomain);
-}
-function replaceYAML(yamlObj, replacements) {
-  if (!yamlObj.proxies) {
-    return;
-  }
-  yamlObj.proxies.forEach((proxy) => {
-    const randomPassword = generateRandomStr(12);
-    const randomDomain = randomPassword + ".com";
-    const originalServer = proxy.server;
-    proxy.server = randomDomain;
-    replacements[randomDomain] = originalServer;
-    if (proxy.password) {
-      const originalPassword = proxy.password;
-      proxy.password = randomPassword;
-      replacements[randomPassword] = originalPassword;
-    }
-    if (proxy.uuid) {
-      const originalUUID = proxy.uuid;
-      const randomUUID = generateRandomUUID();
-      proxy.uuid = randomUUID;
-      replacements[randomUUID] = originalUUID;
-    }
-  });
-  return yaml.dump(yamlObj);
-}
-function urlSafeBase64Encode(input) {
-  return btoa(input).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
-}
-function urlSafeBase64Decode(input) {
-  const padded = input + "=".repeat((4 - input.length % 4) % 4);
-  return atob(padded.replace(/-/g, "+").replace(/_/g, "/"));
-}
-function generateRandomStr(len) {
-  return Math.random().toString(36).substring(2, len);
-}
-function generateRandomUUID() {
-  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
-    const r = Math.random() * 16 | 0;
-    const v = c == "x" ? r : r & 3 | 8;
-    return v.toString(16);
-  });
-}
-function parseData(data) {
-  try {
-    return { format: "base64", data: urlSafeBase64Decode(data) };
-  } catch (base64Error) {
-    try {
-      return { format: "yaml", data: yaml.load(data) };
-    } catch (yamlError) {
-      return { format: "unknown", data };
-    }
-  }
-}
-function cReplace(match, ...replacementPairs) {
-  for (let i = 0; i < replacementPairs.length; i += 2) {
-    if (match === replacementPairs[i]) {
-      return replacementPairs[i + 1];
-    }
-  }
-  return match;
-}
-export {
-  src_default as default
-};
-//# sourceMappingURL=index.js.map
+启动小跟班(); // 小跟班又來了，準備幹活！
+var 歪门邪道 = 寻歪门邪道(); // 歪門邪道，咱們的秘密武器。
+var 山寨总舵主 = { // 山寨總舵主，就是咱們這個大當家。
+  async 接客(来客, 山寨家底) { // 總舵主親自接客，來客和山寨家底都得看好。
+    const 路引 = new URL(来客.url); // 看看來客的路引。
+    const 地盘 = 路引.origin; // 咱們的地盤。
+    const 前院门面 = 'https://raw.githubusercontent.com/yzcjd/sub-trans/main/frontend.html'; // 前院門面，對外展示的。
+    const 藏宝阁 = 山寨家底.SUB_BUCKET; // 藏寶閣，放寶貝的地方。
+    let 后山秘道 = 山寨家底.BACKEND.replace(/(https?:\/\/[^/]+).*$/, "$1"); // 後山秘道，通往後院的。
+    const 暗号 = "subscription"; // 暗號，對上暗號才能進。
+    const 小径分岔 = 路引.pathname.split("/").filter((segment) => segment.length > 0); // 小徑分岔，看看來客走哪條路。
+    if (小径分岔.length === 0) { // 如果沒走小徑，直接到前院。
+      const 回话 = await fetch(前院门面); // 去前院門面拿東西。
