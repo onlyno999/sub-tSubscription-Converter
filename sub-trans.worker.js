@@ -2747,7 +2747,7 @@ var 要卸货机 = 共用模({
           case 样式字面量:
             return "|" + 块头(string, state.indent) + 去尾换行(缩进字串(string, indent));
           case 样式折疊:
-            return ">" + 塊頭(string, state.indent) + 去尾換行(縮進字串(折疊字串(string, lineWidth), indent));
+            return ">" + 块头(string, state.indent) + 去尾换行(缩进字串(折叠字串(string, lineWidth), indent));
           case 样式双引号:
             return '"' + 转义字串(string, lineWidth) + '"';
           default:
@@ -3170,25 +3170,25 @@ var 要山寨配置 = 共用模({
 var 山寨配置 = 要山寨配置();
 
 // 這是咱們山寨的新門面內容，你得自己替換成 https://cf-worker-dir-bke.pages.dev/ 的實際 HTML
-const 前台内容 = `<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>山寨前台</title>
-    <style>
-        body { font-family: sans-serif; margin: 2em; line-height: 1.6; }
-        h1 { color: #333; }
-        p { color: #666; }
-    </style>
-</head>
-<body>
-    <h1>歡迎來到山寨！</h1>
-    <p>這裡曾是咱們山寨的前台，現在換了新門面。</p>
-    <p>請將此處的 HTML 內容替換為 <a href="https://cf-worker-dir-bke.pages.dev/">https://cf-worker-dir-bke.pages.dev/</a> 的實際內容。</p>
-    <p>本 Worker 主要負責處理訂閱鏈接的轉換和代理功能。</p>
-</body>
-</html>`;
+const 前台内容 = "<!DOCTYPE html>\n" +
+"<html lang=\"zh-CN\">\n" +
+"<head>\n" +
+"    <meta charset=\"UTF-8\">\n" +
+"    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
+"    <title>山寨前台</title>\n" +
+"    <style>\n" +
+"        body { font-family: sans-serif; margin: 2em; line-height: 1.6; }\n" +
+"        h1 { color: #333; }\n" +
+"        p { color: #666; }\n" +
+"    </style>\n" +
+"</head>\n" +
+"<body>\n" +
+"    <h1>歡迎來到山寨！</h1>\n" +
+"    <p>這裡曾是咱們山寨的前台，現在換了新門面。</p>\n" +
+"    <p>請將此處的 HTML 內容替換為 <a href=\"https://cf-worker-dir-bke.pages.dev/\">https://cf-worker-dir-bke.pages.dev/</a> 的實際內容。</p>\n" +
+"    <p>本 Worker 主要負責處理訂閱鏈接的轉換和代理功能。</p>\n" +
+"</body>\n" +
+"</html>";
 
 // 這是咱們主程序的默認出口，江湖規矩
 var 主程序 = {
